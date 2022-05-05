@@ -1,0 +1,81 @@
+section p {
+  font-size: 1.125rem;
+}
+
+.highlight {
+  font-size: 1rem;
+  border: none;
+}
+
+.highlight pre {
+  font-weight: 500;
+  white-space: pre;
+  color: #f8f8f2;
+  background-color: #282a36;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  padding: 1em 1em;
+  border-radius: 10px;
+}
+
+.highlight .comment {
+  color: #6272a4;
+}
+
+.highlight .yellow {
+  color: #f1fa8c;
+}
+
+.highlight .pink {
+  color: #ff79c6;
+}
+
+.highlight .green {
+  color: #50fa7b;
+}
+
+.highlight .blue {
+  color: #8be9fd;
+}
+
+.highlight .purple {
+  color: #bd93f9
+}
+
+.highlight ._ {
+  color: #fff;
+}
+
+.note-text p {
+  font-size: .925rem;
+  font-weight: 500;
+  word-break: normal !important;
+  word-wrap: break-word !important;
+}
+
+.note-text {
+  color: #f8f8f2;
+  background-color: #333541;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  padding: 1rem 1rem .6rem .6rem;
+  border-left: #4f515f 15px solid;
+  border-radius: 10px 5px 5px 10px;
+}
+
+
+img {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.mark-text {
+  background-color: rgba(110, 118, 129, 0.4);
+  font-size: .98rem;
+  color: #000;
+  border-radius: 6px;
+  padding: .2em .4em;
+  font-family: monospace;
+  font-weight: 800;
+}

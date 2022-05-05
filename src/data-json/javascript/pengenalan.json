@@ -1,0 +1,77 @@
+{
+    "penggunaan": [{
+            "nama": "Countdown",
+            "url": "https://codepen.io/AllThingsSmitty/pen/JJavZN"
+        },
+        {
+            "nama": "Slider",
+            "url": "https://codepen.io/gurovoleg/pen/OqjPLy"
+        },
+        {
+            "nama": "Accordion",
+            "url": "https://codepen.io/whit1346/pen/MmeQLR"
+        },
+        {
+            "nama": "Navbar",
+            "url": "https://codepen.io/abdosteif/pen/bRoyMb?editors=1100"
+        },
+        {
+            "nama": "Game Sederhana",
+            "url": "https://codepen.io/msval/pen/qKhcD"
+        }
+    ],
+    "alur_belajar": {
+        "basic": [{
+                "langkah": "01",
+                "topik": "Pengenalan",
+                "target_pembelajaran": "Memahami bagaimana JavaScript bekerja"
+            },
+            {
+                "langkah": "02",
+                "topik": "Variabel dan Tipe Data",
+                "target_pembelajaran": "Memahami apa itu variabel dan tipe data yang ada di JavaScript"
+            },
+            {
+                "langkah": "03",
+                "topik": "Operator Aritmatik",
+                "target_pembelajaran": "Dapat melakukan operasi aritmatika sederhana"
+            },
+            {
+                "langkah": "04",
+                "topik": "Perulangan",
+                "target_pembelajaran": "Memahami inti kedua dari pemograman yaitu melakukan perulangan"
+            },
+            {
+                "langkah": "05",
+                "topik": "Pengkondisian",
+                "target_pembelajaran": "Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian"
+            },
+            {
+                "langkah": "06",
+                "topik": "Fungsi",
+                "target_pembelajaran": "Mengenal konsep fungsi dalam teknik pemograman"
+            },
+            {
+                "langkah": "07",
+                "topik": "Konsep Array",
+                "target_pembelajaran": "Memahami konsep Array dan mencoba untuk mengimplementasikannya dalam program"
+            },
+            {
+                "langkah": "08",
+                "topik": "Manipulasi Array",
+                "target_pembelajaran": "Memahami cara memanipulasi Array dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program"
+            },
+            {
+                "langkah": "09",
+                "topik": "Konsep Objek",
+                "target_pembelajaran": "Mengenal konsep Object yang menjadi konsep paling penting di Javascript"
+            },
+            {
+                "langkah": "10",
+                "topik": "Manipulasi Objek",
+                "target_pembelajaran": "Memahami cara memanipulasi Object dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program"
+            }
+        ],
+        "advanced": []
+    }
+}

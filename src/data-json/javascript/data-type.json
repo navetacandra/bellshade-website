@@ -1,0 +1,15 @@
+{
+    "varibel-type": [{
+            "type": "const",
+            "desc": "(constant): sifatnya konstan tidak bisa diubah"
+        },
+        {
+            "type": "let",
+            "desc": "(let it change): sifatnya bisa diubah, lebih aman untuk digunakan"
+        },
+        {
+            "type": "var",
+            "desc": "(variable): sifatnya bisa diubah, tidak aman untuk digunakan"
+        }
+    ]
+}
