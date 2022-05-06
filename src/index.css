@@ -19,6 +19,30 @@ section p {
   border-radius: 10px;
 }
 
+.highlight pre code {
+  display: block;
+  overflow-x: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  --scrollbar: #282A36;
+  --thumb: #777779;
+}
+
+.highlight pre code::-webkit-scrollbar {
+  width: 18px;
+}
+
+.highlight pre code::-webkit-scrollbar-track {
+  background: var(--scrollbar);
+}
+
+.highlight pre code::-webkit-scrollbar-thumb {
+  padding-top: 10px;
+  background-color: var(--thumb);
+  border: 6px solid var(--scrollbar);
+  border-radius: 10px;
+}
+
 .highlight .comment {
   color: #6272a4;
 }
@@ -48,6 +72,8 @@ section p {
 }
 
 .note-text p {
+  margin-top: calc(100%/50);
+  margin-left: calc(20%/15);
   font-size: .925rem;
   font-weight: 500;
   word-break: normal !important;
@@ -60,7 +86,7 @@ section p {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  padding: 1rem 1rem .6rem .6rem;
+  padding: 0.25em;
   border-left: #4f515f 15px solid;
   border-radius: 10px 5px 5px 10px;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import data_json from '../../data-json/javascript/pengenalan.json'
+import data_json from '../../data-json/javascript/000_welcome.json'
 
 function WelcomeJS() {
     return (
@@ -59,7 +59,7 @@ function WelcomeJS() {
                                             data_json.alur_belajar.basic.map((val, key) => (
                                                 <tr key={key}>
                                                     <td scope='row'>{val.langkah}</td>
-                                                    <td className='text-break'>
+                                                    <td>
                                                         <a href={'/javascript/' + val.topik.toLowerCase().replace(/ /g, '-')} className="link-primary">{val.topik}</a>
                                                     </td>
                                                     <td className='text-break'>{val.target_pembelajaran}</td>

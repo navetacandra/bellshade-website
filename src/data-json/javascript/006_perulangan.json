@@ -1,0 +1,113 @@
+{
+    "loop_type": [
+        {
+            "id": "for",
+            "title": "#mark_code[for] loop",
+            "desc": "#mark_code[for loop] ini akan menjalankan kode didalamnya dengan menambahkan kondisi, yaitu kondisi #mark_code[initial], #mark_code[expressionCondition], dan cara #mark_code[increment] untuk menjalankan looping tersebut."
+        },
+        {
+            "id": "while",
+            "title": "#mark_code[while] loop",
+            "desc": "Jika #mark_code[for loop] berjalan dengan cara mengikuti instruksi tetap, #mark_code[while loop] ini berjalan terus hingga paramater yang diberikan berupa boolean #mark_code[false] baru akan berhenti."
+        },
+        {
+            "id": "do_while",
+            "title": "#mark_code[do..while] loop",
+            "desc": "Pengulangan yang dilakukan #mark_code[do while loop] ini mirip dengan #mark_code[while] loop, tetapi ada satu perbedaan ya itu #mark_code[do] di mana didalamnya akan tetap di eksekusi. Selanjutnya akan menjalankan instruksi while. Instruksi di dalam #mark_code[do] akan tetap dijalankan oleh #mark_code[while] di bawahnya."
+        }
+    ],
+    "for": {
+        "draft": [
+            "#_[for(initial, expressionCondition, increment) {]",
+            "#_[    // kode di dalam sini]",
+            "#_[}]"
+        ],
+        "code": [
+            "#comment[// kode ini akan menjalankan perulangan]",
+            "#comment[// selama 10 kali, dimulai dari angka 0]",
+            "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[< ] #purple[10] #_[; i] #pink[++] #_[) {]",
+            "#_[    console.log(i);]",
+            "#_[}]",
+            "",
+            "#comment[//== Bentuk \"for\" yang lain. ==//]",
+            "",
+            "#comment[// for in]",
+            "#blue[let ] #_[buah ] #pink[= ] #_[[] #yellow[\"Anggur\"] #_[, ] #yellow[\"Apel\"] #_[, ] #yellow[\"Pepaya\"] #_[, ] #yellow[\"Nanas\"] #_[, ] #yellow[\"Jeruk\"] #_[];]",
+            "#pink[for] #_[(] #blue[const ] #_[n ] #pink[in ] #_[buah] #_[) {]",
+            "#_[    console.log(] #yellow[`${] #_[n ] #pink[+ ] #purple[1] #yellow[}. ${] #_[buah[n]] #yellow[}`] #_[);]",
+            "#_[}]",
+            "",
+            "#comment[// for of]",
+            "#blue[let ] #_[buah2 ] #pink[= ] #_[[] #yellow[\"Anggur\"] #_[, ] #yellow[\"Apel\"] #_[, ] #yellow[\"Pepaya\"] #_[, ] #yellow[\"Nanas\"] #_[, ] #yellow[\"Jeruk\"] #_[];]",
+            "#pink[for] #_[(] #blue[const ] #_[x ] #pink[of ] #_[buah2] #_[) {]",
+            "#_[    console.log(x);]",
+            "#_[}]"
+        ]
+    },
+    "while": {
+        "draft": [
+            "#_[while(boolean) {]",
+            "#_[    // kode di dalam sini]",
+            "#_[}]"
+        ],
+        "code": [
+            "#blue[let ] #_[pengunjung ] #pink[= ] #purple[0] #_[;]",
+            "",
+            "#pink[while] #_[(pengunjung ] #pink[< ] #purple[20] #_[) {]",
+            "#_[    pengunjung] #pink[++] #_[;]",
+            "#pink[    if] #_[(pengunjung ] #pink[> ] #purple[0] #_[) {]",
+            "#_[        console.log(] #yellow[`Pengunjung ke: ${] #_[pengunjung] #yellow[}`] #_[);]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    "do_while": {
+        "draft": [
+            "#_[do {]",
+            "#_[    // kode yang awalnya dieksekusi dan akan di looping]",
+            "#_[} while(boolean);]"
+        ],
+        "code": [
+            "#comment[]",
+            "#blue[let ] #_[jumlahBarang ] #pink[= ] #purple[-2] #_[;]",
+            "",
+            "#pink[do ] #_[{]",
+            "#_[    jumlahBarang ] #pink[+= ] #purple[3] #_[;]",
+            "#_[    console.log(jumlahBarang);]",
+            "#_[} ] #pink[while] #_[(jumlahBarang ] #pink[< ] #purple[20] #_[);]"
+        ]
+    },
+    "special_keyword": [
+        {
+            "title": "#mark_code[break]",
+            "desc": [
+                "Break merupakan statement untuk mengakhiri perulangan, biasanya digunakan pengkondisian untuk menghentikannya."
+            ],
+            "code": [
+                "#comment[// Kode ini akan berhenti jika i mencapai no 15]",
+                "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[<= ] #purple[20] #_[; i] #pink[++] #_[) {]",
+                "#pink[    if] #_[(i ] #pink[> ] #purple[14] #_[) {]",
+                "#pink[        break] #_[;]",
+                "#_[    }]",
+                "#_[    console.log(i);]",
+                "#_[}]"
+            ]
+        },
+        {
+            "title": "#mark_code[continue]",
+            "desc": [
+                "Continue merupakan statement untuk melewati/melompati perulangan. Statement ini akan mengakhiri program dan melanjutkan ke perulangan selanjutnya.",
+                "Perbedaan continue dengan #mark_code[break] yaitu cara berhentinya. Jika #mark_code[continue] hanya berhenti di kondisi dan melewatinya, sedangkan #mark_code[break] itu benar-benar mematikan programnya."
+            ],
+            "code": [
+                "#comment[// Tampilkan bilangan yang merupakan kelipatan 2]",
+                "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[<= ] #purple[20] #_[; i] #pink[++] #_[) {]",
+                "#pink[    if] #_[(i ] #pink[% ] #purple[2] #_[) {]",
+                "#pink[        continue] #_[;]",
+                "#_[    }]",
+                "#_[    console.log(i);]",
+                "#_[}]"
+            ]
+        }
+    ]
+}

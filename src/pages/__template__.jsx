@@ -16,7 +16,7 @@ function __template__() {
                                 </p>
                                 {/**
                                      * 
-                                     * Highlight color copied from https://petanikode.com/
+                                     * Highlight color copied from VSCode Dracula Theme
                                      * 
                                     */}
                                 <div className="highlight mb-3">

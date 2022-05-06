@@ -1,5 +1,6 @@
 import React from 'react'
 import LineCode from '../../components/LineCode'
+import data_json from '../../data-json/javascript/005_aritmatik.json'
 
 function ArithmeticJS() {
     return (
@@ -30,18 +31,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Penjumlahan ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[10 ] #pink[+ ] #purple[5] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 15]' /><br />
-                                        <LineCode text='#comment[/**]' />
-                                        <LineCode text='#comment[ * contoh perbedaan operator penjumlahan dan concatenation.]' />
-                                        <LineCode text='#comment[ * semua Integer akan berubah menjadi string apabila bertemu dengan]' />
-                                        <LineCode text='#comment[ * concatenation dan akan menghasilkan string juga.]' />
-                                        <LineCode text='#comment[ */]' />
-                                        <LineCode text='#_[console.log(] #purple[3 ] #pink[+ ] #purple[3] #_[); ] #comment[// 6]' />
-                                        <LineCode text='#_[console.log(] #purple[3 ] #pink[+ ] #yellow["3"] #_[); ] #comment[// "33"]' />
-                                        <LineCode text='#_[console.log(] #purple[3 ] #pink[+ ] #purple[3 ] #pink[+ ] #yellow["3"] #_[); ] #comment[// "63"]' />
-                                        <LineCode text='#_[console.log(] #purple[3 ] #pink[+ ] #yellow["3" ] #pink[+ ] #purple[3] #_[); ] #comment[// "333"]' />
+                                        {
+                                            data_json['sum-operator-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -53,9 +47,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Pengurangan ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[7 ] #pink[- ] #purple[2] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 5]' />
+                                    {
+                                            data_json['substraction-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -67,9 +63,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Perkalian ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[10 ] #pink[* ] #purple[5] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 50]' />
+                                        {
+                                            data_json['multiplication-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -81,9 +79,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Pembagian ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[8 ] #pink[/ ] #purple[4] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 2]' />
+                                        {
+                                            data_json['distribution-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -95,9 +95,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Modulus ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[7 ] #pink[% ] #purple[2] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 1]' />
+                                        {
+                                            data_json['modulus-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -109,9 +111,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Eksponenen ==//]' />
-                                        <LineCode text='#_[console.log(] #purple[3 ] #pink[** ] #purple[3] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 3 * 3 * 3 = 27]' />
+                                        {
+                                            data_json['exponent-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -123,10 +127,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Increment ==//]' />
-                                        <LineCode text='#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]' />
-                                        <LineCode text='#_[console.log(] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 10 11 12 13]' />
+                                        {
+                                            data_json['increment-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>
@@ -138,10 +143,11 @@ function ArithmeticJS() {
                                 <p className="mb-3">Contoh :</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#comment[//== Decrement ==//]' />
-                                        <LineCode text='#blue[let ] #_[y ] #pink[= ] #purple[5] #_[;]' />
-                                        <LineCode text='#_[console.log(] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[); ]' />
-                                        <LineCode text='#comment[// menghasilkan 5 4 3 2]' />
+                                        {
+                                            data_json['decrement-code'].map((val, key) => (
+                                                val ? <LineCode key={key} text={val} /> : <br key={key} />
+                                            ))
+                                        }
                                     </code></pre>
                                 </div>
                             </section>

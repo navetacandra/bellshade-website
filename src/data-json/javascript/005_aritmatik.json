@@ -1,0 +1,54 @@
+{
+    "sum-operator-code": [
+        "#comment[//== Penjumlahan ==//]",
+        "#_[console.log(] #purple[10 ] #pink[+ ] #purple[5] #_[); ]",
+        "#comment[// menghasilkan 15]",
+        "",
+        "#comment[/**]",
+        "#comment[ * contoh perbedaan operator penjumlahan dan concatenation.]",
+        "#comment[ * semua Integer akan berubah menjadi string apabila bertemu dengan]",
+        "#comment[ * concatenation dan akan menghasilkan string juga.]",
+        "#comment[ */]",
+        "#_[console.log(] #purple[3 ] #pink[+ ] #purple[3] #_[); ] #comment[// 6]",
+        "#_[console.log(] #purple[3 ] #pink[+ ] #yellow[\"3\"] #_[); ] #comment[// \"33\"]",
+        "#_[console.log(] #purple[3 ] #pink[+ ] #purple[3 ] #pink[+ ] #yellow[\"3\"] #_[); ] #comment[// \"63\"]",
+        "#_[console.log(] #purple[3 ] #pink[+ ] #yellow[\"3\" ] #pink[+ ] #purple[3] #_[); ] #comment[// \"333\"]"
+    ],
+    "substraction-code": [
+        "#comment[//== Pengurangan ==//]",
+        "#_[console.log(] #purple[7 ] #pink[- ] #purple[2] #_[); ]",
+        "#comment[// menghasilkan 5]"
+    ],
+    "multiplication-code": [
+        "#comment[//== Perkalian ==//]",
+        "#_[console.log(] #purple[10 ] #pink[* ] #purple[5] #_[); ]",
+        "#comment[// menghasilkan 50]"
+    ],
+    "distribution-code": [
+        "#comment[//== Pembagian ==//]",
+        "#_[console.log(] #purple[8 ] #pink[/ ] #purple[4] #_[); ]",
+        "#comment[// menghasilkan 2]"
+    ],
+    "modulus-code": [
+        "#comment[//== Modulus ==//]",
+        "#_[console.log(] #purple[7 ] #pink[% ] #purple[2] #_[); ]",
+        "#comment[// menghasilkan 1]"
+    ],
+    "exponent-code": [
+        "#comment[//== Eksponenen ==//]",
+        "#_[console.log(] #purple[3 ] #pink[** ] #purple[3] #_[); ]",
+        "#comment[// menghasilkan 3 * 3 * 3 = 27]"
+    ],
+    "increment-code": [
+        "#comment[//== Increment ==//]",
+        "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+        "#_[console.log(] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[); ]",
+        "#comment[// menghasilkan 10 11 12 13]"
+    ],
+    "decrement-code": [
+        "#comment[//== Decrement ==//]",
+        "#blue[let ] #_[y ] #pink[= ] #purple[5] #_[;]",
+        "#_[console.log(] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[); ]",
+        "#comment[// menghasilkan 5 4 3 2]"
+    ]
+}

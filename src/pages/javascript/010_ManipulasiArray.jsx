@@ -42,10 +42,8 @@ function ManipulasiArrayJS() {
                                             <LineCode text='#blue[let ] #_[oddNum ] #pink[= ] #_[array.filter(] #blue[function] #_[(number) {]' />
                                             <LineCode text='#pink[    return ] #_[number ] #pink[% ] #purple[2 ] #pink[=== ] #purple[1] #_[;]' />
                                             <LineCode text='#_[})]' /><br />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [1, 2, 3, 4, 5]</span><br />
-                                            <LineCode text='#_[console.log(oddNum); ]' _break='no' />
-                                            <span className="comment">// [1, 3, 5]</span>
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [1, 2, 3, 4, 5]]' />
+                                            <LineCode text='#_[console.log(oddNum); ] #comment[// [1, 3, 5]]' />
                                         </code></pre>
                                     </div>
                                     <h3>
@@ -75,10 +73,8 @@ function ManipulasiArrayJS() {
                                             <LineCode text='#blue[let ] #_[oddNum ] #pink[= ] #_[array.filter(] #blue[function] #_[(number) {]' />
                                             <LineCode text='#pink[    return ] #_[number ] #pink[* ] #purple[2] #_[;]' />
                                             <LineCode text='#_[})]' /><br />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [1, 2, 3, 4, 5]</span><br />
-                                            <LineCode text='#_[console.log(oddNum); ]' _break='no' />
-                                            <span className="comment">// [2, 4, 6, 8, 10]</span>
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [1, 2, 3, 4, 5]]' />
+                                            <LineCode text='#_[console.log(oddNum); ] #comment[// [2, 4, 6, 8, 10]]' />
                                         </code></pre>
                                     </div>
                                     <h3>
@@ -91,7 +87,7 @@ function ManipulasiArrayJS() {
                                         <pre><code>
                                             <LineCode text='#_[array.sort()]' />
                                             <LineCode text='#_[array.sort(] #blue[function] #_[(firstEl, secondEl) {]' />
-                                            <LineCode text='#_[#_[    ...]]' />
+                                            <LineCode text='#_[    ...]' />
                                             <LineCode text='#_[})]' />
                                         </code></pre>
                                     </div>
@@ -106,13 +102,11 @@ function ManipulasiArrayJS() {
                                             <LineCode text='#blue[let ] #_[numbers1 ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5]' _break='no' />];<br />
                                             <LineCode text='#blue[let ] #_[numbers2 ] #pink[= ] #_[[] #purple[6] #_[, ] #purple[7] #_[, ] #purple[8] #_[, ] #purple[9] #_[, ] #purple[10]' _break='no' />];<br /><br />
                                             <LineCode text='#_[numbers1.sort()]' />
-                                            <LineCode text='#_[console.log(numbers1); ]' _break='no' />
-                                            <span className="comment">// [1, 2, 3, 4, 5]</span><br /><br />
+                                            <LineCode text='#_[console.log(numbers1); ] #comment[// [1, 2, 3, 4, 5]]' />
                                             <LineCode text='#_[numbers2.sort(] #blue[function] #_[(a, b) {]' />
                                             <LineCode text='#pink[    return ] #_[a ] #pink[- ] #_[b;]' />
                                             <LineCode text='#_[})]' />
-                                            <LineCode text='#_[console.log(numbers2); ]' _break='no' />
-                                            <span className="comment">// [6, 7, 8, 9, 10]</span><br />
+                                            <LineCode text='#_[console.log(numbers2); ] #commnet[// [6, 7, 8, 9, 10]]' />
                                         </code></pre>
                                     </div>
                                     <h3>
@@ -135,13 +129,11 @@ function ManipulasiArrayJS() {
                                     <p className="mb-3"></p>
                                     <div className="highlight">
                                         <pre><code>
-                                            <LineCode text='#blue[let ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5]' _break='no' />];<br /><br />
+                                            <LineCode text='#blue[let ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5] #_[];]' /><br />
                                             <LineCode text='#_[numbers.push(] #purple[6] #_[); ] #comment[// menambahkan angka 6 ke array numbers]' />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [1, 2, 3, 4, 5, 6]</span><br /><br />
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [1, 2, 3, 4, 5, 6]]' />
                                             <LineCode text='#_[numbers.pop(); ] #comment[// menghapus item terakhir dari array numbers]' />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [1, 2, 3, 4, 5]</span><br />
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [1, 2, 3, 4, 5]]' />
                                         </code></pre>
                                     </div>
                                     <h3>
@@ -164,13 +156,11 @@ function ManipulasiArrayJS() {
                                     <p className="mb-3"></p>
                                     <div className="highlight">
                                         <pre><code>
-                                            <LineCode text='#blue[let ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5]' _break='no' />];<br /><br />
+                                            <LineCode text='#blue[let ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5] #_[];]' /><br />
                                             <LineCode text='#_[numbers.unshift(] #purple[-1] #_[, ] #purple[0] #_[); ] #comment[// menambahkan angka -1 dan 0 ke array numbers]' />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [-1, 0, 1, 2, 3, 4, 5]</span><br /><br />
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [-1, 0, 1, 2, 3, 4, 5]]' /><br />
                                             <LineCode text='#_[numbers.shift(); ] #comment[// menghapus item pertama dari array numbers]' />
-                                            <LineCode text='#_[console.log(numbers); ]' _break='no' />
-                                            <span className="comment">// [0, 1, 2, 3, 4, 5]</span><br />
+                                            <LineCode text='#_[console.log(numbers); ] #comment[// [0, 1, 2, 3, 4, 5]]' />
                                         </code></pre>
                                     </div>
                                     <h3>
@@ -182,7 +172,7 @@ function ManipulasiArrayJS() {
                                     </p>
                                     <div className="highlight">
                                         <pre><code>
-                                            <LineCode text='#blue[const ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5]' _break='no' />];<br /><br />
+                                            <LineCode text='#blue[const ] #_[numbers ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5] #_[];]' /><br />
                                             <LineCode text='#blue[const ] #_[totalNumber ] #pink[= ] #_[numbers.reduce(] #blue[function] #_[(akumulator, number) {]' />
                                             <LineCode text='#pink[    return ] #_[akumulator ] #pink[+ ] #_[number;]' />
                                             <LineCode text='#_[})]' />

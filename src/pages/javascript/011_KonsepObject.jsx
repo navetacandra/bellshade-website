@@ -61,7 +61,7 @@ function KonsepObjectJS() {
                                 </p>
                                 <div className="highlight mb-3">
                                     <pre><code>
-                                        <LineCode text='#blue[const ] #_[dataDiri ] #pink[= ] #[{nama] #pink[: ] #yellow["Fatah"] #_[, alamat] #pink[: ] #yellow["Bandung"] #_[, umur] #pink[: ] #purple[20] #_[, perkenalan] #pink[: ] #blue[function] #_[() {]' />
+                                        <LineCode text='#blue[const ] #_[dataDiri ] #pink[= ] #[{nama] #pink[: ] #yellow["Fatah"] #_[, alamat] #pink[: ] #yellow["Bandung"] #_[, umur] #pink[: ] #purple[20] #_[, ] #green[perkenalan] #pink[: ] #blue[function] #_[() {]' />
                                         <LineCode text='#_[    console.log(] #yellow[`Hai, nama saya ${] #pink[this] #_[.nama] #yellow[}`] #_[);]' />
                                         <LineCode text='#_[}};]' /><br />
                                         <LineCode text='#_[dataDiri.perkenalan(); ] #comment[// menghasilkan tampilan pada konsol yaitu "Hai, nama saya Fatah"]' />

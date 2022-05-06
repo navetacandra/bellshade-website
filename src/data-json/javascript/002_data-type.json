@@ -1,0 +1,103 @@
+{
+    "text-1": [
+        "Apa itu variabel dalam bahasa pemrograman ?",
+        "Variabel adalah tempat penyimpanan di mana penyimpanan itu diberi nama, di mana nama yang digunakan harus unik."
+    ],
+    "varibel-type": [{
+            "type": "const",
+            "desc": "(constant): sifatnya konstan tidak bisa diubah"
+        },
+        {
+            "type": "let",
+            "desc": "(let it change): sifatnya bisa diubah, lebih aman untuk digunakan"
+        },
+        {
+            "type": "var",
+            "desc": "(variable): sifatnya bisa diubah, tidak aman untuk digunakan"
+        }
+    ],
+    "data-type": [{
+            "type": "string",
+            "desc": ["Merupakan tipe data yang berupa tulisan/teks. Untuk mendeklarasikannya, gunakan tanda (#mark_code['] ), (#mark_code[\"]) , atau (#mark_code[``]) ."]
+        },
+        {
+            "type": "number",
+            "desc": ["Merupakan tipe data yang berupa angka. Bisa berupa bilangan biasa (misal 1,2,3, dst.) juga bilangan yang memiliki koma, tetapi bilangan yang memiliki koma, tanda komanya diganti dengan titik (misal 1.5, 3.14, 7.27, 19.45 dst...)."]
+        },
+        {
+            "type": "boolean",
+            "desc": ["Merupakan tipe data yang berupa hal kelogisan. Valuenya hanya dua, #mark_code[true] dan #mark_code[false]."]
+        },
+        {
+            "type": "null",
+            "desc": ["Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tidak ada. null ini bersifat falsy jika digunakan untuk boolean operator. Value dari #mark_code[null] hanya #mark_code[null]."]
+        },
+        {
+            "type": "undefined",
+            "desc": ["Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tak terdefinisikan sebelumnya, akan bersifat falsy jika digunakan untuk boolean operator. Value dari #mark_code[undefined] hanya #mark_code[undefined]."]
+        },
+        {
+            "type": "object",
+            "desc": [
+                "Merupakan tipe data yang mempunyai pasangan key dan value. Maksud dari key adalah nama yang harus diberikan untuk dijadikan tanda pengenal, supaya value dari object bisa digunakan.",
+                "Object ini menggunakan kurung kurawal (#mark_code[{}]) untuk menyimpan pasangan dari key dan value."
+            ]
+        }
+    ],
+    "variabel-declare-code": [
+        "#comment[// Isi variabel umur tidak bisa diubah, jika]",
+        "#comment[// dipaksa akan muncul sebuah pesan error]",
+        "#blue[const ] #_[umur ] #pink[= ] #purple[17] #_[;]",
+        "#blue[let ] #_[namaBuah ] #pink[= ] #yellow[\"Pepaya\"] #_[;]",
+        "#blue[var ] #_[hoax ] #pink[= ] #pink[true] #_[;]",
+        "",
+        "#_[console.log(umur); ] #comment[// 17]",
+        "#_[console.log(namaBuah); ] #comment[// Pepaya]",
+        "#_[console.log(hoax); ] #comment[// true]",
+        "",
+        "#comment[// Misal kita mengubah nama buah menjadi Durian]",
+        "#_[namaBuah ] #pink[= ] #yellow[\"Durian\"] #_[;]",
+        "#_[console.log(namaBuah); ] #comment[// Durian]",
+        "#comment[// Misal mengubah variabel hoax menjadi false]",
+        "#_[hoax ] #pink[= ] #pink[false] #_[;]",
+        "#_[console.log(hoax); ] #comment[// false]"
+    ],
+    "data-type-code": [
+        "#blue[const ] #_[jumlahBuku ] #pink[= ] #pink[null] #_[;]",
+        "",
+        "#blue[const ] #_[orang ] #pink[= ] #_[{]",
+        "#_[    nama: ] #yellow[\"Abbie Sudiati\"] #_[,]",
+        "#_[    umur: ] #purple[25]",
+        "#_[};]",
+        "",
+        "#_[console.log(jumlahBuku); ] #comment[// null]",
+        "",
+        "#comment[// Ini akan menampilkan dua key beserta valuenya]",
+        "#_[console.log(orang);]",
+        "",
+        "#comment[// Jika ingin mengakses nama atau umurnya]",
+        "#_[console.log(orang.nama); ] #comment[// Abbie Sudiati]",
+        "#_[console.log(orang.umur); ] #comment[// 25]",
+        "",
+        "#comment[// Jika key yang diluar object yang didefinisikan]",
+        "#comment[// tidak pernah dibuat, maka hasilnya undefined]",
+        "#_[console.log(orang.nik); ] #comment[// undefined]"
+    ],
+    "typeof-code": [
+        "#blue[const ] #_[umur ] #pink[= ] #purple[17] #_[;]",
+        "#_[console.log(] #pink[typeof ] #_[umur);] #comment[ // number]",
+        "",
+        "#blue[let ] #_[namaBuah ] #pink[= ] #yellow[\"Pepaya\"] #_[;]",
+        "#_[console.log(] #pink[typeof ] #_[namaBuah);] #comment[ // string]",
+        "",
+        "#blue[var ] #_[hoax ] #pink[= ] #pink[true] #_[;]",
+        "#_[console.log(] #pink[typeof ] #_[hoax);] #comment[ // boolean]",
+        "",
+        "#blue[var ] #_[array ] #pink[= ] #_[[]] #_[;]",
+        "#_[console.log(] #pink[typeof ] #_[array);] #comment[ // object]",
+        "",
+        "#comment[// jika suatu nama variabel belum didefinisikan, tapi kita panggil typeof nya]",
+        "#comment[// maka hasilnya menjadi undefined]",
+        "#_[console.log(] #pink[typeof ] #_[varBaru);] #comment[ // undefined]"
+    ]
+}

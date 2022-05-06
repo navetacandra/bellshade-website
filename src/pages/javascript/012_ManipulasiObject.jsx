@@ -21,8 +21,7 @@ function ManipulasiObjectJS() {
                                         <LineCode text='#_[    age] #pink[: ] #purple[24] #_[,]' />
                                         <LineCode text='#_[    gender] #pink[: ] #yellow["male"]' />
                                         <LineCode text='#_[};]' /><br />
-                                        <LineCode text='#_[console.log(] #blue[Object] #_[.keys(person)); ]' _break='no' />
-                                        <span className="comment">// ["name", "age", "gender"]</span>
+                                        <LineCode text='#_[console.log(] #blue[Object] #_[.keys(person)); ] #comment[// ["name", "age", "gender"]]' />
                                     </code></pre>
                                 </div>
 
@@ -37,8 +36,7 @@ function ManipulasiObjectJS() {
                                         <LineCode text='#_[    age] #pink[: ] #purple[24] #_[,]' />
                                         <LineCode text='#_[    gender] #pink[: ] #yellow["male"]' />
                                         <LineCode text='#_[};]' /><br />
-                                        <LineCode text='#_[console.log(] #blue[Object] #_[.values(person)); ]' _break='no' />
-                                        <span className="comment">// ["John Doe", 24, "male"]</span>
+                                        <LineCode text='#_[console.log(] #blue[Object] #_[.values(person)); ] #comment[// ["John Doe", 24, "male"]]' />
                                     </code></pre>
                                 </div>
 
@@ -53,8 +51,7 @@ function ManipulasiObjectJS() {
                                         <LineCode text='#_[    age] #pink[: ] #purple[24] #_[,]' />
                                         <LineCode text='#_[    gender] #pink[: ] #yellow["male"]' />
                                         <LineCode text='#_[};]' /><br />
-                                        <LineCode text='#_[console.log(] #blue[Object] #_[.entries(person)); ]' _break='no' />
-                                        <span className="comment">// [["name", "John Doe"], ["age", 24], ["gender", "male"]]</span>
+                                        <LineCode text='#_[console.log(] #blue[Object] #_[.entries(person)); ] #comment[// [["name", "John Doe"], ["age", 24], ["gender", "male"]]]' />
                                     </code></pre>
                                 </div>
 
@@ -71,7 +68,7 @@ function ManipulasiObjectJS() {
                                         <LineCode text='#blue[const ] #_[object2 ] #pink[= ] #_[{]' />
                                         <LineCode text='#_[    lastName] #pink[: ] #yellow["Eich"] #_[,]' />
                                         <LineCode text='#_[};]' /><br />
-                                        <LineCode text='#_[console.log(] #blue[Object] #_[.assign(object1, object2)); ] #comment[// {firstName: "Brendan", lastName: "Eich"}]' _break='no' />
+                                        <LineCode text='#_[console.log(] #blue[Object] #_[.assign(object1, object2)); ] #comment[// {firstName: "Brendan", lastName: "Eich"}]' />
                                     </code></pre>
                                 </div>
 

@@ -1,39 +1,47 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Welcome from "./pages/index";
-import ArithmeticJS from "./pages/javascript/003_Aritmatik";
-import DataTypeJS from "./pages/javascript/002_TipeData";
-import WelcomeJS from "./pages/javascript/0_index";
-import PengenalanJS from "./pages/javascript/001_Pengenalan";
-import PengkondisianJS from "./pages/javascript/005_Pengkondisian";
-import PerulanganJS from "./pages/javascript/004_Perulangan";
-import FungsiJS from "./pages/javascript/006_Fungsi";
-import KonsepArrayJS from "./pages/javascript/007_KonsepArray";
-import ManipulasiArrayJS from "./pages/javascript/008_ManipulasiArray";
-import KonsepObjectJS from "./pages/javascript/009_KonsepObject";
-import ManipulasiObjectJS from "./pages/javascript/010_ManipulasiObject";
 
 function App() {
+
+  const JavascriptPage = {
+    Welcome: lazy(() => import("./pages/javascript/000_index")),
+    Pengenalan: lazy(() => import("./pages/javascript/001_Pengenalan")),
+    DataType: lazy(() => import("./pages/javascript/002_TipeData")),
+    Operator: lazy(() => import("./pages/javascript/003_Operator")),
+    OperatorAritmatika: lazy(() => import("./pages/javascript/005_Aritmatik")),
+    Perulangan: lazy(() => import("./pages/javascript/006_Perulangan")),
+    Pengkondisian: lazy(() => import("./pages/javascript/007_Pengkondisian")),
+    Fungsi: lazy(() => import("./pages/javascript/008_Fungsi")),
+    KonsepArray: lazy(() => import("./pages/javascript/009_KonsepArray")),
+    ManipulasiArray: lazy(() => import("./pages/javascript/010_ManipulasiArray")),
+    KonsepObject: lazy(() => import("./pages/javascript/011_KonsepObject")),
+    ManipulasiObject: lazy(() => import("./pages/javascript/012_ManipulasiObject"))
+  };
+
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Welcome />} />
+      <Suspense>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
 
-        {/* Javascript Route */}
-        <Route path="/javascript" element={<WelcomeJS />} />
-        <Route path="/javascript/pengenalan" element={<PengenalanJS />} />
-        <Route path="/javascript/variabel-dan-tipe-data" element={<DataTypeJS />} />
-        <Route path="/javascript/operator-aritmatik" element={<ArithmeticJS />} />
-        <Route path="/javascript/perulangan" element={<PerulanganJS />} />
-        <Route path="/javascript/pengkondisian" element={<PengkondisianJS />} />
-        <Route path="/javascript/fungsi" element={<FungsiJS />} />
-        <Route path="/javascript/konsep-array" element={<KonsepArrayJS />} />
-        <Route path="/javascript/manipulasi-array" element={<ManipulasiArrayJS />} />
-        <Route path="/javascript/konsep-objek" element={<KonsepObjectJS />} />
-        <Route path="/javascript/manipulasi-objek" element={<ManipulasiObjectJS />} />
-        {/* End Javascript Route */}
+          {/* Javascript Route */}
+          <Route path="/javascript" element={<JavascriptPage.Welcome />} />
+          <Route path="/javascript/pengenalan" element={<JavascriptPage.Pengenalan />} />
+          <Route path="/javascript/variabel-dan-tipe-data" element={<JavascriptPage.DataType />} />
+          <Route path="/javascript/operator" element={<JavascriptPage.Operator />} />
+          <Route path="/javascript/operator-aritmatik" element={<JavascriptPage.OperatorAritmatika />} />
+          <Route path="/javascript/perulangan" element={<JavascriptPage.Perulangan />} />
+          <Route path="/javascript/pengkondisian" element={<JavascriptPage.Pengkondisian />} />
+          <Route path="/javascript/fungsi" element={<JavascriptPage.Fungsi />} />
+          <Route path="/javascript/konsep-array" element={<JavascriptPage.KonsepArray />} />
+          <Route path="/javascript/manipulasi-array" element={<JavascriptPage.ManipulasiArray />} />
+          <Route path="/javascript/konsep-objek" element={<JavascriptPage.KonsepObject />} />
+          <Route path="/javascript/manipulasi-objek" element={<JavascriptPage.ManipulasiObject />} />
+          {/* End Javascript Route */}
 
-      </Routes>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }

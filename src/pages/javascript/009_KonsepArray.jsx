@@ -20,10 +20,10 @@ function KonsepArrayJS() {
                                 <p className="mb-3">Contoh:</p>
                                 <div className="highlight mb-3">
                                     <pre><code>
-                                        <LineCode text='#blue[let ] #_[array1 ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5]' _break='no' />];<br />
-                                        <LineCode text='#blue[let ] #_[array2 ] #pink[= ] #_[[] #yellow["satu"] #_[, ] #yellow["dua"] #_[, ] #yellow["tiga"]' _break='no' />];<br />
-                                        <LineCode text='#blue[let ] #_[array3 ] #pink[= ] #_[[] #pink[true] #_[, ] #pink[false]' _break='no' />];<br />
-                                        <LineCode text='#blue[let ] #_[array4 ] #pink[= ] #_[[] #purple[1] #_[, ] #yellow["satu"] #_[, ] #pink[true]' _break='no' />];<br />
+                                        <LineCode text='#blue[let ] #_[array1 ] #pink[= ] #_[[] #purple[1] #_[, ] #purple[2] #_[, ] #purple[3] #_[, ] #purple[4] #_[, ] #purple[5] #_[];]' />
+                                        <LineCode text='#blue[let ] #_[array2 ] #pink[= ] #_[[] #yellow["satu"] #_[, ] #yellow["dua"] #_[, ] #yellow["tiga"] #_[];]'/>
+                                        <LineCode text='#blue[let ] #_[array3 ] #pink[= ] #_[[] #pink[true] #_[, ] #pink[false] #_[];]' />
+                                        <LineCode text='#blue[let ] #_[array4 ] #pink[= ] #_[[] #purple[1] #_[, ] #yellow["satu"] #_[, ] #pink[true] #_[];]' />
                                     </code></pre>
                                 </div>
                             </section>
@@ -36,18 +36,10 @@ function KonsepArrayJS() {
                                 <p className="mb-3">Contoh:</p>
                                 <div className="highlight">
                                     <pre><code>
-                                        <LineCode text='#_[console.log(array1]' _break='no' />
-                                        <LineCode text='#_[[] #purple[0]' _break='no' />]
-                                        <LineCode text='#_[); ] #comment[// 1]' />
-                                        <LineCode text='#_[console.log(array2]' _break='no' />
-                                        <LineCode text='#_[[] #purple[1]' _break='no' />]
-                                        <LineCode text='#_[); ] #comment[// "satu"]' />
-                                        <LineCode text='#_[console.log(array3]' _break='no' />
-                                        <LineCode text='#_[[] #purple[1]' _break='no' />]
-                                        <LineCode text='#_[); ] #comment[// false   ]' />
-                                        <LineCode text='#_[console.log(array4]' _break='no' />
-                                        <LineCode text='#_[[] #purple[2]' _break='no' />]
-                                        <LineCode text='#_[); ] #comment[// true]' />
+                                        <LineCode text='#_[console.log(array1] #_[[] #purple[0] #_[]); ] #comment[// 1]' />
+                                        <LineCode text='#_[console.log(array2] #_[[] #purple[1] #_[]); ] #comment[// "satu"]' />
+                                        <LineCode text='#_[console.log(array3] #_[[] #purple[1] #_[]); ] #comment[// false]' />
+                                        <LineCode text='#_[console.log(array4] #_[[] #purple[2] #_[]); ] #comment[// true]' />
                                     </code></pre>
                                 </div>
                             </section>
