@@ -23,24 +23,24 @@
             "#_[}]"
         ],
         "code": [
-            "#comment[// kode ini akan menjalankan perulangan]",
-            "#comment[// selama 10 kali, dimulai dari angka 0]",
-            "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[< ] #purple[10] #_[; i] #pink[++] #_[) {]",
-            "#_[    console.log(i);]",
+            "#cmt[// kode ini akan menjalankan perulangan]",
+            "#cmt[// selama 10 kali, dimulai dari angka 0]",
+            "#m[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[< ] #o[10] #_[; ] #p[i] #c[++] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
             "#_[}]",
             "",
-            "#comment[//== Bentuk \"for\" yang lain. ==//]",
+            "#cmt[//== Bentuk \"for\" yang lain. ==//]",
             "",
-            "#comment[// for in]",
-            "#blue[let ] #_[buah ] #pink[= ] #_[[] #yellow[\"Anggur\"] #_[, ] #yellow[\"Apel\"] #_[, ] #yellow[\"Pepaya\"] #_[, ] #yellow[\"Nanas\"] #_[, ] #yellow[\"Jeruk\"] #_[];]",
-            "#pink[for] #_[(] #blue[const ] #_[n ] #pink[in ] #_[buah] #_[) {]",
-            "#_[    console.log(] #yellow[`${] #_[n ] #pink[+ ] #purple[1] #yellow[}. ${] #_[buah[n]] #yellow[}`] #_[);]",
+            "#cmt[// for in]",
+            "#m[let ] #p[buah ] #c[= ] #_[[] #g[\"Anggur\"] #_[, ] #g[\"Apel\"] #_[, ] #g[\"Pepaya\"] #_[, ] #g[\"Nanas\"] #_[, ] #g[\"Jeruk\"] #_[];]",
+            "#m[for] #_[(] #b[const ] #y[n ] #m[in ] #p[buah] #_[) {]",
+            "#y[    console] #_[.] #b[log(] #g[`] #m[${] #_[n ] #c[+ ] #o[1] #m[}] #g[. ] #m[${] #p[buah] #_[[] #y[n] #_[]] #m[]] #y[`] #_[);]",
             "#_[}]",
             "",
-            "#comment[// for of]",
-            "#blue[let ] #_[buah2 ] #pink[= ] #_[[] #yellow[\"Anggur\"] #_[, ] #yellow[\"Apel\"] #_[, ] #yellow[\"Pepaya\"] #_[, ] #yellow[\"Nanas\"] #_[, ] #yellow[\"Jeruk\"] #_[];]",
-            "#pink[for] #_[(] #blue[const ] #_[x ] #pink[of ] #_[buah2] #_[) {]",
-            "#_[    console.log(x);]",
+            "#cmt[// for of]",
+            "#m[let ] #p[buah2 ] #c[= ] #_[[] #g[\"Anggur\"] #_[, ] #g[\"Apel\"] #_[, ] #g[\"Pepaya\"] #_[, ] #g[\"Nanas\"] #_[, ] #g[\"Jeruk\"] #_[];]",
+            "#m[for] #_[(] #b[const ] #y[x ] #m[of ] #p[buah2] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[x] #_[);]",
             "#_[}]"
         ]
     },
@@ -51,12 +51,12 @@
             "#_[}]"
         ],
         "code": [
-            "#blue[let ] #_[pengunjung ] #pink[= ] #purple[0] #_[;]",
+            "#m[let ] #p[pengunjung ] #c[= ] #o[0] #_[;]",
             "",
-            "#pink[while] #_[(pengunjung ] #pink[< ] #purple[20] #_[) {]",
-            "#_[    pengunjung] #pink[++] #_[;]",
-            "#pink[    if] #_[(pengunjung ] #pink[> ] #purple[0] #_[) {]",
-            "#_[        console.log(] #yellow[`Pengunjung ke: ${] #_[pengunjung] #yellow[}`] #_[);]",
+            "#m[while] #_[(] #p[pengunjung ] #c[< ] #o[20] #_[) {]",
+            "#p[    pengunjung] #c[++] #_[;]",
+            "#m[    if] #_[(] #p[pengunjung ] #c[> ] #o[0] #_[) {]",
+            "#y[        console] #_[.] #b[log(] #g[`Pengunjung ke: ] #m[${] #p[pengunjung] #m[}] #g[`] #_[);]",
             "#_[    }]",
             "#_[}]"
         ]
@@ -68,13 +68,12 @@
             "#_[} while(boolean);]"
         ],
         "code": [
-            "#comment[]",
-            "#blue[let ] #_[jumlahBarang ] #pink[= ] #purple[-2] #_[;]",
+            "#m[let ] #p[jumlahBarang ] #c[= -] #o[2] #_[;]",
             "",
-            "#pink[do ] #_[{]",
-            "#_[    jumlahBarang ] #pink[+= ] #purple[3] #_[;]",
-            "#_[    console.log(jumlahBarang);]",
-            "#_[} ] #pink[while] #_[(jumlahBarang ] #pink[< ] #purple[20] #_[);]"
+            "#m[do ] #_[{]",
+            "#p[    jumlahBarang ] #c[+= ] #o[3] #_[;]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[jumlahBarang] #_[);]",
+            "#_[} ] #m[while] #_[(] #p[jumlahBarang ] #c[< ] #o[20] #_[);]"
         ]
     },
     "special_keyword": [
@@ -84,12 +83,12 @@
                 "Break merupakan statement untuk mengakhiri perulangan, biasanya digunakan pengkondisian untuk menghentikannya."
             ],
             "code": [
-                "#comment[// Kode ini akan berhenti jika i mencapai no 15]",
-                "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[<= ] #purple[20] #_[; i] #pink[++] #_[) {]",
-                "#pink[    if] #_[(i ] #pink[> ] #purple[14] #_[) {]",
-                "#pink[        break] #_[;]",
+                "#cmt[// Kode ini akan berhenti jika i mencapai no 15]",
+                "#m[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[<= ] #o[20] #_[; ] #p[i] #c[++] #_[) {]",
+                "#m[    if] #_[(] #p[i ] #c[> ] #o[14] #_[) {]",
+                "#m[        break] #_[;]",
                 "#_[    }]",
-                "#_[    console.log(i);]",
+                "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
                 "#_[}]"
             ]
         },
@@ -100,12 +99,12 @@
                 "Perbedaan continue dengan #mark_code[break] yaitu cara berhentinya. Jika #mark_code[continue] hanya berhenti di kondisi dan melewatinya, sedangkan #mark_code[break] itu benar-benar mematikan programnya."
             ],
             "code": [
-                "#comment[// Tampilkan bilangan yang merupakan kelipatan 2]",
-                "#pink[for] #_[(] #blue[let ] #_[i ] #pink[= ] #purple[0] #_[; i ] #pink[<= ] #purple[20] #_[; i] #pink[++] #_[) {]",
-                "#pink[    if] #_[(i ] #pink[% ] #purple[2] #_[) {]",
-                "#pink[        continue] #_[;]",
+                "#cmt[// Tampilkan bilangan yang merupakan kelipatan 2]",
+                "#p[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[<= ] #o[20] #_[; ] #p[i] #c[++] #_[) {]",
+                "#m[    if] #_[(] #p[i ] #c[% ] #o[2] #_[) {]",
+                "#m[        continue] #_[;]",
                 "#_[    }]",
-                "#_[    console.log(i);]",
+                "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
                 "#_[}]"
             ]
         }

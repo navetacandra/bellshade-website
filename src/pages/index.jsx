@@ -5,11 +5,9 @@ let renderer = () => {
     __html: '<button>Hello World!</button>'
   }
 }
-
 function Welcome() {
   return (
-    <div>
-      <div dangerouslySetInnerHTML={renderer()}></div>
+    <div dangerouslySetInnerHTML={renderer()}>
     </div>
   )
 }

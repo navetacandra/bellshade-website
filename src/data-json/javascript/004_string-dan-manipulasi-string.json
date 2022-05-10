@@ -1,0 +1,122 @@
+{
+    "declare_string": [
+        {
+            "title": "Cara Mendeklarasikan String",
+            "desc": [
+                "JavaScript memiliki tiga jenis dalam mendefinisikan apakah suatu tipe data termasuk string atau bukan, yaitu:",
+                "#mark_code[''] (Petik Satu), #mark_code[\"\"] (Petik Dua), dan #mark_code[``] (Backtick)."
+            ],
+            "note": "Nama lain dari deklarasi backtick adalah template literal.",
+            "code": [
+                "#m[const ] #y[kutipSatu ] #c[= ] #g['Ini adalah string kutip satu'] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[kutipSatu] #_[); ] #cmt[// Ini adalah string kutip satu]",
+                "",
+                "#m[const ] #y[kutipDua ] #c[= ] #g[\"Ini adalah string\"] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[kutipDua] #_[); ] #cmt[// Ini adalah string]",
+                "",
+                "#m[const ] #y[templateLiteral ] #c[= ] #g[`Saya tinggal di bumi`] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[templateLiteral] #_[); ] #cmt[// Saya tinggal di bumi]",
+                "",
+                "#m[const ] #y[kutipSatuDiDalamKutipDua ] #c[= ] #g[\"Benda ini adalah 'sapu'\"] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[kutipSatuDiDalamKutipDua] #_[); ] #cmt[// Benda ini adalah 'sapu']",
+                "",
+                "#m[const ] #y[kutipDuaDiDalamKutipSatu ] #c[= ] #g['Dia berkata \"Oke.\"'] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[kutipDuaDiDalamKutipSatu] #_[); ] #cmt[// Dia berkata \"Oke.\"]"
+            ]
+        },
+        {
+            "desc": [
+                "Tetapi dalam penggunaannya juga jika kita tidak teliti, bisa saja menimbulkan <i>error</i>.",
+                "Untuk penggunaan jenis-jenis deklarasi bisa juga dilakukan dengan syarat menggunakan #mark_code[escape character] atau menggunakan <i>jenis deklarasi</i> yang berlainan."
+            ],
+            "code": [
+                "#m[const ] #y[errorPertama ] #c[= ] #g[''''] #_[;]", 
+                "#cmt[// Uncaught SyntaxError: Unexpected string]",
+                "#m[const ] #y[errorKedua ] #c[= ] #g[\"\"\"\"] #_[;]", 
+                "#cmt[// Uncaught SyntaxError: Unexpected string]",
+                "#m[const ] #y[errorKetiga ] #c[= ] #g[````] #_[;]", 
+                "#cmt[// Uncaught SyntaxError: Unexpected string]",
+                "",
+                "#cmt[//== Contoh escape character ==//]",
+                "#m[const ] #y[escapeCharacter ] #c[= ] #g[\"] #c[\\\"\\\"] #g[\"] #_[;]",
+                "",
+                "#cmt[//== Contoh menggunakan jenis deklarasi lain ==//]",
+                "#m[const ] #y[differentDeclaration ] #c[= ] #g['] #g[\"\"] #g['] #_[;]"
+            ]
+        }
+    ],
+    "string_manipulation": [
+        {
+            "title": "#mark_code[.length]",
+            "desc": [
+                "Bisa menggunakan property #mark_code[length] untuk mengecek panjangnya sebuah string."
+            ],
+            "code": [
+                "#m[const ] #y[teks ] #c[= ] #g[\"Berapa panjangnya?\"] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[teks] #_[.] #p[length] #_[); ] #cmt[// 19]"
+            ],
+            "note": "Perlu diperhatikan, jika sebuah string memiliki spasi, maka spasi tersebut juga dihitung."
+        },
+        {
+            "title": "#mark_code[Concatenation (Penggabungan)]",
+            "desc": [
+
+            ],
+            "code": [
+                "#m[const ] #y[nama ] #c[= ] #g[\"Fatah\"] #_[;]",
+                "#m[const ] #y[umur ] #c[= ] #g[\"21\"] #_[;]",
+                "#m[const ] #y[makananKesukaan ] #c[= ] #g[\"Nasi Goreng\"] #_[;]",
+                "",
+                "#cmt[//== Concatenation Pertambahan ==//]",
+                "#m[const ] #y[concatPertambahan ] #c[= ] ",
+                "#g[    \"Halo, nama saya \" ] #c[+]",
+                "#y[    nama ] #c[+]",
+                "#g[    \", saya berumur \" ] #c[+]",
+                "#y[    umur ] #c[+]",
+                "#g[    \" tahun. Makanan favorit saya adalah \" ] #c[+]",
+                "#y[    makananKesukaan ] #c[+]",
+                "#g[    \".\"] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[concatPertambahan] #_[);]",
+                "#cmt[// Halo, nama saya Fatah, saya berumur 21 tahun. Makanan favorit saya adalah Nasi Goreng.]",
+                "",
+                "#cmt[//== Template Literal ==//]",
+                "#m[const ] #y[templateLiteral ] #c[= ] #g[`Halo, nama saya ] #m[${] #y[nama] #m[}] #g[, saya berumur ] #m[${] #y[umur] #m[}] #g[ tahun. Makanan favorit saya adalah ] #m[${] #y[makananKesukaan] #m[}] #g[.`] #_[;]",
+                "#y[console] #_[.] #b[log] #_[(] #y[templateLiteral] #_[);]",
+                "#cmt[// Halo, nama saya Fatah, saya berumur 21 tahun. Makanan favorit saya adalah Nasi Goreng.]",
+                "",
+                ""
+            ]
+        },
+        {
+            "desc": [
+                "Data dari object juga bisa digunakan untuk operasi concat ini."
+            ],
+            "code": [
+                "#m[const ] #y[obj ] #c[= ] #_[{]",
+                "#p[    namaMakhluk] #_[:] #g[\"Manusia\"] #_[,]",
+                "#p[    jenis] #_[:] #g[\"mamalia\"]",
+                "#_[};]",
+                "",
+                "#y[console] #_[.] #b[log] #_[(] #g[`] #m[${] #y[obj] #_[.] #p[namaMakhluk] #m[}] #g[ juga termasuk dalam jenis ] #m[${] #y[obj] #_[.] #p[jenis] #m[}] #g[.`] #_[);]",
+                "#cmt[// Manusia juga termasuk dalam jenis mamalia.]"
+            ]
+        },
+        {
+            "title": "Mengganti Tulisan (#mark_code[.replace])",
+            "desc": [
+                "Untuk mengganti tulisan di dalam string, di JavaScript bisa menggunakan function #mark_code[replace] untuk mengganti sebuah teks dengan pola tertentu atau hanya tulisan spesifik saja."
+            ],
+            "code": [
+                "#m[const ] #y[teks ] #c[= ] #g[\"Pohon Pisang itu berbuah Pisang.\"] #_[;]",
+                "",
+                "#cmt[//== replace menggunakan string ==//]",
+                "#y[console] #_[.] #b[log] #_[(] #y[teks] #_[.] #b[replace] #_[(] #g[\"Pisang\"] #_[, ] #g[\"Apel\"] #_[)] #_[);]",
+                "#cmt[// Pohon Apel itu berbuah Pisang.]",
+                "",
+                "#cmt[//== replace menggunakan regex ==//]",
+                "#y[console] #_[.] #b[log] #_[(] #y[teks] #_[.] #b[replace] #_[(] #p[/Pisang/] #m[g] #_[, ] #g[\"Apel\"] #_[)] #_[);]",
+                "#cmt[// Pohon Apel itu berbuah Apel.]"
+            ]
+        }
+    ]
+}

@@ -3,77 +3,77 @@ import data_json from '../../data-json/javascript/000_welcome.json'
 
 function WelcomeJS() {
     return (
-        <>
-            <div className="container mt-5">
-                <div className="row justify-content-center">
-                    <div className="col-md-10 col-lg-8 col-xl-8 card shadow-sm mb-5">
-                        <div className="row justify-content-center p-5">
-                            <section className="mb-5">
-                                <h2 className="mb-4">Apa itu Javascript?</h2>
-                                <p className="mb-3">
-                                    JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Jika sebelumnya kalian mungkin belajar HTML dan CSS maka dengan JavaScript kalian bisa membuat tampilan dari website kalian menjadi lebih interaktif lagi.
-                                </p>
-                            </section>
-                            <section className='mb-5'>
-                                <h2 className="mb-4">Kenapa Javascript?</h2>
-                                <p className="mb-3">
-                                    Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemula alias beginner-friendly yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh Stackoverflow.
-                                </p>
-                                <img src="https://camo.githubusercontent.com/dd74d0ff2a9d659a2abf86974c19717db8cff1bea81a1dba60cb575eb175afed/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3639363030363235383739323333333335322f3930353639333037373438343733363531322f756e6b6e6f776e2e706e67" alt="Console inspect" className="mb-3" width='100%' height='auto' />
-                            </section>
-                            <section className="mb-5">
-                                <h2 className="mb-4">Contoh Penggunaan Javascript</h2>
-                                <p className="mb-3">
-                                    Dengan JavaScript kita bisa membuat website yang jauh lebih baik pastinya. Seperti membuat navbar, slider, timer, hingga membuat sebuah game sekalipun yang dapat berjalan di browser, dan tentunya masih banyak lagi yang bisa dibuat dengan JavaScript.
-                                </p>
-                                <p className="mb-3">
-                                    Beberapa contoh sederhana penggunaan JavaScript:
-                                </p>
-                                <ol>
-                                    {
-                                        data_json.penggunaan.map((val, key) => (
-                                            <li style={{ fontSize: '1.125rem' }} key={key}>
-                                                <a href={val.url} style={{ textDecoration: 'none' }}>{val.nama}</a>
-                                            </li>
-                                        ))
-                                    }
-                                </ol>
-                            </section>
-                            <section className="mb-5">
-                                <h2 className="mb-4">Tahapan Belajar Javascript</h2>
-                                <hr />
-                                <h4 className="mb-3">Jalur Belajar Javascript</h4>
-                                <p className="mb-3">
-                                    Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terjun di dunia pemrograman. Di sini kalian akan belajar dasar-dasar JavaScript mulai dari variabel hingga objek.
-                                </p>
-                                <table className='table table-striped'>
-                                    <thead>
+        <div className="container mx-auto">
+            <div className="flex flex-warp">
+                <div className="self-center w-full px-5 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white my-10 shadow-lg">
+                    <section className="my-5 justify-center">
+                        <h2 className='block text-4xl font-bold my-3 text-dark'>Apa itu Javascript?</h2>
+                        <p className="section_text">
+                            JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Jika sebelumnya kalian mungkin belajar HTML dan CSS maka dengan JavaScript kalian bisa membuat tampilan dari website kalian menjadi lebih interaktif lagi.
+                        </p>
+                    </section>
+                    <section className='my-5'>
+                        <h2 className="title-2">Kenapa Javascript?</h2>
+                        <p className="section_text">
+                            Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemula alias beginner-friendly yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh Stackoverflow.
+                        </p>
+                        <img src="https://camo.githubusercontent.com/dd74d0ff2a9d659a2abf86974c19717db8cff1bea81a1dba60cb575eb175afed/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3639363030363235383739323333333335322f3930353639333037373438343733363531322f756e6b6e6f776e2e706e67" alt="Console inspect" className="my-5 shadow-lg w-full mt-5" />
+                    </section>
+                    <section className="my-5">
+                        <h2 className="title-2">Contoh Penggunaan Javascript</h2>
+                        <p className="section_text">
+                            Dengan JavaScript kita bisa membuat website yang jauh lebih baik pastinya. Seperti membuat navbar, slider, timer, hingga membuat sebuah game sekalipun yang dapat berjalan di browser, dan tentunya masih banyak lagi yang bisa dibuat dengan JavaScript.
+                        </p>
+                        <p className="section_text">
+                            Beberapa contoh sederhana penggunaan JavaScript:
+                        </p>
+                        <ol>
+                            {
+                                data_json.penggunaan.map((val, key) => (
+                                    <li style={{ fontSize: '1.125rem' }} className='list-decimal ml-4' key={key}>
+                                        <a href={val.url} style={{ textDecoration: 'none' }} className='text-blue_primary font-normal'>{val.nama}</a>
+                                    </li>
+                                ))
+                            }
+                        </ol>
+                    </section>
+                    <section className="my-5">
+                        <h2 className="title-2">Tahapan Belajar Javascript</h2>
+                        <hr />
+                        <h4 className="subtitle-h4">Jalur Belajar Javascript</h4>
+                        <p className="section_text">
+                            Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terjun di dunia pemrograman. Di sini kalian akan belajar dasar-dasar JavaScript mulai dari variabel hingga objek.
+                        </p>
+                        <div className="container mx-auto px-auto">
+                            <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                                <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
+                                    <thead className='text-base text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400'>
                                         <tr>
-                                            <th scope='col'>#</th>
-                                            <th scope='col'>Topik</th>
-                                            <th scope='col'>Target Pembelajaran</th>
+                                            <th className='px-6 py-3'>#</th>
+                                            <th className='px-6 py-3'>Topik</th>
+                                            <th className='px-6 py-3'>Target Pembelajaran</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {
                                             data_json.alur_belajar.basic.map((val, key) => (
-                                                <tr key={key}>
-                                                    <td scope='row'>{val.langkah}</td>
-                                                    <td>
-                                                        <a href={'/javascript/' + val.topik.toLowerCase().replace(/ /g, '-')} className="link-primary">{val.topik}</a>
+                                                <tr key={key} className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
+                                                    <td className='font-semibold text-base px-6 py-4 text-gray-900 dark:text-white whitespace-nowrap'>{val.langkah}</td>
+                                                    <td className='px-6 py-4'>
+                                                        <a href={window.location.protocol + '//' + window.location.host + '/javascript/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
                                                     </td>
-                                                    <td className='text-break'>{val.target_pembelajaran}</td>
+                                                    <td className='px-6 py-4 text-base'>{val.target_pembelajaran}</td>
                                                 </tr>
                                             ))
                                         }
                                     </tbody>
                                 </table>
-                            </section>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

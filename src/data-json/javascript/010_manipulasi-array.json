@@ -1,0 +1,159 @@
+[
+    {
+        "title": "Filter",
+        "desc": [
+            "Method #mark_code[.filter()] akan membuat sebuah array baru berisi element yang sesuai dengan kondisi yang diberikan. Method ini tidak akan mengubah array yang sebelumnya."
+        ],
+        "code": [
+            "#m[let ] #p[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#m[let ] #p[oddNum ] #c[= ] #p[array] #_[.] #b[] #b[filter] #_[(] #p[function] #_[(] #p[number] #_[) {]",
+            "#m[    return ] #p[number ] #c[% ] #o[2 ] #c[=== ] #o[1] #_[;]",
+            "#_[});]",
+            "",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [1, 2, 3, 4, 5]]",
+            "#y[console] #_[.] #b[log] #_[(] #p[oddNum] #_[); ] #cmt[// [1, 3, 5]]"
+        ],
+        "draft": [
+            "#m[let ] #p[result ] #c[= ] #p[array] #_[.] #b[] #b[filter] #_[(] #p[function] #_[(] #p[item] #_[, ] #p[index] #_[) {]",
+            "#m[    return ] #o[true] #_[;]",
+            "#_[});]"
+        ],
+        "list": [
+            "#mark_code[item]: nilai dari element yang sedang diproses",
+            "#mark_code[index]: index dari element yang sedang diproses (optional)"
+        ],
+        "desc_2": [
+            "Mendapatkan array berisi bilangan ganjil"
+        ]
+    },
+    {
+        "title": "Map",
+        "desc": [
+            "Method #mark_code[.map()] akan membuat array baru berisi hasil dari operasi yang diberikan."
+        ],
+        "code": [
+            "#m[let ] #p[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#m[let ] #p[oddNum ] #c[= ] #p[array] #_[.] #b[] #b[filter] #_[(] #m[function] #_[(] #p[number] #_[) {]",
+            "#m[    return ] #p[number ] #c[* ] #o[2] #_[;]",
+            "#_[});]", 
+            "",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [1, 2, 3, 4, 5]]",
+            "#y[console] #_[.] #b[log] #_[(] #p[oddNum] #_[); ] #cmt[// [2, 4, 6, 8, 10]]"
+        ],
+        "draft": [
+            "#m[let ] #p[result ] #c[= ] #p[array] #_[.] #b[] #b[filter] #_[(] #m[function] #_[(item, index) {]",
+            "#m[    return ] #o[true] #_[;]",
+            "#_[});]"
+        ],
+        "list": [
+            "#mark_code[item]: nilai dari element yang sedang diproses",
+            "#mark_code[index]: index dari element yang sedang diproses (optional)"
+        ],
+        "desc_2": [
+            "Mengalikan semua nilai dalam array dengan 2"
+        ]
+    },
+    {
+        "title": "Sort",
+        "desc": [
+            "Method #mark_code[.map()] akan membuat array baru berisi hasil dari operasi yang diberikan."
+        ],
+        "code": [
+            "#m[let ] #p[numbers1 ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#m[let ] #p[numbers2 ] #c[= ] #_[[] #o[6] #_[, ] #o[7] #_[, ] #o[8] #_[, ] #o[9] #_[, ] #o[10] #_[];]",
+            "#p[numbers1] #_[.] #b[sort] #_[();]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers1] #_[); ] #cmt[// [1, 2, 3, 4, 5]]",
+            "#p[numbers2] #_[.] #b[sort] #_[(] #m[function] #_[(] #p[a] #_[,] #p[b] #_[) {]",
+            "#m[    return ] #p[a ] #c[- ] #p[b] #_[;]",
+            "#_[});]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers2] #_[); ] #cmt[// [6, 7, 8, 9, 10]]"
+        ],
+        "draft": [
+            "#p[array] #_[.] #b[sort] #_[();]",
+            "#p[array] #_[.] #b[sort] #_[(] #m[function] #_[(] #p[firstEl] #_[, ] #p[secondEl] #_[) {]",
+            "#_[    ...]",
+            "#_[});]"
+        ],
+        "list": [
+            "#mark_code[firstEl]: element pertama yang akan dibandingkan",
+            "#mark_code[secondEl]: element kedua yang akan dibandingkan"
+        ]
+    },
+    {
+        "title": "Push & Pop",
+        "desc": [
+            "Method #mark_code[.push()] akan menambahkan element baru pada akhir array, sedangkan #mark_code[.pop()] akan menghapus element terakhir dari array. Kedua method ini akan mengubah array asli."
+        ],
+        "code": [
+            "#m[let ] #p[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#p[numbers] #_[.] #b[push] #_[(] #o[6] #_[); ] #cmt[// menambahkan angka 6 ke array numbers]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [1, 2, 3, 4, 5, 6]]",
+            "#p[numbers] #_[.] #b[pop] #_[(); ] #cmt[// menghapus item terakhir dari array numbers]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [1, 2, 3, 4, 5]]"
+        ],
+        "draft": [
+            "#p[array] #_[.] #b[push] #_[(] #p[item1] #_[, ] #p[item2] #_[, ..., ] #p[itemN] #_[);]",
+            "#p[array] #_[.] #b[pop] #_[();]"
+        ],
+        "list": [
+            "#mark_code[item]: element yang akan ditambahkan ke array"
+        ]
+    },
+    {
+        "title": "Shift & Unshift",
+        "desc": [
+            "Method #mark_code[.unshift()] akan menambahkan element baru pada awal array, sedangkan #mark_code[.shift()] akan menghapus element pertama dari array. Kedua method ini akan mengubah array asli."
+        ],
+        "code": [
+            "#m[let ] #p[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#p[numbers] #b[.unshift(] #o[-1] #_[, ] #o[0] #_[); ] #cmt[// menambahkan angka -1 dan 0 ke array numbers]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [-1, 0, 1, 2, 3, 4, 5]]",
+            "#p[numbers] #b[.shift] #_[(); ] #cmt[// menghapus item pertama dari array numbers]",
+            "#y[console] #_[.] #b[log] #_[(] #p[numbers] #_[); ] #cmt[// [0, 1, 2, 3, 4, 5]]"
+        ],
+        "draft": [
+            "#p[array] #_[.] #b[unshift] #_[(] #p[item1] #_[, ] #p[item2] #_[, ..., ] #p[itemN] #_[);]",
+            "#p[array] #_[.] #b[shift] #_[();]"
+        ],
+        "list": [
+            "#mark_code[item]: element yang akan ditambahkan ke array"
+        ]
+    },
+    {
+        "title": "Reduce",
+        "desc": [
+            "Method #mark_code[.reduce()] akan menjalankan fungsi pada setiap element dimana pada setiap iterasinya menggunakan hasil return dari iterasi sebelumnya."
+        ],
+        "code": [
+            "#m[const ] #y[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#m[const ] #y[totalNumber ] #c[= ] #y[numbers] #_[.] #b[reduce] #_[(] #m[function] #_[(] #p[akumulator] #_[, ] #p[number] #_[) {]",
+            "#m[    return ] #p[akumulator ] #c[+ ] #p[number;]",
+            "#_[}, ] #o[100] #_[)]",
+            "#cmt[// parameter kedua (nilai awal akumulator) diberi nilai 100 sehingga perhitungan dimulai dari 100]",
+            "#y[console] #_[.] #b[log] #_[(] #y[totalNumber] #_[); ] #cmt[// 115]",
+            "#cmt[// nilai totalNumber menjadi 115]"
+        ],
+        "draft": [
+            "#m[const ] #y[numbers ] #c[= ] #_[[] #o[1] #_[, ] #o[2] #_[, ] #o[3] #_[, ] #o[4] #_[, ] #o[5] #_[];]",
+            "#m[const ] #y[totalNumber ] #c[= ] #y[numbers] #_[.] #b[reduce] #_[(] #m[function] #_[(] #p[akumulator] #_[, ] #p[number] #_[) {]",
+            "#m[    return ] #p[akumulator ] #c[+ ] #p[number] #_[;]",
+            "#_[});]",
+            "#cmt[// untuk setiap elemen akan menjalankan fungsi menambahkan akumulator dengan nilai dirinya]",
+            "#cmt[// akumulator adalah nilai dari perhitungan semua elemen sebelumnya]",
+            "#y[console] #_[.] #b[log] #_[(] #y[totalNumber] #_[); ] #cmt[// 15]"
+        ],
+        "desc_1": [
+            "dalam contoh di atas nilai awal akumulator secara default adalah 0, sehingga:"
+        ],
+        "list": [
+            "0 + #mark_code[1] = 1",
+            "1 + #mark_code[2] = 3",
+            "3 + #mark_code[3] = 6",
+            "6 + #mark_code[4] = 10",
+            "10 + #mark_code[5] = 15 (nilai totalNumber menjadi 15)"
+        ],
+        "desc_2": [
+            "Nilai awal akumulator dapat ditentukan pada parameter kedua method #mark_code[.reduce()]"
+        ]
+    }
+]

@@ -7,7 +7,7 @@ function find_last(string, find_char) {
     let position_list = string.split('').map((char, i) => {
         return char === find_char ? i : false;
     }).filter(el => el);
-    
+
     return position_list.length > 0 ? position_list[position_list.length - 1] : undefined;
 }
 
@@ -20,7 +20,7 @@ function find_first(string, find_char) {
     let position_list = string.split('').map((char, i) => {
         return char === find_char ? i : false;
     }).filter(el => el);
-    
+
     return position_list.length > 0 ? position_list[0] : undefined;
 }
 

@@ -3,108 +3,109 @@
         "Operator dalam bahasa pemrograman berguna untuk memberi informasi kepada compiler atau intepreter untuk melakukan sebuah operasi matematika, kesamaan atau kelogisan yang akan menghasilkan sebuah keputusan.",
         "Javascript sendiri memiliki banyak operator, mulai dari operator perbandingan, kelogisan, dan aritmatika."
     ],
-    "comparison-operator": [{
+    "comparison-operator": [
+        {
             "title": "#mark_code[==] (sama dengan)",
             "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[== ] #yellow[\"10\"] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x bernilai sama dengan \"10\"]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[== ] #g[\"10\"] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x bernilai sama dengan \"10\"]"
             ]
         },
         {
             "title": "#mark_code[===] (persis sama dengan)",
             "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai dan tipe datanya sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[=== ] #yellow[\"5\"] #_[); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena x memiliki nilai yang berbeda]",
-                "#comment[// dan x memiliki tipe data number sedangkan \"5\" memiliki tipe data string]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[=== ] #g[\"5\"] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena x memiliki nilai yang berbeda]",
+                "#cmt[// dan x memiliki tipe data number sedangkan \"5\" memiliki tipe data string]",
                 "",
-                "#_[console.log(x ] #pink[=== ] #yellow[\"10\"] #_[); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena x memiliki tipe data number]",
-                "#comment[// sedangkan \"10\" memiliki tipe data string]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[=== ] #g[\"10\"] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena x memiliki tipe data number]",
+                "#cmt[// sedangkan \"10\" memiliki tipe data string]"
             ]
         },
         {
             "title": "#mark_code[!=] (tidak sama)",
             "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai tidak sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[!= ] #purple[10] #_[); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena x sama dengan 10]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[!= ] #m[10] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena x sama dengan 10]",
                 "",
-                "#_[console.log(x ] #pink[!= ] #purple[4] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x tidak bernilai 4]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[!= ] #m[4] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x tidak bernilai 4]"
             ]
         },
         {
             "title": "#mark_code[!==] (persis tidak sama)",
             "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai dan tipe datanya tidak sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[!== ] #yellow[\"5\"] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x memiliki nilai yang berbeda dengan \"5\"]",
-                "#comment[// dan x memiliki tipe data yang berbeda dengan \"5\"]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[!== ] #g[\"5\"] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x memiliki nilai yang berbeda dengan \"5\"]",
+                "#cmt[// dan x memiliki tipe data yang berbeda dengan \"5\"]",
                 "",
-                "#_[console.log(x ] #pink[!== ] #yellow[\"10\"] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x memiliki tipe data yang berbeda dengan \"10\"]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[!== ] #g[\"10\"] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x memiliki tipe data yang berbeda dengan \"10\"]"
             ]
         },
         {
             "title": "#mark_code[>] (lebih besar dari)",
             "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah lebih besar daripada nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[> ] #purple[7] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena nilai x lebih besar dibandingkan dengan 7]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[> ] #m[7] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena nilai x lebih besar dibandingkan dengan 7]",
                 "",
-                "#_[console.log(x ] #pink[> ] #purple[15] #_[); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena nilai x lebih kecil dibandingkan dengan 15]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[> ] #m[15] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena nilai x lebih kecil dibandingkan dengan 15]"
             ]
         },
         {
             "title": "#mark_code[<] (kurang dari)",
             "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah kurang daripada nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[< ] #purple[15] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena nilai x lebih kecil dibandingkan dengan 15]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[< ] #m[15] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena nilai x lebih kecil dibandingkan dengan 15]",
                 "",
-                "#_[console.log(x ] #pink[< ] #purple[7] #_[); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena nilai x lebih besar dibandingkan dengan 7]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[< ] #m[7] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena nilai x lebih besar dibandingkan dengan 7]"
             ]
         },
         {
             "title": "#mark_code[>=] (lebih besar sama dengan)",
             "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah lebih besar daripada atau sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[>= ] #purple[3] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena nilai x lebih besar dibandingkan dengan 3]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[>= ] #m[3] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena nilai x lebih besar dibandingkan dengan 3]",
                 "",
-                "#_[console.log(x ] #pink[>= ] #purple[10] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x senilai atau sama dengan 10 ]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[>= ] #m[10] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x senilai atau sama dengan 10 ]"
             ]
         },
         {
-            "title": "#mark_code[=<] (kurang dari sama dengan)",
+            "title": "#mark_code[<=] (kurang dari sama dengan)",
             "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah kurang daripada atau sama dengan nilai yang lain.",
             "code": [
-                "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
+                "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
                 "",
-                "#_[console.log(x ] #pink[=< ] #purple[17] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena nilai x lebih kecil dibandingkan dengan 3]",
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[<= ] #m[17] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena nilai x lebih kecil dibandingkan dengan 3]",
                 "",
-                "#_[console.log(x ] #pink[=< ] #purple[10] #_[); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena x senilai atau sama dengan 10 ]"
+                "#y[console] #_[.] #b[log] #_[(] #p[x ] #c[<= ] #m[10] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena x senilai atau sama dengan 10 ]"
             ]
         }
     ],
@@ -117,71 +118,70 @@
             "title": "#mark_code[&&] (AND operator, dan)",
             "desc": "Operator yang digunakan untuk mengecek apakah nilai satu dan yang lain apakah keduanya true. Jika salah satunya false maka akan mereturn nilai false.",
             "code": [
-                "#blue[const ] #_[beritaPertama ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKedua ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKetiga ] #pink[= false] #_[;]",
-                "#blue[const ] #_[beritaKeempat ] #pink[= false] #_[;]",
+                "#m[const ] #y[beritaPertama ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKedua ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKetiga ] #c[= ] #o[false] #_[;]",
+                "#m[const ] #y[beritaKeempat ] #c[= ] #o[false] #_[;]",
                 "",
-                "#_[console.log(beritaPertama ] #pink[&& ] #_[beritaKedua); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena program mengecek]",
-                "#comment[// apakah kedua kondisi bernilai true]",
+                "#y[console] #_[.] #b[log] #_[(] #y[beritaPertama ] #c[&& ] #y[beritaKedua] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena program mengecek]",
+                "#cmt[// apakah kedua kondisi bernilai true]",
                 "",
-                "#_[console.log(beritaKedua ] #pink[&& ] #_[beritaKetiga); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena beritaKedua bernilai true]",
-                "#comment[// sedangkan beritaKetiga bernilai false]"
+                "#y[console] #_[.] #b[log] #_[(] #y[beritaKedua ] #c[&& ] #y[beritaKetiga] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena beritaKedua bernilai true]",
+                "#cmt[// sedangkan beritaKetiga bernilai false]"
             ]
         },
         {
             "title": "#mark_code[||] (OR operator, atau)",
             "desc": "Operator yang digunakan untuk mengecek apakah salah satu nilai dari dua nilai yang diuji hasilnya true. Jika dua nilai yang diuji hasilnya false maka yang direturn.",
             "code": [
-                "#blue[const ] #_[beritaPertama ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKedua ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKetiga ] #pink[= false] #_[;]",
-                "#blue[const ] #_[beritaKeempat ] #pink[= false] #_[;]",
+                "#m[const ] #y[beritaPertama ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKedua ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKetiga ] #c[= ] #o[false] #_[;]",
+                "#m[const ] #y[beritaKeempat ] #c[= ] #o[false] #_[;]",
                 "",
-                "#_[console.log(beritaPertama ] #pink[|| ] #_[beritaKeempat); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena program mendahulukan nilai true untuk dipilih]",
+                "#y[console] #_[.] #b[log] #_[(] #y[beritaPertama ] #c[|| ] #y[beritaKeempat] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena program mendahulukan nilai true untuk dipilih]",
                 "",
-                "#_[console.log(beritaKetiga ] #pink[|| ] #_[beritaKeempat); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena tidak ada pilihan yang bernilai true untuk dipilih]"
+                "#y[console] #_[.] #b[log] #_[(] #y[beritaKetiga ] #c[|| ] #y[beritaKeempat] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena tidak ada pilihan yang bernilai true untuk dipilih]"
             ]
         },
         {
             "title": "#mark_code[!] (NOT operator, bukan)",
             "desc": "Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang diinginkan maksudnya adalah apa benar pernyataan itu adalah kebalikannya.",
             "code": [
-                "#blue[const ] #_[beritaPertama ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKedua ] #pink[= true] #_[;]",
-                "#blue[const ] #_[beritaKetiga ] #pink[= false] #_[;]",
-                "#blue[const ] #_[beritaKeempat ] #pink[= false] #_[;]",
+                "#m[const ] #y[beritaPertama ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKedua ] #c[= ] #o[true] #_[;]",
+                "#m[const ] #y[beritaKetiga ] #c[= ] #o[false] #_[;]",
+                "#m[const ] #y[beritaKeempat ] #c[= ] #o[false] #_[;]",
                 "",
-                "#_[console.log(] #pink[!] #_[beritaPertama); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena nilai !beritaPertama adalah NOT true atau false]",
+                "#y[console] #_[.] #b[log] #_[(] #c[!] #y[beritaPertama); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena nilai !beritaPertama adalah NOT true atau false]",
                 "",
-                "#_[console.log(beritaPertama ] #pink[&& ] #pink[!] #_[beritaKeempat); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena nilai beritaPertama dan !beritaKeempat bernilai true]",
-                "#comment[// !beritaKeempat bernilai NOT false atau true]"
+                "#y[console] #_[.] #b[log] #_[(] #y[beritaPertama ] #c[&& ] #c[!] #y[beritaKeempat] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena nilai beritaPertama dan !beritaKeempat bernilai true]",
+                "#cmt[// !beritaKeempat bernilai NOT false atau true]"
             ]
         }
     ],
-    "other-operator": [
-        {
+    "other-operator": [{
             "title": "Nullish coalescing operator (??)",
             "desc": "Nullish coalescing operator merupakan logical operator yang mengembalikan right-hand value jika left-hand bernilai #mark_code[null] atau #mark_code[undefined].",
             "code": [
-                "#blue[const ] #_[theme ] #pink[= null] #_[;]",
-                "#blue[const ] #_[color ] #pink[= ] #_[theme ] #pink[?? ] #yellow[\"dark\"] #_[;]",
+                "#m[const ] #y[theme ] #c[= ] #o[null] #_[;]",
+                "#m[const ] #y[color ] #c[= ] #y[theme ] #c[?? ] #g[\"dark\"] #_[;]",
                 "",
-                "#_[console.log(color); ] #comment[// \"dark\"]",
-                "#comment[// Menghasilkan \"dark\" karena variabel theme bernilai null]",
+                "#y[console] #_[.] #b[log] #_[(] #y[color] #_[); ] #cmt[// \"dark\"]",
+                "#cmt[// Menghasilkan \"dark\" karena variabel theme bernilai null]",
                 "",
                 "",
-                "#blue[const ] #_[user ] #pink[= ] #yellow[\"\"] #_[;]",
-                "#blue[const ] #_[username ] #pink[= ] #_[user ] #pink[?? ] #yellow[\"admin\"] #_[;]",
+                "#m[const ] #y[user ] #c[= ] #g[\"\"] #_[;]",
+                "#m[const ] #y[username ] #c[= ] #y[user ] #c[?? ] #g[\"admin\"] #_[;]",
                 "",
-                "#_[console.log(username); ] #comment[// \"\"]",
-                "#comment[// Menghasilkan \"\" karena variabel user tidak bernilai null atau undefined]"
+                "#y[console] #_[.] #b[log] #_[(] #y[username] #_[); ] #cmt[// \"\"]",
+                "#cmt[// Menghasilkan \"\" karena variabel user tidak bernilai null atau undefined]"
             ]
         },
         {
@@ -189,93 +189,92 @@
             "desc": "Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, namun penulisan syntaxnya lebih sederhana.",
             "note": "condition ? ifTruthy : ifFalsy",
             "code": [
-                "#blue[const ] #_[discount ] #pink[= true] #_[;]",
+                "#m[const ] #y[discount ] #c[= ] #o[true] #_[;]",
                 "",
-                "#_[console.log(discount ] #pink[? ] #yellow[\"Rp. 100.000\" ] #pink[: ] #yellow[\"Rp. 150.000\"] #_[); ] #comment[// \"Rp. 100.000\"]",
-                "#comment[// Menghasilkan \"Rp. 100.000\" karena varibel discount bernilai true]"
+                "#y[console] #_[.] #b[log] #_[(] #y[discount ] #c[? ] #g[\"Rp. 100.000\" ] #c[: ] #g[\"Rp. 150.000\"] #_[); ] #cmt[// \"Rp. 100.000\"]",
+                "#cmt[// Menghasilkan \"Rp. 100.000\" karena varibel discount bernilai true]"
             ]
         },
         {
             "title": "In Operator (in)",
             "desc": "In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index di dalam array dan akan mengembalikan boolean.",
             "code": [
-                "#blue[const ] #_[user ] #pink[= ] #_[{]",
-                "#_[    username] #pink[: ] #yellow[\"John Doe\"] #_[,]",
-                "#_[    email] #pink[: ] #yellow[\"johndoe@domain.com\"] #_[,]",
-                "#_[    profile] #pink[: null]",
-                "#_[};]", 
+                "#m[const ] #y[user ] #c[= ] #_[{]",
+                "#p[    username] #_[: ] #g[\"John Doe\"] #_[,]",
+                "#p[    email] #_[: ] #g[\"johndoe@domain.com\"] #_[,]",
+                "#p[    profile] #_[: ] #o[null]",
+                "#_[};]",
                 "",
-                "#_[console.log(] #yellow[\"email\" ] #pink[in ] #_[user); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena object user memiliki key dengan nama \"email\"]",
-                "#_[console.log(] #yellow[\"phone\" ] #pink[in ] #_[user); ] #comment[// false]",
-                "#comment[// Menghasilkan false karena object user tidak memiliki key dengan nama \"phone\"]",
-                "#_[console.log(] #yellow[\"profile\" ] #pink[in ] #_[user); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena object user memiliki key dengan nama \"profile\"]",
+                "#y[console] #_[.] #b[log] #_[(] #y[] #g[\"email\" ] #m[in ] #y[user] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena object user memiliki key dengan nama \"email\"]",
+                "#y[console] #_[.] #b[log] #_[(] #y[] #g[\"phone\" ] #m[in ] #y[user] #_[); ] #cmt[// false]",
+                "#cmt[// Menghasilkan false karena object user tidak memiliki key dengan nama \"phone\"]",
+                "#y[console] #_[.] #b[log] #_[(] #y[] #g[\"profile\" ] #m[in ] #y[user] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena object user memiliki key dengan nama \"profile\"]",
                 "",
-                "#blue[const ] #_[colors ] #pink[= ] #_[[] #yellow[\"red\"] #_[, ] #yellow[\"green\"] #_[, ] #yellow[\"blue\"] #_[];]",
+                "#m[const ] #y[colors ] #c[= ] #_[[] #g[\"red\"] #_[, ] #g[\"green\"] #_[, ] #g[\"blue\"] #_[];]",
                 "",
-                "#_[console.log(] #purple[0 ] #pink[in ] #_[colors); ] #comment[// true]",
-                "#comment[// Menghasilkan true karena array colors memiliki index ke 0]"
+                "#y[console] #_[.] #b[log] #_[(] #y[] #o[0 ] #m[in ] #y[colors] #_[); ] #cmt[// true]",
+                "#cmt[// Menghasilkan true karena array colors memiliki index ke 0]"
             ]
         },
         {
             "title": "Optional Chaining Operator (?)",
             "desc": "Optional chaining operator merupakan cara yang aman untuk mengambil nilai dari object, karena tidak menimbulkan error apabila kita mengakses property yang tidak tersedia di object tersebut dan akan mengembalikan nilai undefined.",
             "code": [
-                "#blue[const ] #_[user ] #pink[= ] #_[{]",
-                "#_[    name] #pink[: ] #yellow[\"John Doe\"] #_[,]",
-                "#_[    address] #pink[: ] #_[{]",
-                "#_[        street] #pink[: ] #yellow[\"Mawar\"]",
-                "#_[    }]", 
-                "#_[};]", 
+                "#m[const ] #y[user ] #c[= ] #_[{]",
+                "#p[    name] #_[: ] #g[\"John Doe\"] #_[,]",
+                "#p[    address] #_[: ] #_[{]",
+                "#p[        street] #_[: ] #g[\"Mawar\"]",
+                "#_[    }]",
+                "#_[};]",
                 "",
-                "#blue[const ] #_[street ] #pink[= ] #_[user.address] #pink[?] #_[.street;]",
-                "#blue[const ] #_[phone ] #pink[= ] #_[user.contact] #pink[?] #_[.phone;]",
+                "#m[const ] #y[street ] #c[= ] #y[user] #_[.] #p[address] #_[?.] #p[street;]",
+                "#m[const ] #y[phone ] #c[= ] #y[user] #_[.] #y[contact] #_[?.] #p[phone;]",
                 "",
-                "#comment[// memanggil method dengan optional chaining]",
-                "#blue[const ] #_[getName ] #pink[= ] #_[user.name] #pink[?] #_[.getName] #pink[?] #_[.();]",
+                "#cmt[// memanggil method dengan optional chaining]",
+                "#m[const ] #y[getName ] #c[= ] #y[user] #_[.] #p[name] #_[?.] #b[getName] #_[?.();]",
                 "",
-                "#_[console.log(street); ] #comment[// \"Mawar\"]",
-                "#comment[// Menghasilkan \"Mawar\" karena nilai dari property street dari address adalah \"Mawar\"]",
-                "#_[console.log(phone); ] #comment[// undefined]",
-                "#comment[// Menghasilkan undefined karena object user tidak memiliki property contact]",
-                "#_[console.log(getName); ] #comment[// undefined]",
-                "#comment[// Menghasilkan undefined karena property name tidak memiliki method getName]"
+                "#y[console] #_[.] #b[log] #_[(] #y[street] #_[); ] #cmt[// \"Mawar\"]",
+                "#cmt[// Menghasilkan \"Mawar\" karena nilai dari property street dari address adalah \"Mawar\"]",
+                "#y[console] #_[.] #b[log] #_[(] #y[phone] #_[); ] #cmt[// undefined]",
+                "#cmt[// Menghasilkan undefined karena object user tidak memiliki property contact]",
+                "#y[console] #_[.] #b[log] #_[(] #y[getName] #_[); ] #cmt[// undefined]",
+                "#cmt[// Menghasilkan undefined karena property name tidak memiliki method getName]"
             ]
         },
         {
             "title": "Double Bang (!!)",
             "desc": "Double Bang adalah operator yang mengkonversi suatu value menjadi tipe data boolean, pada dasarnya Double Bang meyakinkan kita untuk selalu mendapatkan value dengan tipe data boolean.",
             "code": [
-                "#blue[const ] #_[object ] #pink[= ] #_[{};]",
-                "#blue[const ] #_[array ] #pink[= ] #_[[];]",
+                "#m[const ] #y[object ] #c[= ] #_[{};]",
+                "#m[const ] #y[array ] #c[= ] #_[[];]",
                 "",
-                "#_[console.log(] #pink[!!] #_[object); ] #comment[// true]",
-                "#_[console.log(] #pink[!!] #_[array); ] #comment[// true]",
+                "#y[console] #_[.] #b[log] #_[(] #c[!!] #y[object] #_[); ] #cmt[// true]",
+                "#y[console] #_[.] #b[log] #_[(] #c[!!] #y[array] #_[); ] #cmt[// true]",
                 "",
-                "#comment[//== Contoh data yang akan dianggap true ==//]",
-                "#blue[const ] #_[object ] #pink[= ] #_[{};]",
-                "#blue[const ] #_[array ] #pink[= ] #_[[];]",
-                "#blue[const ] #_[bukanStringKosong ] #pink[= ] #yellow[\"string\"] #_[;]",
-                "#blue[const ] #_[angkaSelainNol ] #pink[= ] #purple[2.125] #_[;]",
-                "#blue[const ] #_[date ] #pink[= ] #pink[new ] #_[Date();]",
-                "#blue[const ] #_[truthy ] #pink[= ] #pink[true] #_[;]",
+                "#cmt[//== Contoh data yang akan dianggap true ==//]",
+                "#m[const ] #y[object ] #c[= ] #_[{};]",
+                "#m[const ] #y[array ] #c[= ] #_[[];]",
+                "#m[const ] #y[bukanStringKosong ] #c[= ] #g[\"string\"] #_[;]",
+                "#m[const ] #y[angkaSelainNol ] #c[= ] #o[2.125] #_[;]",
+                "#m[const ] #y[date ] #c[= ] #m[new ] #y[Date] #_[();]",
+                "#m[const ] #y[truthy ] #c[= ] #o[true] #_[;]",
                 "",
                 "",
-                "#blue[const ] #_[stringKosong ] #pink[= ] #yellow[\"\"] #_[;]",
-                "#blue[const ] #_[angkaNol ] #pink[= ] #purple[0] #_[;]",
+                "#m[const ] #y[stringKosong ] #c[= ] #g[\"\"] #_[;]",
+                "#m[const ] #y[angkaNol ] #c[= ] #m[0] #_[;]",
                 "",
-                "#_[console.log(] #pink[!!] #_[stringKosong); ] #comment[// false]",
-                "#_[console.log(] #pink[!!] #_[angkaNol); ] #comment[// false]",
+                "#y[console] #_[.] #b[log] #_[(] #c[!!] #y[stringKosong] #_[); ] #cmt[// false]",
+                "#y[console] #_[.] #b[log] #_[(] #c[!!] #y[angkaNol] #_[); ] #cmt[// false]",
                 "",
-                "#comment[//== Contoh data yang akan dianggap false ==//]",
-                "#blue[const ] #_[stringKosong ] #pink[= ] #yellow[\"\"] #_[;]",
-                "#blue[const ] #_[angkaNol ] #pink[= ] #purple[0] #_[;]",
-                "#blue[const ] #_[nullish ] #pink[= ] #purple[null] #_[;]",
-                "#blue[const ] #_[notDefined ] #pink[= ] #purple[undefined] #_[;]",
-                "#blue[const ] #_[bukanAngka ] #pink[= ] #purple[NaN] #_[;]",
-                "#blue[const ] #_[falsy ] #pink[= false] #_[;]",
-                ""
+                "#cmt[//== Contoh data yang akan dianggap false ==//]",
+                "#m[const ] #y[stringKosong ] #c[= ] #g[\"\"] #_[;]",
+                "#m[const ] #y[angkaNol ] #c[= ] #o[0] #_[;]",
+                "#m[const ] #y[nullish ] #c[= ] #o[null] #_[;]",
+                "#m[const ] #y[notDefined ] #c[= ] #o[undefined] #_[;]",
+                "#m[const ] #y[bukanAngka ] #c[= ] #o[NaN] #_[;]",
+                "#m[const ] #y[falsy ] #c[= ] #o[false] #_[;]"
             ]
         }
     ]

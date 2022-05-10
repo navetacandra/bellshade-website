@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Object",
+        "text_1": [
+            "Object adalah struktur data yang bisa menyimpan lebih dari satu pasangan #mark_code[nama variabel] dan #mark_code[nilai] di dalamnya. Pasangan #mark_code[nama variabel] dan #mark_code[nilai] dipisahkan dengan tanda titik dua (:) dan dikenal sebagai <i>key-value</i> pairs atau <i>name-value</i> pairs.",
+            "Berbeda dengan <i>array</i> yang menggunakan kurung siku [[]], <i>object</i> ditandai dengan adanya kurung kurawal { }.",
+            "Salah satu cara membuat <i>object</i> adalah dengan menggunakan <i>object</i> literal atau mendefinisikan <i>object</i> secara langsung kedalam sebuah variabel."
+        ],
+        "code": [
+            "#m[const ] #y[dataDiri ] #c[= ] #[{]", 
+            "#p[    nama] #_[: ] #g[\"Fatah\"] #_[,]",
+            "#p[    alamat] #_[: ] #g[\"Bandung\"] #_[,]", 
+            "#p[    umur] #_[: ] #o[20]", 
+            "#_[};]"
+        ],
+        "text_2": [
+            "Pada contoh di atas dengan menggunakan <i>object literal</i> dibuat variabel #mark_code[dataDiri] yang dapat menyimpan lebih dari satu variabel di dalamnya sebagai sebuah <i>object</i>."
+        ]
+    },
+    {
+        "title": "Property dan Method",
+        "text_1": [
+            "Dalam <i>object</i>, variabel yang menyimpan nilai seperti #mark_code[string], #mark_code[number], #mark_code[boolean], atau #mark_code[array] disebut sebagai <strong>property</strong>. Dari contoh variabel #mark_code[dataDiri] di atas, <i>object</i> yang dibuat memiliki <i>property</i> yaitu nama, alamat, dan umur.",
+            "Untuk mengambil nilai sebuah <i>property</i> dapat menggunakan <i>dot notation</i> atau notasi titik, yaitu dengan menulis titik setelah nama <i>object</i> diikuti nama <i>property</i> yang ingin diambil."
+        ],
+        "code": [
+            "#m[const ] #y[dataDiri ] #c[= ] #[{]", 
+            "#p[    nama] #_[: ] #g[\"Fatah\"] #_[,]",
+            "#p[    alamat] #_[: ] #g[\"Bandung\"] #_[,]", 
+            "#p[    umur] #_[: ] #o[20]", 
+            "#_[};]",
+            "",
+            "#y[console] #_[.] #b[log] #_[(] #y[dataDiri] #_[.] #p[alamat] #_[); ] #cmt[// pada dataDiri.alamat memiliki nilai \"Bandung\"]"
+        ]
+    },
+    {
+        "text_1": [
+            "Selain dapat menyimpan nilai seperti #mark_code[string] dan #mark_code[number], di dalam <i>object </i> juga dapat disimpan fungsi yang bisa dipanggil kemudian. Variabel yang menyimpan fungsi dikenal sebagai <span class=\"fw-bolder\">method</span>.",
+            "Cara memanggil fungsi pada <i>method</i> adalah dengan menggunakan <i>dot notation</i> atau notasi titik seperti pada <i>property</i> kemudian menambahkan tanda kurung di akhir."
+        ],
+        "code": [
+            "#m[const ] #y[dataDiri ] #c[= ] #[{]", 
+            "#p[    nama] #_[: ] #g[\"Fatah\"] #_[,]",
+            "#p[    alamat] #_[: ] #g[\"Bandung\"] #_[,]", 
+            "#p[    umur] #_[: ] #o[20] #_[,]", 
+            "#b[    perkenalan] #_[: ] #m[function] #_[() {]", 
+            "#y[        console] #_[.] #b[log] #_[(] #g[`Hai, nama saya ] #m[${] #y[this] #_[.] #p[nama] #m[}] #g[`] #_[);]",
+            "#_[    }]",
+            "#_[};]",
+            "",
+            "#y[dataDiri] #_[.] #b[perkenalan] #_[(); ] #cmt[// menghasilkan tampilan pada konsol yaitu \"Hai, nama saya Fatah\"]"
+        ],
+        "text_2": [
+            "Dari contoh di atas, <i>object</i> #mark_code[dataDiri] memiliki <i>method</i> yang diberi nama perkenalan. <i>Method</i> perkenalan kemudian dipanggil setelah #mark_code[dataDiri] dideklarasikan dan menjalankan perintah dalam fungsinya."
+        ]
+    }
+]

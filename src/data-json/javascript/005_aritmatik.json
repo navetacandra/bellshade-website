@@ -1,54 +1,88 @@
-{
-    "sum-operator-code": [
-        "#comment[//== Penjumlahan ==//]",
-        "#_[console.log(] #purple[10 ] #pink[+ ] #purple[5] #_[); ]",
-        "#comment[// menghasilkan 15]",
-        "",
-        "#comment[/**]",
-        "#comment[ * contoh perbedaan operator penjumlahan dan concatenation.]",
-        "#comment[ * semua Integer akan berubah menjadi string apabila bertemu dengan]",
-        "#comment[ * concatenation dan akan menghasilkan string juga.]",
-        "#comment[ */]",
-        "#_[console.log(] #purple[3 ] #pink[+ ] #purple[3] #_[); ] #comment[// 6]",
-        "#_[console.log(] #purple[3 ] #pink[+ ] #yellow[\"3\"] #_[); ] #comment[// \"33\"]",
-        "#_[console.log(] #purple[3 ] #pink[+ ] #purple[3 ] #pink[+ ] #yellow[\"3\"] #_[); ] #comment[// \"63\"]",
-        "#_[console.log(] #purple[3 ] #pink[+ ] #yellow[\"3\" ] #pink[+ ] #purple[3] #_[); ] #comment[// \"333\"]"
-    ],
-    "substraction-code": [
-        "#comment[//== Pengurangan ==//]",
-        "#_[console.log(] #purple[7 ] #pink[- ] #purple[2] #_[); ]",
-        "#comment[// menghasilkan 5]"
-    ],
-    "multiplication-code": [
-        "#comment[//== Perkalian ==//]",
-        "#_[console.log(] #purple[10 ] #pink[* ] #purple[5] #_[); ]",
-        "#comment[// menghasilkan 50]"
-    ],
-    "distribution-code": [
-        "#comment[//== Pembagian ==//]",
-        "#_[console.log(] #purple[8 ] #pink[/ ] #purple[4] #_[); ]",
-        "#comment[// menghasilkan 2]"
-    ],
-    "modulus-code": [
-        "#comment[//== Modulus ==//]",
-        "#_[console.log(] #purple[7 ] #pink[% ] #purple[2] #_[); ]",
-        "#comment[// menghasilkan 1]"
-    ],
-    "exponent-code": [
-        "#comment[//== Eksponenen ==//]",
-        "#_[console.log(] #purple[3 ] #pink[** ] #purple[3] #_[); ]",
-        "#comment[// menghasilkan 3 * 3 * 3 = 27]"
-    ],
-    "increment-code": [
-        "#comment[//== Increment ==//]",
-        "#blue[let ] #_[x ] #pink[= ] #purple[10] #_[;]",
-        "#_[console.log(] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[, ] #_[x] #pink[++] #_[); ]",
-        "#comment[// menghasilkan 10 11 12 13]"
-    ],
-    "decrement-code": [
-        "#comment[//== Decrement ==//]",
-        "#blue[let ] #_[y ] #pink[= ] #purple[5] #_[;]",
-        "#_[console.log(] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[, ] #_[y] #pink[--] #_[); ]",
-        "#comment[// menghasilkan 5 4 3 2]"
-    ]
-}
+
+[
+    {
+        "title": "Penjumlahan (+)",
+        "desc": "Operator ini digunakan untuk melakukan operasi penjumlahan.",
+        "note": "Catatan : pada javascript, operator + (penjumlahan) juga digunakan untuk rangkaian (concatenation) string. Jadi perhatikan penggunaan + pada string dan integer.",
+        "code": [
+            "#cmt[//== Penjumlahan ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[10 ] #c[+ ] #o[5] #_[); ]",
+            "#cmt[// menghasilkan 15]",
+            "",
+            "#cmt[/**]",
+            "#cmt[ * contoh perbedaan operator penjumlahan dan concatenation.]",
+            "#cmt[ * semua Integer akan berubah menjadi string apabila bertemu dengan]",
+            "#cmt[ * concatenation dan akan menghasilkan string juga.]",
+            "#cmt[ */]",
+            "#y[console] #_[.] #b[log] #_[(] #o[3 ] #c[+ ] #o[3] #_[); ] #cmt[// 6]",
+            "#y[console] #_[.] #b[log] #_[(] #o[3 ] #c[+ ] #g[\"3\"] #_[); ] #cmt[// \"33\"]",
+            "#y[console] #_[.] #b[log] #_[(] #o[3 ] #c[+ ] #o[3 ] #c[+ ] #g[\"3\"] #_[); ] #cmt[// \"63\"]",
+            "#y[console] #_[.] #b[log] #_[(] #o[3 ] #c[+ ] #g[\"3\" ] #c[+ ] #o[3] #_[); ] #cmt[// \"333\"]"
+        ]
+    },
+    {
+        "title": "Pengurangan (-)",
+        "desc": "Operator ini digunakan untuk melakukan operasi pengurangan.",
+        "code": [
+            "#cmt[//== Pengurangan ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[7 ] #c[- ] #o[2] #_[); ]",
+            "#cmt[// menghasilkan 5]"
+        ]
+    },
+    {
+        "title": "Perkalian (*)",
+        "desc": "Operator ini digunakan untuk melakukan operasi perkalian.",
+        "code": [
+            "#cmt[//== Perkalian ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[10 ] #c[* ] #o[5] #_[); ]",
+            "#cmt[// menghasilkan 50]"
+        ]
+    },
+    {
+        "title": "Pembagian (/)",
+        "desc": "Operator ini digunakan untuk melakukan operasi pembagian.",
+        "code": [
+            "#cmt[//== Pembagian ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[8 ] #c[/ ] #o[4] #_[); ]",
+            "#cmt[// menghasilkan 2]"
+        ]
+    },
+    {
+        "title": "Modulus (%)",
+        "desc": "Operator ini berfungsi untuk mencari sisa bagi suatu bilangan. Operator ini biasa digunakan untuk mengecek apakah suatu bilangan ganjil atau genap.",
+        "code": [
+            "#cmt[//== Modulus ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[7 ] #c[% ] #o[2] #_[); ]",
+            "#cmt[// menghasilkan 1]"
+        ]
+    },
+    {
+        "title": "Eksponen (**)",
+        "desc": "Sesuai namanya, operator ini berfungsi untuk membuat eksponen. Eksponen atau yang biasa disebut bilangan berpangkat adalah suatu bentuk perkalian dengan bilangan yang sama berulang-ulang.",
+        "code": [
+            "#cmt[//== Eksponenen ==//]",
+            "#y[console] #_[.] #b[log] #_[(] #o[3 ] #c[** ] #o[3] #_[); ]",
+            "#cmt[// menghasilkan 3 * 3 * 3 = 27]"
+        ]
+    },
+    {
+        "title": "Increment (++)",
+        "desc": "Operator ini digunakan untuk menambah suatu bilangan sebanyak 1 angka. Operator ini biasa digunakan pada perulangan.",
+        "code": [
+            "#cmt[//== Increment ==//]",
+            "#m[let ] #p[x ] #c[= ] #o[10] #_[;]",
+            "#y[console] #_[.] #b[log] #_[(] #p[x] #c[++] #_[, ] #p[x] #c[++] #_[, ] #p[x] #c[++] #_[, ] #p[x] #c[++] #_[); ]",
+            "#cmt[// menghasilkan 10 11 12 13]"
+        ]
+    },
+    {
+        "title": "Decrement (--)",
+        "desc": "Operator ini kebalikan dari operator increment, digunakan untuk mengurangi suatu bilangan sebanyak 1 angka. Operator ini biasa digunakan pada perulangan.",
+        "code": [
+            "#cmt[//== Decrement ==//]",
+            "#m[let ] #p[y ] #c[= ] #o[5] #_[;]",
+            "#y[console] #_[.] #b[log] #_[(] #p[y] #c[--] #_[, ] #p[y] #c[--] #_[, ] #p[y] #c[--] #_[, ] #p[y] #c[--] #_[); ]",
+            "#cmt[// menghasilkan 5 4 3 2]"
+        ]
+    }
+]

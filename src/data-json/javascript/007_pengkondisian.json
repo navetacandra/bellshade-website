@@ -5,8 +5,8 @@
             "Di dalam bahasa pemrograman javascript ada sebuah cara di mana kita bisa mengeksekusi sebuah kode, jika syarat yang kita tentukan sudah terpenuhi (#mark_code[true]) yakni dengan menggunakan statement if biasanya syarat di if statement menggunakan comparison (perbandingan) operator ataupun logical (logika) operator kode yang di dalam if statement akan dieksekusi hanya jika syarat mengeluarkan nilai #mark_code[true]."
         ],
         "code": [
-            "#pink[if] #_[(] #pink[true] #_[) {]",
-            "#_[    console.log(] #yellow[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#m[if] #_[(] #o[true] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
             "#_[}]"
         ]
     },
@@ -16,10 +16,10 @@
             "Javascript juga memiliki sebuah cara untuk mengeksekusi sebuah kode jika syarat yang kita tentukan tidak terpenuhi (#mark_code[false]) yakni dengan menggunakan statement else jika kode di dalam if tidak dieksekusi karena syarat tidak terpenuhi atau mengeluarkan nilai false, maka kode di dalam blok else akan dieksekusi."
         ],
         "code": [
-            "#pink[if] #_[(] #pink[false] #_[) {]",
-            "#_[    console.log(] #yellow[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
-            "#_[} ] #pink[else ] #_[{]",
-            "#_[    console.log(] #yellow[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#m[if] #_[(] #o[false] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[} ] #m[else ] #_[{]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
             "#_[}]"
         ]
     },
@@ -29,14 +29,14 @@
             "Ada metode lain untuk melakukan pengecekan ber-urut yakni dengan else if. Jika blok if pertama bernilai false, maka kode akan melakukan pengecekan dengan syarat kedua di blok else if. Jika syarat kedua bernilai true, maka blok else if akan dijalankan."
         ],
         "code": [
-            "#blue[const ] #_[tanggal ] #pink[= ] #purple[10] #_[;]",
+            "#m[const ] #y[tanggal ] #c[= ] #o[10] #_[;]",
             "",
-            "#pink[if] #_[(tanggal ] #pink[< ] #purple[5] #_[) {]",
-            "#_[    console.log(] #yellow[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
-            "#_[} ] #pink[else if] #_[(tanggal ] #pink[> ] #purple[8] #_[) {]",
-            "#_[    console.log(] #yellow[\"Kode ini pasti dijalankan\"] #_[);]",
-            "#_[} ] #pink[else ] #_[{]",
-            "#_[    console.log(] #yellow[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#m[if] #_[(] #y[tanggal ] #c[< ] #o[5] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[} ] #m[else if] #_[(] #y[tanggal ] #c[> ] #o[8] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#_[} ] #m[else ] #_[{]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
             "#_[}]"
         ]
     },
@@ -46,18 +46,18 @@
             "Ada alternatif lain untuk melakukan pengecekan ber-urut yaitu dengan switch case. Kita bisa menentukan variabel mana yang akan kita cek, lalu tambahkan beberapa case di bawahnya untuk mengecek isi dari variabel yang kita tentukan di dalam switch tadi. Kita juga bisa memberikan kondisi default sama halnya dengan else di atas."
         ],
         "code": [
-            "#blue[const ] #_[buah ] #pink[= ] #yellow[\"Jeruk\"] #_[;]",
+            "#m[const ] #y[buah ] #c[= ] #g[\"Jeruk\"] #_[;]",
             "",
-            "#pink[switch] #_[(buah) {]",
-            "#pink[    case ] #yellow[\"Apel\"] #pink[:]",
-            "#_[        console.log(] #yellow[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
-            "#pink[        break;]",
-            "#pink[    case ] #yellow[\"Nanas\"] #pink[:]",
-            "#_[        console.log(] #yellow[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
-            "#pink[        break;]",
-            "#pink[    default:]",
-            "#_[        console.log(] #yellow[\"Kode ini pasti dijalankan\"] #_[);]",
-            "#pink[        break;]",
+            "#m[switch] #_[(] #y[buah] #_[) {]",
+            "#m[    case ] #g[\"Apel\"] #_[:]",
+            "#y[        console] #_[.] #b[log] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#m[        break] #_[;]",
+            "#m[    case ] #g[\"Nanas\"] #_[:]",
+            "#y[        console] #_[.] #b[log] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#m[        break] #_[;]",
+            "#m[    default:]",
+            "#y[        console] #_[.] #b[log] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#m[        break] #_[;]",
             "#_[}]"
         ]
     }

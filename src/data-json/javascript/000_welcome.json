@@ -37,6 +37,11 @@
                 "target_pembelajaran": "Memahami Operator dalam Javascript seperti Perbandingan, Kelogisan, dan Aritmatika."
             },
             {
+                "langkah": "04",
+                "topik": "String dan Manipulasi String",
+                "target_pembelajaran": "Memahami cara Mendeklarasikan String dan Memanipulasi String pada Javascript"
+            },
+            {
                 "langkah": "05",
                 "topik": "Operator Aritmatik",
                 "target_pembelajaran": "Dapat melakukan operasi aritmatika sederhana"
@@ -72,7 +77,7 @@
                 "target_pembelajaran": "Mengenal konsep Object yang menjadi konsep paling penting di Javascript"
             },
             {
-                "langkah": "11",
+                "langkah": "12",
                 "topik": "Manipulasi Objek",
                 "target_pembelajaran": "Memahami cara memanipulasi Object dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program"
             }
