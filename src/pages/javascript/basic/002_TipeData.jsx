@@ -1,4 +1,5 @@
 import React from 'react'
+import { OrderedList } from '../../../components/List'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
@@ -18,42 +19,42 @@ function DataTypeJS() {
                 <p className="section_text">
                     Dalam bahasa pemrograman JavaScript sendiri memiliki 3 cara mendeklarasikan sebuah variabel, yaitu
                 </p>
-                <ol>
+                <OrderedList>
                     {
                         data_json['varibel-type'].map((val, key) => (
-                            <li key={key} className='list-decimal ml-4 section_text'>
+                            <li key={key} className='section_text'>
                                 <code className="mark-text">{val.type}</code> {val.desc}
                             </li>
                         ))
                     }
-                </ol>
+                </OrderedList>
                 <p className="section_text">Contoh:</p>
                 <SyntaxHighlighter code={data_json['variabel-declare-code']} />
                 <h4 className="subtitle-h3">Jenis-Jenis Tipe Data</h4>
                 <p className="section_text">
                     Untuk tipe data, JavaScript memiliki banyak tipe data, kali ini membahas 3 tipe data dasar yang sering digunakan, yaitu:
                 </p>
-                <ol>
+                <OrderedList>
                     {
                         data_json['data-type'].map((val, key) => (
                             <div key={key} className='ml-4'>
-                                <li className='list-decimal section_text'>
+                                <li className='section_text'>
                                     <code className="mark-text">
                                         {val.type}
                                     </code>
                                 </li>
                                 {
-                                    TextStyle({ __text__: val.desc }).map((val1, key1) => {
-                                        return (
-                                            <p className="section_text" key={key1} dangerouslySetInnerHTML={val1} ></p>
-                                        )
-                                    })
+                                    val.desc.map((val, key) => (
+                                        <p className="section_text" key={key}>
+                                            <TextStyle list_text={val} />
+                                        </p>
+                                    ))
                                 }
                             </div>
                         ))
                     }
-                </ol>
-                {data_json['data-type-code'] ? <SyntaxHighlighter code={data_json['data-type-code']} /> : null}
+                </OrderedList>
+                <SyntaxHighlighter code={data_json['data-type-code']} />
                 <div className="note-text my-3">
                     <p>
                         Truthy : nilai yang dianggap benar ketika ditemui dalam konteks Boolean.
@@ -68,7 +69,7 @@ function DataTypeJS() {
                 <p className="section_text">
                     contoh dari penggunaan <i>typeOf</i> adalah:
                 </p>
-                {data_json['typeof-code'] ? <SyntaxHighlighter code={data_json['typeof-code']} /> : null}
+                <SyntaxHighlighter code={data_json['typeof-code']} />
                 <img className='my-3 shadow-lg rounded-lg border-b' src="https://camo.githubusercontent.com/78d5a112c5f275f4381703a3598662637fc257f5323b30fc331e36baf0acc212/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f447573434f667958634141395f46373f666f726d61743d6a7067266e616d653d6c61726765" alt="Javascript Meme" />
                 <div className="note-text my-3">
                     <p>

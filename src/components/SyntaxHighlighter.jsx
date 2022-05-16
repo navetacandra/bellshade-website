@@ -8,7 +8,7 @@ import LineCode from './LineCode'
  */
 function SyntaxHighlighter({ code = [] }) {
     return (
-        <div className="highlight my-3">
+        <div className="highlight border border-slate-200 my-3 shadow-md dark:shadow-xl">
             <pre><code>
                 {
                     typeof code === 'object' && !!code.length 

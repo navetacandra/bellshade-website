@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import LineCode from '../../../components/LineCode'
+import { OrderedList, UnorderedList } from '../../../components/List'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import WrapperTemplate from '../../../components/WrapperTemplate'
 import data_json from '../../../data-json/javascript/008_fungsi.json'
@@ -13,34 +13,34 @@ function FungsiJS() {
                     Function (fungsi) adalah sebuah sub-program / pecahan code yang dapat dipanggil berulang kali di manapun dan kapanpun. Function digunakan agar program yang dibuat lebih efisien dan mudah untuk dibaca, sehingga akan lebih mudah dalam menangani error.
                 </p>
                 <h3 className="subtitle-h3">Macam-Macam Function</h3>
-                <ol className='ml-4'>
+                <OrderedList className='section_text'>
                     {
                         data_json['function-type-list'].map((val, key) => (
-                            <div key={key} className='ml-4 section_text'>
-                                <li className='list-decimal'>
+                            <Fragment key={key}>
+                                <li>
                                     <p><strong>{val.type}</strong></p>
                                 </li>
                                 <p className="section_text">{val.desc}</p>
                                 <SyntaxHighlighter code={val.code} />
-                            </div>
+                            </Fragment>
                         ))
                     }
-                </ol>
+                </OrderedList>
                 <p className="section_text">
                     Function juga bisa memproses data yang dinamis, disitulah Parameter dan Argumen ada.
                 </p>
-                <ul className='ml-4'>
-                    <li className='list-disc'>
+                <UnorderedList className='section_text'>
+                    <li>
                         <p>
                             Parameter adalah variabel yang digunakan untuk menampung nilai yang dikirimkan saat memanggil function.
                         </p>
                     </li>
-                    <li className='list-disc'>
+                    <li>
                         <p>
                             Argument adalah nilai yang dikirimkan saat function dipanggil dan akan ditampung oleh parameter.
                         </p>
                     </li>
-                </ul>
+                </UnorderedList>
                 <SyntaxHighlighter code={data_json['parameter-argument-code']} />
             </section>
             <section className='my-5'>

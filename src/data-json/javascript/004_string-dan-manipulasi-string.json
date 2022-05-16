@@ -30,11 +30,11 @@
                 "Untuk penggunaan jenis-jenis deklarasi bisa juga dilakukan dengan syarat menggunakan #mark_code[escape character] atau menggunakan <i>jenis deklarasi</i> yang berlainan."
             ],
             "code": [
-                "#m[const ] #y[errorPertama ] #c[= ] #g[''''] #_[;]", 
+                "#m[const ] #y[errorPertama ] #c[= ] #g[''] #err_wv_g[''] #_[;]", 
                 "#cmt[// Uncaught SyntaxError: Unexpected string]",
-                "#m[const ] #y[errorKedua ] #c[= ] #g[\"\"\"\"] #_[;]", 
+                "#m[const ] #y[errorKedua ] #c[= ] #g[\"\"] #err_wv_g[\"\"] #_[;]", 
                 "#cmt[// Uncaught SyntaxError: Unexpected string]",
-                "#m[const ] #y[errorKetiga ] #c[= ] #g[````] #_[;]", 
+                "#m[const ] #y[errorKetiga ] #c[= ] #g[``] #err_wv_g[``] #_[;]", 
                 "#cmt[// Uncaught SyntaxError: Unexpected string]",
                 "",
                 "#cmt[//== Contoh escape character ==//]",

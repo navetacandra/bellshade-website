@@ -1,0 +1,13 @@
+{
+    "code": [
+        "#cmt[// HeloWorld.java]",
+        "",
+        "#m[package learn.basic] #_[;]",
+        "",
+        "#m[public class ] #y[HelloWorld ] #_[{ ] #cmt[// mendeklarasikan class pada program. Pastikan nama class sesuai dengan nama Source-Code]",
+        "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[args] #_[) { ] #cmt[// mendeklarasikan method void publuc static dan string[] args agar bisa menghasilkan compiler program dengan ekstensi compiler source-code.class]",
+        "#y[        System] #_[.] #y[out] #_[.] #b[print] #_[(] #g[\"Hello World\"] #_[); ] #cmt[// menuliskan output pada program]",
+        "#_[    }]",
+        "#_[}]"
+    ]
+}

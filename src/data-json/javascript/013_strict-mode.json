@@ -1,0 +1,85 @@
+[{
+        "desc": [
+            "<i>Strict mode</i> digunakan untuk menghindari #mark_code[bug] yang dapat tercipta dari versi lama Javascript. #mark_code[Bug] tersebut antara lain adalah perilaku Javascript sebelum ECMAScript versi 5 yang memungkinkan penggunaan variabel yang tidak dideklarasikan sebelumnya.",
+            "<i>Strict mode</i> digunakan dengan menulis string #mark_code[<i>\"use strict\"</i>] pada bagian paling atas file javascript atau dibagian paling atas dalam sebuah fungsi."
+        ]
+    },
+    {
+        "code": [
+            "#p[y ] #c[= ] #o[100] #_[;]",
+            "#y[console] #_[.] #b[log] #_[(] #p[y] #_[); ] #cmt[// 100]",
+            "#cmt[// variabel y yang tidak dideklarasikan dapat digunakan tanpa strict mode]"
+        ]
+    },
+    {
+        "code": [
+            "#g[\"use strict\"] #_[; ] #cmt[// menggunakan strict mode]",
+            "#p[y ] #c[= ] #o[100] #_[;]",
+            "#y[console] #_[.] #b[log] #_[(] #p[y] #_[); ] #cmt[// ReferenceError: y is not defined]",
+            "#cmt[// console log menghasilkan ReferenceError karena variabel y belum dideklarasikan]"
+        ]
+    },
+    {
+        "desc": [
+            "Dengan menggunakan <i>strict mode</i>, jika tanpa sengaja salah dalam menulis nama variabel dapat langsung diketahui karena variabel yang tidak dideklarasikan akan memunculkan #mark_code[ReferenceError]."
+        ],
+        "code": [
+            "#m[let ] #p[lamaBekerja ] #c[= ] #o[5] #_[; ] #cmt[// variabel lamaBekerja dideklarasikan dengan nilai 5]",
+            "",
+            "#p[lamaBerkerja ] #c[= ] #o[6] #_[;    ] #cmt[// kesalahan penulisan (typo) pada kata bekerja menjadi berkerja]",
+            "#cmt[                     // hal ini tidak terdeteksi sebagai error karena diperbolehkan tanpa strict mode]",
+            "",
+            "#m[if] #_[(] #p[lamaBekerja ] #c[<= ] #o[5] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Junior Developer\"] #_[);]",
+            "#_[} ] #m[else ] #_[{]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Senior Developer\"] #_[);]",
+            "#_[}]",
+            "#cmt[// console log akan menghasilkan \"Junior Developer\" karena nilai lamaBekerja masih tetap 5, saat ingin merubah nilai terjadi typo pada variabel dan tanpa sengaja membuat variabel baru]",
+            "#cmt[// kesalahan ini dapat menjadi bug yang error-nya tidak terdeteksi javascript]"
+        ]
+    },
+    {
+        "desc": [
+            "Jika menggunakan <i>strict mode</i>:"
+        ],
+        "code": [
+            "#m[let ] #p[lamaBekerja ] #c[= ] #o[5] #_[; ] #cmt[// variabel lamaBekerja dideklarasikan dengan nilai 5]",
+            "",
+            "#p[lamaBerkerja ] #c[= ] #o[6] #_[;    ] #cmt[// ReferenceError: lamaBerkerja is not defined]",
+            "",
+            "#m[if] #_[(] #p[lamaBekerja ] #c[<= ] #o[5] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Junior Developer\"] #_[);]",
+            "#_[} ] #m[else ] #_[{]",
+            "#y[    console] #_[.] #b[log] #_[(] #g[\"Senior Developer\"] #_[);]",
+            "#_[}]",
+            "#cmt[// dengan adanya pemberitahuan error ini, kesalahan penulisan dapat langsung diperbaiki tanpa menyebabkan bug terlebih dahulu]"
+        ]
+    },
+    {
+        "desc": [
+            "Selain memunculkan #mark_code[ReferenceError] pada variabel yang belum dideklarasikan, <i>strict mode</i> juga melarang menggunakan kata yang di-<i>booking</i> javascript untuk digunakan di kemudian hari. Hal ini bertujuan apabila javascript melakukan <i>update</i> di masa depan tidak menciptakan masalah pada kode website yang telah ada."
+        ],
+        "code": [
+            "#g[\"use strict\"]",
+            "#m[const ] #y[private ] #c[= ] #o[300] #_[; ] #cmt[// SyntaxError: Unexpected strict mode reserved word]",
+            "#cmt[// kata private merupakan reserved words sehingga tidak boleh digunakan dalam strict mode]"
+        ]
+    },
+    {
+        "title": "Strict Mode Otomatis",
+        "desc": [
+            "Sangat disarankan untuk selalu menggunakan <i>strict mode</i> jika belum menggunakan fitur ES6 seperti module dan class atau menggunakan transpiler seperti babel. Dengan menggunakan fitur ES6 tersebut, <i>strict mode</i> akan secara otomatis diaktifkan oleh JavaScript, sedangkan transpiler akan mengubah kode JavaScript modern menjadi kode ES5 ditambah dengan string #mark_code[\"use strict\"].",
+            "Contoh #mark_code[\"use strict\"] otomatis aktif saat menggunakan module:"
+        ],
+        "code": [
+            "#p[user ] #c[= ] #_[{]",
+            "#p[    id] #_[: ] #o[1] #_[,]",
+            "#p[    name] #_[: ] #g[\"Andi\"]",
+            "#_[};]",
+            "",
+            "#y[console] #_[.] #b[log] #_[(] #p[user] #_[); ] #cmt[// ReferenceError: user is not defined]",
+            "",
+            "#m[export default ] #p[user] #_[;]"
+        ]
+    }
+]

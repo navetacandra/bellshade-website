@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
-import LineCode from '../../../components/LineCode'
 import data_json from '../../../data-json/javascript/010_manipulasi-array.json'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
+import { OrderedList, UnorderedList } from '../../../components/List'
 
 function ManipulasiArrayJS() {
     return (
@@ -13,48 +13,56 @@ function ManipulasiArrayJS() {
                 <h3 className="subtitle-h3">Jenis Method Untuk Memanipulasi Array</h3>
             </section>
             <section className="my-5">
-                <ol className='ml-4'>
+                <OrderedList>
                     {
                         data_json.map((data, i) => (
-                            <div key={i} className='ml-4'>
+                            <Fragment key={i}>
                                 <h4 className='subtitle-h4 ml-3'>
-                                    <li className='list-decimal'>{data.title}</li>
+                                    <li>{data.title}</li>
                                 </h4>
                                 {
-                                    TextStyle({ __text__: data.desc }).map((val, key) => (
-                                        <p className="section_text" key={key} dangerouslySetInnerHTML={val}></p>
+                                    data.desc.map((val, key) => (
+                                        <p className="section_text" key={key}>
+                                            <TextStyle list_text={val} />
+                                        </p>
                                     ))
                                 }
                                 <SyntaxHighlighter code={data.draft} />
                                 {
                                     data.desc_1 ? (
-                                        TextStyle({ __text__: data.desc_1 }).map((val, key) => (
-                                            <p className="section_text" key={key} dangerouslySetInnerHTML={val}></p>
+                                        data.desc_1.map((val, key) => (
+                                            <p className="section_test" key={key}>
+                                                <TextStyle list_text={val} />
+                                            </p>
                                         ))
                                     ) : null
                                 }
-                                <ul className="mb-3">
+                                <UnorderedList className='my-3'>
                                     {
-                                        TextStyle({ __text__: data.list }).map((val, key) => (
+                                        data.list.map((val, key) => (
                                             <li key={key}>
-                                                <p className="section_text" dangerouslySetInnerHTML={val}></p>
+                                                <p className="section_text">
+                                                    <TextStyle list_text={val} />
+                                                </p>
                                             </li>
                                         ))
                                     }
-                                </ul>
+                                </UnorderedList>
                                 <p className="section_text">Contoh:</p>
                                 {
                                     data.desc_2 ? (
-                                        TextStyle({ __text__: data.desc_2 }).map((val, key) => (
-                                            <p className="section_text" key={key} dangerouslySetInnerHTML={val}></p>
+                                        data.desc.map((val, key) => (
+                                            <p className="section_text" key={key}>
+                                                <TextStyle list_text={val} />
+                                            </p>
                                         ))
                                     ) : null
                                 }
                                 <SyntaxHighlighter code={data.code} />
-                            </div>
+                            </Fragment>
                         ))
                     }
-                </ol>
+                </OrderedList>
             </section>
         </WrapperTemplate>
     )

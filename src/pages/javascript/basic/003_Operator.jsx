@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import LineCode from '../../../components/LineCode';
+import { OrderedList } from '../../../components/List';
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter';
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate';
@@ -19,24 +19,26 @@ function OperatorJS() {
             <section className="my-5">
                 <h3 className="subtitle-h3">Javascript comparison (perbandingan) operator</h3>
                 <p className="section_text">Banyak jenis operasi perbandingan. Macam-macamnya yaitu:</p>
-                <ol>
+                <OrderedList>
                     {
                         data_json['comparison-operator'].map((val, key) => (
-                            <div key={key} className='ml-4'>
-                                <li className='list-decimal'>
-                                    {
-                                        TextStyle({ __text__: [val.title] }).map((val1, key1) => (
-                                            <p key={key1} dangerouslySetInnerHTML={val1} ></p>
-                                        ))
-                                    }
-                                </li>
+                            <Fragment key={key}>
+                                {
+                                    [val.title].map((val1, key1) => (
+                                        <li key={key1}>
+                                            <p className='section_text'>
+                                                <TextStyle list_text={val1} />
+                                            </p>
+                                        </li>
+                                    ))
+                                }
                                 <p className="section_text">{val.desc}</p>
                                 <p className="section_text">Contoh:</p>
                                 <SyntaxHighlighter code={val.code} />
-                            </div>
+                            </Fragment>
                         ))
                     }
-                </ol>
+                </OrderedList>
             </section>
             <section className="my-5">
                 <h3 className="subtitle-h3">Javascript logical (logika) operator</h3>
@@ -45,32 +47,36 @@ function OperatorJS() {
                         <p className="section_text" key={key}>{val}</p>
                     ))
                 }
-                <ol>
+                <OrderedList>
                     {
                         data_json['logical-operator'].map((val, key) => (
-                            <div key={key} className='ml-4'>
-                                <li className='list-decimal'>
-                                    {
-                                        TextStyle({ __text__: [val.title] }).map((val1, key1) => (
-                                            <p key={key1} dangerouslySetInnerHTML={val1} ></p>
-                                        ))
-                                    }
-                                </li>
+                            <Fragment key={key}>
+                                {
+                                    [val.title].map((val1, key1) => (
+                                        <li key={key1}>
+                                            <p className='section_text'>
+                                                <TextStyle list_text={val1} />
+                                            </p>
+                                        </li>
+                                    ))
+                                }
                                 <p className="section_text">{val.desc}</p>
                                 <p className="section_text">Contoh:</p>
                                 <SyntaxHighlighter code={val.code} />
-                            </div>
+                            </Fragment>
                         ))
                     }
-                </ol>
+                </OrderedList>
             </section>
             {
                 data_json['other-operator'].map((val, key) => (
-                    <section key={key} className='my-5'>
+                    <section key={key} className='my-5 ml-4'>
                         <h3 className="subtitle-h3">{val.title}</h3>
                         {
-                            TextStyle({ __text__: [val.desc] }).map((val1, key1) => (
-                                <p className="section_text" dangerouslySetInnerHTML={val1} key={key1}></p>
+                            [val.desc].map((val1, key1) => (
+                                <p className='section_text' key={key1}>
+                                    <TextStyle list_text={val1} />
+                                </p>
                             ))
                         }
                         {

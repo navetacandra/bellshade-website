@@ -1,50 +1,80 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Welcome from "./pages/index";
+import NotFound from "./pages/NotFound";
 
 function App() {
 
   const JavascriptPage = {
     Welcome: lazy(() => import("./pages/javascript/000_index")),
-    Basic_Pengenalan: lazy(() => import("./pages/javascript/basic/001_Pengenalan")),
-    Basic_DataType: lazy(() => import("./pages/javascript/basic/002_TipeData")),
-    Basic_Operator: lazy(() => import("./pages/javascript/basic/003_Operator")),
-    Basic_String: lazy(() => import("./pages/javascript/basic/004_String_Manipulasi")),
-    Basic_OperatorAritmatika: lazy(() => import("./pages/javascript/basic/005_Aritmatik")),
-    Basic_Perulangan: lazy(() => import("./pages/javascript/basic/006_Perulangan")),
-    Basic_Pengkondisian: lazy(() => import("./pages/javascript/basic/007_Pengkondisian")),
-    Basic_Fungsi: lazy(() => import("./pages/javascript/basic/008_Fungsi")),
-    Basic_KonsepArray: lazy(() => import("./pages/javascript/basic/009_KonsepArray")),
-    Basic_ManipulasiArray: lazy(() => import("./pages/javascript/basic/010_ManipulasiArray")),
-    Basic_KonsepObject: lazy(() => import("./pages/javascript/basic/011_KonsepObject")),
-    Basic_ManipulasiObject: lazy(() => import("./pages/javascript/basic/012_ManipulasiObject"))
+    Basic: {
+      Pengenalan: lazy(() => import("./pages/javascript/basic/001_Pengenalan")),
+      TipeData: lazy(() => import("./pages/javascript/basic/002_TipeData")),
+      Operator: lazy(() => import("./pages/javascript/basic/003_Operator")),
+      String: lazy(() => import("./pages/javascript/basic/004_String_Manipulasi")),
+      OperatorAritmatika: lazy(() => import("./pages/javascript/basic/005_Aritmatik")),
+      Perulangan: lazy(() => import("./pages/javascript/basic/006_Perulangan")),
+      Pengkondisian: lazy(() => import("./pages/javascript/basic/007_Pengkondisian")),
+      Fungsi: lazy(() => import("./pages/javascript/basic/008_Fungsi")),
+      KonsepArray: lazy(() => import("./pages/javascript/basic/009_KonsepArray")),
+      ManipulasiArray: lazy(() => import("./pages/javascript/basic/010_ManipulasiArray")),
+      KonsepObject: lazy(() => import("./pages/javascript/basic/011_KonsepObject")),
+      ManipulasiObject: lazy(() => import("./pages/javascript/basic/012_ManipulasiObject")),
+      StrictMode: lazy(() => import("./pages/javascript/basic/013_StrictMode"))
+    }
   };
 
+  const JavaPage = {
+    Welcome: lazy(() => import("./pages/java/000_index")),
+    Basic: {
+      Pendahuluan: lazy(() => import("./pages/java/basic/001_Pendahuluan")),
+      TipeData: lazy(() => import("./pages/java/basic/002_TipeData")),
+    }
+  }
+
+  const [theme, setTheme] = useState(localStorage.getItem('color-theme') || 'light')
+
   return (
-    <BrowserRouter>
-      <Suspense>
-        <Routes>
-          <Route path="/" element={<Welcome />} />
+    <div className="bg-white dark:bg-slate-900 relative transition-colors duration-100" theme={theme}>
+      <BrowserRouter>
+        <Suspense>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
 
-          {/* Javascript Route */}
-          <Route path="/javascript" element={<JavascriptPage.Welcome />} />
-          <Route path="/javascript/pengenalan" element={<JavascriptPage.Basic_Pengenalan />} />
-          <Route path="/javascript/variabel-dan-tipe-data" element={<JavascriptPage.Basic_DataType />} />
-          <Route path="/javascript/operator" element={<JavascriptPage.Basic_Operator />} />
-          <Route path="/javascript/string-dan-manipulasi-string" element={<JavascriptPage.Basic_String />} />
-          <Route path="/javascript/operator-aritmatik" element={<JavascriptPage.Basic_OperatorAritmatika />} />
-          <Route path="/javascript/perulangan" element={<JavascriptPage.Basic_Perulangan />} />
-          <Route path="/javascript/pengkondisian" element={<JavascriptPage.Basic_Pengkondisian />} />
-          <Route path="/javascript/fungsi" element={<JavascriptPage.Basic_Fungsi />} />
-          <Route path="/javascript/konsep-array" element={<JavascriptPage.Basic_KonsepArray />} />
-          <Route path="/javascript/manipulasi-array" element={<JavascriptPage.Basic_ManipulasiArray />} />
-          <Route path="/javascript/konsep-objek" element={<JavascriptPage.Basic_KonsepObject />} />
-          <Route path="/javascript/manipulasi-objek" element={<JavascriptPage.Basic_ManipulasiObject />} />
-          {/* End Javascript Route */}
+            {/* Javascript Route */}
+            <Route path="/javascript" element={<JavascriptPage.Welcome />} />
+            <Route path="/javascript/basic/pengenalan" element={<JavascriptPage.Basic.Pengenalan />} />
+            <Route path="/javascript/basic/variabel-dan-tipe-data" element={<JavascriptPage.Basic.TipeData />} />
+            <Route path="/javascript/basic/operator" element={<JavascriptPage.Basic.Operator />} />
+            <Route path="/javascript/basic/string-dan-manipulasi-string" element={<JavascriptPage.Basic.String />} />
+            <Route path="/javascript/basic/operator-aritmatik" element={<JavascriptPage.Basic.OperatorAritmatika />} />
+            <Route path="/javascript/basic/perulangan" element={<JavascriptPage.Basic.Perulangan />} />
+            <Route path="/javascript/basic/pengkondisian" element={<JavascriptPage.Basic.Pengkondisian />} />
+            <Route path="/javascript/basic/fungsi" element={<JavascriptPage.Basic.Fungsi />} />
+            <Route path="/javascript/basic/konsep-array" element={<JavascriptPage.Basic.KonsepArray />} />
+            <Route path="/javascript/basic/manipulasi-array" element={<JavascriptPage.Basic.ManipulasiArray />} />
+            <Route path="/javascript/basic/konsep-objek" element={<JavascriptPage.Basic.KonsepObject />} />
+            <Route path="/javascript/basic/manipulasi-objek" element={<JavascriptPage.Basic.ManipulasiObject />} />
+            <Route path="/javascript/basic/strict-mode" element={<JavascriptPage.Basic.StrictMode />} />
+            {/* End Javascript Route */}
 
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+            {/* Java Route */}
+            <Route path="/java" element={<JavaPage.Welcome />} />
+            <Route path="/java/basic/pendahuluan-pemrograman-dan-java" element={<JavaPage.Basic.Pendahuluan />} />
+            <Route path="/java/basic/variabel-dan-tipe-data" element={<JavaPage.Basic.TipeData />} />
+            {/* End Java Route */}
+
+
+            {/* No Match Route */}
+            <Route path="*" element={<NotFound />} />
+            {/* End No Match Route */}
+
+          </Routes>
+        </Suspense>
+        <ThemeSwitcher setTheme={setTheme} />
+      </BrowserRouter>
+    </div>
   );
 }
 

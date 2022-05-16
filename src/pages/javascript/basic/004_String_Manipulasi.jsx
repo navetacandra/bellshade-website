@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import LineCode from '../../../components/LineCode'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
@@ -14,11 +13,13 @@ function String_Manipulasi() {
                     data_json.declare_string.map((data, i) => (
                         <Fragment key={i}>
                             {data.title ? <h3 className="subtitle-h3">{data.title}</h3> : null}
-                            {
-                                TextStyle({ __text__: data.desc }).map((val, key) => (
-                                    <p className="section_text" key={key} dangerouslySetInnerHTML={val}></p>
-                                ))
-                            }
+                            <p className='section_text'>
+                                {
+                                    data.desc.map((val, key) => (
+                                        <TextStyle list_text={val} key={key} />
+                                    ))
+                                }
+                            </p>
                             {data.note ? <div className="note-text mb-3"><p>{data.note}</p></div> : null}
                             <p className="section_text">Contoh:</p>
                             {
@@ -32,21 +33,22 @@ function String_Manipulasi() {
                     data_json.string_manipulation.map((data, i) => (
                         <Fragment key={i}>
                             {
-                                data.title ? TextStyle({ __text__: [data.title] }).map((val, key) => (
-                                    <div className="section_text font-semibold" key={key} dangerouslySetInnerHTML={val}></div>
+                                data.title ? [data.title].map((val, key) => (
+                                    <p className='section_text' key={key}>
+                                        <TextStyle list_text={val} />
+                                    </p>
                                 )) : null
                             }
-                            {
-                                data.desc ? TextStyle({ __text__: data.desc }).map((val, key) => (
-                                    <p className="section_text" key={key} dangerouslySetInnerHTML={val}></p>
-                                )) : null
-                            }
+
+                            <p className="section_text">
+                                {
+                                    data.desc.map((val, key) => (
+                                        <TextStyle list_text={val} key={key} />
+                                    ))
+                                }
+                            </p>
                             <p className="section_text">Contoh:</p>
-                            {
-                                data.code ? (
-                                    <SyntaxHighlighter code={data.code} />
-                                ) : null
-                            }
+                            <SyntaxHighlighter code={data.code} />
                             {
                                 data.note ? (
                                     <div className="note-text mb-3">

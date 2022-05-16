@@ -1,13 +1,15 @@
 import React from 'react'
+import { OrderedList } from '../../components/List'
+import TextStyle from '../../components/TextStyle'
 import data_json from '../../data-json/javascript/000_welcome.json'
 
 function WelcomeJS() {
     return (
         <div className="container mx-auto">
             <div className="flex flex-warp">
-                <div className="self-center w-full px-5 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white my-10 shadow-lg">
+                <div className="self-center w-full px-5 bg-white border border-gray-300 rounded-lg my-10 shadow-xl dark:bg-slate-800 dark:border-slate-900">
                     <section className="my-5 justify-center">
-                        <h2 className='block text-4xl font-bold my-3 text-dark'>Apa itu Javascript?</h2>
+                        <h2 className='title-2'>Apa itu Javascript?</h2>
                         <p className="section_text">
                             JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Jika sebelumnya kalian mungkin belajar HTML dan CSS maka dengan JavaScript kalian bisa membuat tampilan dari website kalian menjadi lebih interaktif lagi.
                         </p>
@@ -27,15 +29,15 @@ function WelcomeJS() {
                         <p className="section_text">
                             Beberapa contoh sederhana penggunaan JavaScript:
                         </p>
-                        <ol>
+                        <OrderedList>
                             {
                                 data_json.penggunaan.map((val, key) => (
-                                    <li style={{ fontSize: '1.125rem' }} className='list-decimal ml-4' key={key}>
+                                    <li style={{ fontSize: '1.125rem' }} key={key}>
                                         <a href={val.url} style={{ textDecoration: 'none' }} className='text-blue_primary font-normal'>{val.nama}</a>
                                     </li>
                                 ))
                             }
-                        </ol>
+                        </OrderedList>
                     </section>
                     <section className="my-5">
                         <h2 className="title-2">Tahapan Belajar Javascript</h2>
@@ -60,9 +62,11 @@ function WelcomeJS() {
                                                 <tr key={key} className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                                                     <td className='font-semibold text-base px-6 py-4 text-gray-900 dark:text-white whitespace-nowrap'>{val.langkah}</td>
                                                     <td className='px-6 py-4'>
-                                                        <a href={window.location.protocol + '//' + window.location.host + '/javascript/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
+                                                        <a href={window.location.protocol + '//' + window.location.host + '/javascript/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
                                                     </td>
-                                                    <td className='px-6 py-4 text-base'>{val.target_pembelajaran}</td>
+                                                    <td className='px-6 py-4 text-base'>
+                                                        <TextStyle list_text={val.target_pembelajaran} />
+                                                    </td>
                                                 </tr>
                                             ))
                                         }

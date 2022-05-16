@@ -34,7 +34,7 @@
             {
                 "langkah": "03",
                 "topik": "Operator",
-                "target_pembelajaran": "Memahami Operator dalam Javascript seperti Perbandingan, Kelogisan, dan Aritmatika."
+                "target_pembelajaran": "Memahami Operator dalam Javascript seperti Perbandingan, Kelogisan, dan Aritmatika"
             },
             {
                 "langkah": "04",
@@ -80,6 +80,11 @@
                 "langkah": "12",
                 "topik": "Manipulasi Objek",
                 "target_pembelajaran": "Memahami cara memanipulasi Object dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program"
+            },
+            {
+                "langkah": "13",
+                "topik": "Strict Mode",
+                "target_pembelajaran": "Mengenal Strict Mode dan penggunaannya pada Javascript"
             }
         ],
         "advanced": []

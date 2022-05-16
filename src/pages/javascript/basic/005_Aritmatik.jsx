@@ -1,5 +1,4 @@
 import React from 'react'
-import LineCode from '../../../components/LineCode'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import WrapperTemplate from '../../../components/WrapperTemplate'
 import data_json from '../../../data-json/javascript/005_aritmatik.json'

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { OrderedList } from '../../../components/List'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
@@ -14,26 +15,26 @@ function PengkondisianJS() {
                     bisa dieksekusi/dijalankan. Dalam javascript terdapat tiga {'macam '}
                     pengkondisian, yaitu:
                 </p>
-                <ol className='ml-4'>
+                <OrderedList>
                     {
                         data_json.map((val, key) => (
-                            <div key={key} className='ml-4'>
+                            <Fragment key={key}>
+                                <li className='section_text'>
+                                    <TextStyle list_text={val.title} />
+                                </li>
                                 {
-                                    TextStyle({ __text__: [val.title] }).map((val1, key1) => (
-                                        <li key={key1} dangerouslySetInnerHTML={val1} className='ml-4 list-decimal section_text'></li>
-                                    ))
-                                }
-                                {
-                                    TextStyle({ __text__: val.desc }).map((val1, key1) => (
-                                        <p className="section_text" key={key1} dangerouslySetInnerHTML={val1}></p>
+                                    val.desc.map((val1, key1) => (
+                                        <p className="section_text" list_text={val1}>
+                                            <TextStyle key={key1} />
+                                        </p>
                                     ))
                                 }
                                 <p className="section_text">Contoh:</p>
                                 <SyntaxHighlighter code={val.code} />
-                            </div>
+                            </Fragment>
                         ))
                     }
-                </ol>
+                </OrderedList>
             </section>
         </WrapperTemplate>
     )
