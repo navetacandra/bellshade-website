@@ -56,7 +56,13 @@ function WelcomeJava() {
                                         <tr key={key} className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                                             <td className='font-semibold text-base px-6 py-4 text-gray-900 dark:text-white whitespace-nowrap'>{val.langkah}</td>
                                             <td className='px-6 py-4'>
-                                                <a href={window.location.protocol + '//' + window.location.host + '/java/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
+                                                {
+                                                    val.status === 'done' ? (
+                                                        <a href={window.location.protocol + '//' + window.location.host + '/java/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
+                                                    ) : (
+                                                        <p className="text-slate-500 text-base">{val.topik}</p>
+                                                    )
+                                                }
                                             </td>
                                             <td className='px-6 py-4 text-base'>
                                                 <TextStyle list_text={val.target_pembelajaran} />
@@ -83,9 +89,9 @@ function WelcomeJava() {
                     </a>.
                 </p>
                 <p className="section_text">
-                Apabila kalian telah mempelajari tingkat 
-                <a href="/java/intermediate/object_oriented_programming/basic" className="text-blue_primary"><i> dasar Object-Oriented Programming</i></a> (Pemrograman Berorientasi Objek), maka selanjutnya kalian bisa mempelajari tingkat 
-                <a href="/java/intermediate/object_oriented_programming/intermediate" className="text-blue_primary"> lanjutan</a>.
+                    Apabila kalian telah mempelajari tingkat
+                    <a href="/java/intermediate/object_oriented_programming/basic" className="text-blue_primary"><i> dasar Object-Oriented Programming</i></a> (Pemrograman Berorientasi Objek), maka selanjutnya kalian bisa mempelajari tingkat
+                    <a href="/java/intermediate/object_oriented_programming/intermediate" className="text-blue_primary"> lanjutan</a>.
                 </p>
             </section>
         </WrapperTemplate>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import data_json from '../../../data-json/javascript/012_manipulasi-object.json'
+import data_json from '../../../data-json/javascript/basic/012_manipulasi-object.json'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'

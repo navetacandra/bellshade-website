@@ -1,7 +1,7 @@
 import React from 'react'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import WrapperTemplate from '../../../components/WrapperTemplate'
-import data_json from '../../../data-json/javascript/005_aritmatik.json'
+import data_json from '../../../data-json/javascript/basic/005_aritmatik.json'
 
 function ArithmeticJS() {
     return (

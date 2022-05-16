@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { OrderedList, UnorderedList } from '../../../components/List'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import WrapperTemplate from '../../../components/WrapperTemplate'
-import data_json from '../../../data-json/javascript/008_fungsi.json'
+import data_json from '../../../data-json/javascript/basic/008_fungsi.json'
 
 function FungsiJS() {
     return (

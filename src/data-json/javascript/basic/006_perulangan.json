@@ -1,0 +1,112 @@
+{
+    "loop_type": [
+        {
+            "id": "for",
+            "title": "#mark_code[for] loop",
+            "desc": "#mark_code[for loop] ini akan menjalankan kode didalamnya dengan menambahkan kondisi, yaitu kondisi #mark_code[initial], #mark_code[expressionCondition], dan cara #mark_code[increment] untuk menjalankan looping tersebut."
+        },
+        {
+            "id": "while",
+            "title": "#mark_code[while] loop",
+            "desc": "Jika #mark_code[for loop] berjalan dengan cara mengikuti instruksi tetap, #mark_code[while loop] ini berjalan terus hingga paramater yang diberikan berupa boolean #mark_code[false] baru akan berhenti."
+        },
+        {
+            "id": "do_while",
+            "title": "#mark_code[do..while] loop",
+            "desc": "Pengulangan yang dilakukan #mark_code[do while loop] ini mirip dengan #mark_code[while] loop, tetapi ada satu perbedaan ya itu #mark_code[do] di mana didalamnya akan tetap di eksekusi. Selanjutnya akan menjalankan instruksi while. Instruksi di dalam #mark_code[do] akan tetap dijalankan oleh #mark_code[while] di bawahnya."
+        }
+    ],
+    "for": {
+        "draft": [
+            "#_[for(initial, expressionCondition, increment) {]",
+            "#_[    // kode di dalam sini]",
+            "#_[}]"
+        ],
+        "code": [
+            "#cmt[// kode ini akan menjalankan perulangan]",
+            "#cmt[// selama 10 kali, dimulai dari angka 0]",
+            "#m[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[< ] #o[10] #_[; ] #p[i] #c[++] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
+            "#_[}]",
+            "",
+            "#cmt[//== Bentuk \"for\" yang lain. ==//]",
+            "",
+            "#cmt[// for in]",
+            "#m[let ] #p[buah ] #c[= ] #_[[] #g[\"Anggur\"] #_[, ] #g[\"Apel\"] #_[, ] #g[\"Pepaya\"] #_[, ] #g[\"Nanas\"] #_[, ] #g[\"Jeruk\"] #_[];]",
+            "#m[for] #_[(] #b[const ] #y[n ] #m[in ] #p[buah] #_[) {]",
+            "#y[    console] #_[.] #b[log(] #g[`] #m[${] #_[n ] #c[+ ] #o[1] #m[}] #g[. ] #m[${] #p[buah] #_[[] #y[n] #_[]] #m[]] #y[`] #_[);]",
+            "#_[}]",
+            "",
+            "#cmt[// for of]",
+            "#m[let ] #p[buah2 ] #c[= ] #_[[] #g[\"Anggur\"] #_[, ] #g[\"Apel\"] #_[, ] #g[\"Pepaya\"] #_[, ] #g[\"Nanas\"] #_[, ] #g[\"Jeruk\"] #_[];]",
+            "#m[for] #_[(] #b[const ] #y[x ] #m[of ] #p[buah2] #_[) {]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[x] #_[);]",
+            "#_[}]"
+        ]
+    },
+    "while": {
+        "draft": [
+            "#_[while(boolean) {]",
+            "#_[    // kode di dalam sini]",
+            "#_[}]"
+        ],
+        "code": [
+            "#m[let ] #p[pengunjung ] #c[= ] #o[0] #_[;]",
+            "",
+            "#m[while] #_[(] #p[pengunjung ] #c[< ] #o[20] #_[) {]",
+            "#p[    pengunjung] #c[++] #_[;]",
+            "#m[    if] #_[(] #p[pengunjung ] #c[> ] #o[0] #_[) {]",
+            "#y[        console] #_[.] #b[log(] #g[`Pengunjung ke: ] #m[${] #p[pengunjung] #m[}] #g[`] #_[);]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    "do_while": {
+        "draft": [
+            "#_[do {]",
+            "#_[    // kode yang awalnya dieksekusi dan akan di looping]",
+            "#_[} while(boolean);]"
+        ],
+        "code": [
+            "#m[let ] #p[jumlahBarang ] #c[= -] #o[2] #_[;]",
+            "",
+            "#m[do ] #_[{]",
+            "#p[    jumlahBarang ] #c[+= ] #o[3] #_[;]",
+            "#y[    console] #_[.] #b[log] #_[(] #p[jumlahBarang] #_[);]",
+            "#_[} ] #m[while] #_[(] #p[jumlahBarang ] #c[< ] #o[20] #_[);]"
+        ]
+    },
+    "special_keyword": [
+        {
+            "title": "#mark_code[break]",
+            "desc": [
+                "Break merupakan statement untuk mengakhiri perulangan, biasanya digunakan pengkondisian untuk menghentikannya."
+            ],
+            "code": [
+                "#cmt[// Kode ini akan berhenti jika i mencapai no 15]",
+                "#m[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[<= ] #o[20] #_[; ] #p[i] #c[++] #_[) {]",
+                "#m[    if] #_[(] #p[i ] #c[> ] #o[14] #_[) {]",
+                "#m[        break] #_[;]",
+                "#_[    }]",
+                "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
+                "#_[}]"
+            ]
+        },
+        {
+            "title": "#mark_code[continue]",
+            "desc": [
+                "Continue merupakan statement untuk melewati/melompati perulangan. Statement ini akan mengakhiri program dan melanjutkan ke perulangan selanjutnya.",
+                "Perbedaan continue dengan #mark_code[break] yaitu cara berhentinya. Jika #mark_code[continue] hanya berhenti di kondisi dan melewatinya, sedangkan #mark_code[break] itu benar-benar mematikan programnya."
+            ],
+            "code": [
+                "#cmt[// Tampilkan bilangan yang merupakan kelipatan 2]",
+                "#p[for] #_[(] #m[let ] #p[i ] #c[= ] #o[0] #_[; ] #p[i ] #c[<= ] #o[20] #_[; ] #p[i] #c[++] #_[) {]",
+                "#m[    if] #_[(] #p[i ] #c[% ] #o[2] #_[) {]",
+                "#m[        continue] #_[;]",
+                "#_[    }]",
+                "#y[    console] #_[.] #b[log] #_[(] #p[i] #_[);]",
+                "#_[}]"
+            ]
+        }
+    ]
+}

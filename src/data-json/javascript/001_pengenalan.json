@@ -1,8 +1,0 @@
-{
-    "code": [
-        "#cmt[// Menampilkan tulisan Hello World]",
-        "#y[console] #_[.] #b[log] #_[(] #g[\"Hello World\"] #_[);]",
-        "#cmt[// Menampilkan tulisan Indonesia]",
-        "#y[console] #_[.] #b[log] #_[(] #g[\"Indonesia\"] #_[);]"
-    ]
-}

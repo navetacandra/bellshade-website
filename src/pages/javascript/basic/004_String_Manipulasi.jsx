@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
-import data_json from '../../../data-json/javascript/004_string-dan-manipulasi-string.json'
+import data_json from '../../../data-json/javascript/basic/004_string-dan-manipulasi-string.json'
 
 function String_Manipulasi() {
     return (

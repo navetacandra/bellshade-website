@@ -1,0 +1,74 @@
+{
+    "function-type-list": [
+        {
+            "type": "Function Declaration",
+            "desc": "Function Declaration adalah function yang dapat dideklarasikan baik sebelum atau sesudah function tersebut dipanggil / dijalankan.",
+            "code": [
+                "#m[function ] #b[buah] #_[() {]",
+                "#y[    console] #_[.] #b[log] #_[(] #g[\"Durian\"] #_[);]",
+                "#_[};]",
+                "",
+                "#b[buah] #_[(); ] #cmt[// \"Durian\"]"
+            ]
+        },
+        {
+            "type": "Function Expression",
+            "desc": "Function Expression adalah function yang disimpan ke dalam sebuah variabel, dan variabel tersebut dapat digunakan sebagai function (dipanggil). Namun function expression harus dibuat terlebih dahulu sebelum dipanggil.",
+            "code": [
+                "#m[const ] #b[benda ] #c[= ] #m[function] #_[() {]",
+                "#y[    console] #_[.] #b[log] #_[(] #g[\"Besi\"] #_[);]",
+                "#_[};]",
+                "",
+                "#b[benda] #_[(); ] #cmt[// \"Besi\"]"
+            ]
+        },
+        {
+            "type": "Function Anonymous / Tidak ada nama",
+            "desc": "Function anonymous adalah function yang tidak memiliki nama/identifier. Jenis function ini biasa digunakan jika function akan langsung dipanggil atau biasa juga digunakan jika sebuah function membutuhkan parameter function (callback function)",
+            "code": [
+                "#_[(] #m[function] #_[() {]",
+                "#y[    console] #_[.] #b[log] #_[(] #g[\"Halo\"] #_[);]",
+                "#_[})(); ] #cmt[// \"Halo\"]"
+            ]
+        },
+        {
+            "type": "Function Callback",
+            "desc": "Function callback adalah function yang biasanya di gunakan sebagai parameter function lainnya. Function callback berfungsi jika kita ingin mengeksekusi kode setelah memanggil suatu function. Biasanya juga function callback adalah function anonymous.",
+            "code": [
+                "#b[masukkanFunction] #_[(] #m[function] #_[() {]",
+                "#y[    console] #_[.] #b[log] #_[(] #g[\"Hai\"] #_[);]",
+                "#_[}); ] #cmt[// \"Hai\"]"
+            ]
+        }
+    ],
+
+    "parameter-argument-code": [
+        "#cmt[// Contoh function dengan parameter]",
+        "#m[function ] #b[perkenalan] #_[(] #p[nama] #_[, ] #p[umur] #_[) {]",
+        "#cmt[    // nama dan umur adalah parameter]",
+        "#y[    console] #_[.] #b[log] #_[(] #g[`Hai nama saya ] #m[${] #p[nama] #m[}] #g[, umur saya ] #m[${] #p[umur] #m[} ] #g[tahun.`] #_[);]",
+        "#_[}]",
+        "",
+        "#cmt[// \"Dimas Saputra\" merupakan argumen untuk parameter nama]",
+        "#cmt[// 17 merupakan argumen untuk parameter umur]",
+        "#b[perkenalan] #_[(] #g[\"Dimas Saputra\"] #_[, ] #o[17] #_[); ]",
+        "#cmt[// \"Hai nama saya Dimas Saputra, umur saya 17 tahun.\"]"
+    ],
+
+    "function-type": [
+        "#cmt[// Contoh void function]",
+        "#m[function ] #b[voidFunction] #_[() {]",
+        "#y[    console] #_[.] #b[log] #_[(] #g[\"Aku tidak mengembalikan nilai\"] #_[);]",
+        "#_[}]",
+        "",
+        "#b[voidFunction] #_[();]",
+        "",
+        "#cmt[// Contoh returning function]",
+        "#m[function ] #_[] #b[returningFunction] #_[() {]",
+        "#cmt[    // nilai yang dikembalikan harus ditampung dengan variabel]",
+        "#cmt[    // atau dengan menjadikan argument dari sebuah function juga bisa]",
+        "#m[    return ] #g[\"Aku adalah fungsi yang mengembalikan nilai\"] #_[;]",
+        "#_[}]",
+        "#y[console] #_[.] #b[log] #_[(] #b[returningFunction] #_[());]"
+    ]
+}

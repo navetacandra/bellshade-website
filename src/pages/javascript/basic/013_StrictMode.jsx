@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
-import data_json from '../../../data-json/javascript/013_strict-mode.json'
+import data_json from '../../../data-json/javascript/basic/013_strict-mode.json'
 
 function StrictMode() {
     return (

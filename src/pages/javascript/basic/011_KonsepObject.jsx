@@ -1,5 +1,5 @@
 import React from 'react'
-import data_json from '../../../data-json/javascript/011_konsep-object.json'
+import data_json from '../../../data-json/javascript/basic/011_konsep-object.json'
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate'
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter'

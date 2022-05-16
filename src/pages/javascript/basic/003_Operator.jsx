@@ -3,7 +3,7 @@ import { OrderedList } from '../../../components/List';
 import SyntaxHighlighter from '../../../components/SyntaxHighlighter';
 import TextStyle from '../../../components/TextStyle'
 import WrapperTemplate from '../../../components/WrapperTemplate';
-import data_json from '../../../data-json/javascript/003_operator.json'
+import data_json from '../../../data-json/javascript/basic/003_operator.json'
 
 function OperatorJS() {
     return (
