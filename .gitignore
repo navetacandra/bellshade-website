@@ -129,8 +129,16 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+#compressed file
+*.rar
+*.zip
+*.7z
+
 /build
 /.firebase/*
 
 *-lock.json
+
+*.tar
+
 *test*.*

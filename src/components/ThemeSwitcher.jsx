@@ -34,7 +34,6 @@ function ThemeSwitcher({ setTheme }) {
     }
 
     useEffect(() => {
-        console.log(dark);
         if (dark) {
             localStorage.setItem('color-theme', 'dark');
             setTheme('dark');
@@ -44,6 +43,7 @@ function ThemeSwitcher({ setTheme }) {
             setTheme('light');
             document.querySelector('html').classList.remove('dark');
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dark])
     return (
         <div className="fixed bottom-3 right-3 text-dark dark:text-slate-50">
