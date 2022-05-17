@@ -1,5 +1,6 @@
 import React from 'react'
 import LineCode from '../components/LineCode'
+import WrapperTemplate from '../components/WrapperTemplate'
 
 function __template__() {
     return (

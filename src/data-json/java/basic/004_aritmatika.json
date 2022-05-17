@@ -1,0 +1,123 @@
+[
+    {
+        "title": "Penjumlahan (+)",
+        "desc": "Operator ini digunakan untuk melakukan operasi penjumlahan.",
+        "code": [
+            "#cmt[//== Penjumlahan ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Penjumlahan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Penjumlahan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[2] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[+ ] #o[2] #_[); ] #cmt[// 4]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Pengurangan (-)",
+        "desc": "Operator ini digunakan untuk melakukan operasi pengurangan.",
+        "code": [
+            "#cmt[//== Pengurangan ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Pengurangan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Pengurangan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[5] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[- ] #o[2] #_[); ] #cmt[// 3]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Perkalian (*)",
+        "desc": "Operator ini digunakan untuk melakukan operasi perkalian.",
+        "code": [
+            "#cmt[//== Perkalian ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Perkalian.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Perkalian ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[5] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[* ] #o[2] #_[); ] #cmt[// 10]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Pembagian (/)",
+        "desc": "Operator ini digunakan untuk melakukan operasi pembagian.",
+        "code": [
+            "#cmt[//== Pembagian ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Pembagian.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Pembagian ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[+ ] #o[2] #_[); ] #cmt[// 5]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Modulus (%)",
+        "desc": "Operator ini berfungsi untuk mencari sisa bagi suatu bilangan. Operator ini biasa digunakan untuk mengecek apakah suatu bilangan ganjil atau genap.",
+        "code": [
+            "#cmt[//== Modulus ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Modulus.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Modulus ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[% ] #o[5] #_[); ] #cmt[// 0]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Increment (++)",
+        "desc": "Operator ini digunakan untuk menambah suatu bilangan sebanyak 1 angka. Operator ini biasa digunakan pada perulangan.",
+        "code": [
+            "#cmt[//== Increment ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Increment.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Increment ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[2] #_[;]",
+            "#cmt[        // operator penambahan, ++2 yang berarti 1 + 2, jika +++2 maka error]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(] #c[++] #_[angka); ] #cmt[// 3]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Decrement (--)",
+        "desc": "Operator ini kebalikan dari operator increment, digunakan untuk mengurangi suatu bilangan sebanyak 1 angka. Operator ini biasa digunakan pada perulangan.",
+        "code": [
+            "#cmt[//== Decrement ==//]",
+            "#cmt[// ./learn/basic/Operator/Aritmatika/Decrement.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[A] #m[ritmatika] #_[;]",
+            "",
+            "#m[public class ] #y[Decrement ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[5] #_[;]",
+            "#cmt[        // operator pengurangan --2 yang berarti 1 - 2, jika ---2 maka error]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(] #c[--] #_[angka); ] #cmt[// 4]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+]

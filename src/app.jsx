@@ -12,8 +12,8 @@ function App() {
       Pengenalan: lazy(() => import("./pages/javascript/basic/001_Pengenalan")),
       TipeData: lazy(() => import("./pages/javascript/basic/002_TipeData")),
       Operator: lazy(() => import("./pages/javascript/basic/003_Operator")),
-      String: lazy(() => import("./pages/javascript/basic/004_String_Manipulasi")),
-      OperatorAritmatika: lazy(() => import("./pages/javascript/basic/005_Aritmatik")),
+      String: lazy(() => import("./pages/javascript/basic/004_StringManipulasi")),
+      OperatorAritmatika: lazy(() => import("./pages/javascript/basic/005_OperatorAritmatika")),
       Perulangan: lazy(() => import("./pages/javascript/basic/006_Perulangan")),
       Pengkondisian: lazy(() => import("./pages/javascript/basic/007_Pengkondisian")),
       Fungsi: lazy(() => import("./pages/javascript/basic/008_Fungsi")),
@@ -31,6 +31,7 @@ function App() {
       Pendahuluan: lazy(() => import("./pages/java/basic/001_Pendahuluan")),
       TipeData: lazy(() => import("./pages/java/basic/002_TipeData")),
       DataCasting: lazy(() => import("./pages/java/basic/003_DataCasting")),
+      OperatorAritmatika: lazy(() => import("./pages/java/basic/004_OperatorAritmatika")),
     }
   }
 
@@ -65,6 +66,7 @@ function App() {
             <Route path="/java/basic/pendahuluan-pemrograman-dan-java" element={<JavaPage.Basic.Pendahuluan />} />
             <Route path="/java/basic/variabel-dan-tipe-data" element={<JavaPage.Basic.TipeData />} />
             <Route path="/java/basic/data-casting" element={<JavaPage.Basic.DataCasting />} />
+            <Route path="/java/basic/operator-aritmatika" element={<JavaPage.Basic.OperatorAritmatika />} />
             {/* End Java Route */}
 
 
