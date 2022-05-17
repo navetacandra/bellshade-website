@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Otomatis Casting Tipe Data",
+        "desc": "merubah dari tipe data yang terendah yang ke tertinggi",
+        "notes": "byte => char => integer => long => float => double",
+        "code": [
+            "#cmt[// ./learn/basic/DataCasting/OtomatisCasting.java]",
+            "",
+            "#m[package learn.basic.] #w[D] #m[ata] #w[C] #m[asting] #_[;]",
+            "",
+            "#m[public class ] #y[DataCasting ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#cmt[        // pada kasus ini kita akan merubah data tipe integer]",
+            "#cmt[        // ke bilangan floating atau berkoma]",
+            "",
+            "#m[        int ] #p[angka ] #c[= ] #o[20] #_[;]",
+            "#m[        float ] #p[angka_dirubah ] #c[= ] #_[angka] #_[;]",
+            "",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka); ] #cmt[// 20]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka_dirubah); ] #cmt[// 20.0]",
+            "",
+            "#cmt[        // Contoh lain]",
+            "#m[        byte ] #p[byte_angka ] #c[= ] #o[10] #_[;]",
+            "#m[        double ] #p[double_angka ] #c[= ] #p[byte_angka] #_[;]",
+            "",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(byte_angka); ] #cmt[// 10]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(double_angka); ] #cmt[// 10.0]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "Manual Casting Tipe Data",
+        "desc": "merubah dari tipe data yang tertinggi ke terendah",
+        "notes": "double => float => long => int => char => char => short => byte",
+        "code": [
+            "#cmt[// ./learn/basic/DataCasting/ManualCasting.java]",
+            "",
+            "#m[package learn.basic.] #w[D] #m[ata] #w[C] #m[asting] #_[;]",
+            "",
+            "#m[public class ] #y[ManualCasting ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#cmt[        // pada kasus ini kita akan merubah data tipe integer]",
+            "#cmt[        // ke bilangan floating atau berkoma]",
+            "",
+            "#m[        float ] #p[angka ] #c[= ] #o[3.78f] #_[;]",
+            "#m[        int ] #p[angka_dirubah ] #c[= ] #_[(] #m[int] #_[) angka] #_[;]",
+            "",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka); ] #cmt[// 3.78]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka_dirubah); ] #cmt[// 3]",
+            "",
+            "#cmt[        // Contoh lain]",
+            "#m[        double ] #p[double_angka ] #c[= ] #o[3.78] #_[;]",
+            "#m[        int ] #p[int_angka ] #c[= ] #_[(] #m[int] #_[) double_angka] #_[;]",
+            "",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(double_angka); ] #cmt[// 3.78]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(int_angka); ] #cmt[// 3]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+]

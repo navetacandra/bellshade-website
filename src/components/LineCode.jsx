@@ -33,8 +33,7 @@ function LineCode({ text, _break }) {
                         textDecorationLine: 'underline',
                         textDecorationStyle: 'wavy'
                     } : { color: val.color }
-                } className='font-mono'>
-                    {val.text}
+                } className='font-mono' dangerouslySetInnerHTML={{__html: val.text}}>
                 </span>
                 {
                     _break !== 'no' && key === elem.length - 1 ? (

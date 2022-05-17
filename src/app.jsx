@@ -30,13 +30,14 @@ function App() {
     Basic: {
       Pendahuluan: lazy(() => import("./pages/java/basic/001_Pendahuluan")),
       TipeData: lazy(() => import("./pages/java/basic/002_TipeData")),
+      DataCasting: lazy(() => import("./pages/java/basic/003_DataCasting")),
     }
   }
 
   const [theme, setTheme] = useState(localStorage.getItem('color-theme') || 'light')
 
   return (
-    <div className="bg-white dark:bg-slate-900 relative transition-colors duration-100" theme={theme}>
+    <div className="bg-white dark:bg-slate-900 relative transition-all ease-out duration-200" theme={theme}>
       <BrowserRouter>
         <Suspense>
           <Routes>
@@ -63,6 +64,7 @@ function App() {
             <Route path="/java" element={<JavaPage.Welcome />} />
             <Route path="/java/basic/pendahuluan-pemrograman-dan-java" element={<JavaPage.Basic.Pendahuluan />} />
             <Route path="/java/basic/variabel-dan-tipe-data" element={<JavaPage.Basic.TipeData />} />
+            <Route path="/java/basic/data-casting" element={<JavaPage.Basic.DataCasting />} />
             {/* End Java Route */}
 
 

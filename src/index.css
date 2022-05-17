@@ -82,6 +82,7 @@ body::-webkit-scrollbar-thumb {
   -o-tab-size: 4;
   tab-size: 4;
   padding: 1em 1em;
+  padding-top: 2.5em;
   border-radius: 10px;
 }
 
