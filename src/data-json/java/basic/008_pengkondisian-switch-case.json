@@ -1,0 +1,37 @@
+{
+    "desc": "Statement switch merupakan salah satu dari statement logika yang dapat digunakan untuk menentukan kondisi yang akan dijalankan.",
+    "requirements": [
+        "Tidak menerima sistem duplikasi case.",
+        "Harus mengandung value yang konstan dan tidak menggunakan variabel.",
+        "Jika semua case tidak terpenuhi maka lanjut ke default case sebagai default case yang akan dijalankan."
+    ],
+    "code": [
+        "#cmt[// ./learn/basic/Percabangan/SwitchCase.java]",
+        "",
+        "#m[package learn.basic.] #w[S] #m[truktur] #w[K] #m[ontrol.] #w[P] #m[ercabangan] #_[;]",
+        "",
+        "#m[public class ] #y[SwitchCase ] #_[{]",
+        "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+        "#m[        int ] #p[angka ] #c[= ] #o[20] #_[;]",
+        "",
+        "#m[        switch] #_[(angka) {]",
+        "#cmt[            // jika angka 15 case 15 akan diesekusi]",
+        "#cmt[            // break sebagai penutup dari fungsi case]",
+        "#cmt[            // jika tidak akan lanjut sampai ke default case]",
+        "#cmt[            // atau case yang memiliki break statement]",
+        "#m[            case ] #o[15] #m[:]",
+        "#y[                System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+        "#m[                break] #_[]",
+        "#m[            case ] #o[20] #m[:]",
+        "#y[                System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Angka bernilai 20\"] #_[);]",
+        "#m[                break] #_[]",
+        "#cmt[            // statement ini akan dijalankan jika kedua case]",
+        "#cmt[            // tidak terpenuhi]",
+        "#m[            default:]",
+        "#y[                System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Angka tidak terdaftar.\"] #_[);]",
+        "#_[        }]",
+        "#_[    }]",
+        "#_[}]",
+        ""
+    ]
+}

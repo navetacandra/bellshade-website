@@ -35,6 +35,7 @@ function App() {
       OperatorKomparasi: lazy(() => import("./pages/java/basic/005_OperatorKomparasi")),
       OperatorLogika: lazy(() => import("./pages/java/basic/006_OperatorLogika")),
       StrukturKontrolIfElse: lazy(() => import("./pages/java/basic/007_StrukturKontrolIfElse")),
+      StrukturKontrolSwitchCase: lazy(() => import("./pages/java/basic/008_StrukturKontrolSwitchCase")),
     }
   }
 
@@ -73,6 +74,7 @@ function App() {
             <Route path="/java/basic/operator-komparasi" element={<JavaPage.Basic.OperatorKomparasi />} />
             <Route path="/java/basic/operator-logika" element={<JavaPage.Basic.OperatorLogika />} />
             <Route path="/java/basic/pengkondisian-if-else" element={<JavaPage.Basic.StrukturKontrolIfElse />} />
+            <Route path="/java/basic/pengkondisian-switch-case" element={<JavaPage.Basic.StrukturKontrolSwitchCase />} />
             {/* End Java Route */}
 
 

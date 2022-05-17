@@ -32,7 +32,7 @@ function WelcomeJS() {
                         <OrderedList>
                             {
                                 data_json.penggunaan.map((val, key) => (
-                                    <li style={{ fontSize: '1.125rem' }} key={key}>
+                                    <li style={{ fontSize: '1.125rem' }} className='section_text' key={key}>
                                         <a href={val.url} style={{ textDecoration: 'none' }} className='text-blue_primary font-normal'>{val.nama}</a>
                                     </li>
                                 ))

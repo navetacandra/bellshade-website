@@ -3,27 +3,27 @@
 }
 
 .highlight pre code ._ {
-    color: #a9aeb8;
+    color: #abb2bf;
 }
 
 .highlight pre code .cmt {
-    color: #7F8482;
+    color: #7f848e;
 }
 
 .highlight pre code .c {
-    color: #56B6C2;
+    color: #56b6c2;
 }
 
 .highlight pre code .m {
-    color: #BC78BE;
+    color: #c678dd;
 }
 
 .highlight pre code .y {
-    color: #EDD466;
+    color: #e5c07b;
 }
 
 .highlight pre code .g {
-    color: #98C365;
+    color: #98c379;
 }
 
 .highlight pre code .b {
@@ -31,43 +31,9 @@
 }
 
 .highlight pre code .p {
-    color: #E06C75;
+    color: #e06c75;
 }
 
 .highlight pre code .o {
-    color: #D19A66;
-}
-
-
-/* Dark Mode */
-html.dark .highlight pre code .cmt {
-    color: #787878;
-}
-
-html.dark .highlight pre code .c {
-    color: #4ba0ab;
-}
-
-html.dark .highlight pre code .m {
-    color: #a960ab;
-}
-
-html.dark .highlight pre code .y {
-    color: #dbc45e;
-}
-
-html.dark .highlight pre code .g {
-    color: #8cb858;
-}
-
-html.dark .highlight pre code .b {
-    color: #519fe0;
-}
-
-html.dark .highlight pre code .p {
-    color: #de5d67;
-}
-
-html.dark .highlight pre code .o {
-    color: #c28348;
+    color: #d19a66;
 }
