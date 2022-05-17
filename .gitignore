@@ -140,5 +140,6 @@ dist
 *-lock.json
 
 *.tar
+.firebaserc
 
 *test*.*
