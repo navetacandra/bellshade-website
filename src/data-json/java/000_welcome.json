@@ -39,14 +39,14 @@
             "topik": "Operator Logika",
             "target_pembelajaran": "Memahami operator logika (boolean) dalam Java",
             "id": "operator-logika",
-            "status": "on_progress"
+            "status": "done"
         },
         {
             "langkah": "07",
             "topik": "Struktur Kontrol (If-Else)",
             "target_pembelajaran": "Memahami pengkondisian atau struktur kontrol if-else dalam Java",
             "id": "pengkondisian-if-else",
-            "status": "on_progress"
+            "status": "done"
         },
         {
             "langkah": "08",

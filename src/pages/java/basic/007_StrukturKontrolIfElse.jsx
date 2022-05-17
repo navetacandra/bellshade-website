@@ -1,20 +1,15 @@
-import React, { Fragment } from 'react'
-import { OrderedList } from '../../../components/List'
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
-import TextStyle from '../../../components/TextStyle'
-import WrapperTemplate from '../../../components/WrapperTemplate'
-import data_json from '../../../data-json/javascript/basic/007_pengkondisian.json'
+import React, { Fragment } from "react";
+import { OrderedList } from "../../../components/List";
+import SyntaxHighlighter from "../../../components/SyntaxHighlighter";
+import TextStyle from "../../../components/TextStyle";
+import WrapperTemplate from "../../../components/WrapperTemplate";
+import data_json from  "../../../data-json/java/basic/007_pengkondisian-if-else.json";
 
-function PengkondisianJS() {
+function StrukturKontrolIfElse() {
     return (
         <WrapperTemplate>
-            <section className='my-5'>
-                <h2 className="title-2">Pengkondisian</h2>
-                <p className="section_text">
-                    Kegunaan dari pengkondisian adalah memberi tau program blok kode mana {'yang '}
-                    bisa dieksekusi/dijalankan. Dalam javascript terdapat tiga {'macam '}
-                    pengkondisian, yaitu:
-                </p>
+            <section className="my-5">
+                <h2 className="title-2">Pengkondisian If-Else</h2>
                 <OrderedList>
                     {
                         data_json.map((val, key) => (
@@ -38,6 +33,6 @@ function PengkondisianJS() {
             </section>
         </WrapperTemplate>
     )
-}
+};
 
-export default PengkondisianJS
+export default StrukturKontrolIfElse;

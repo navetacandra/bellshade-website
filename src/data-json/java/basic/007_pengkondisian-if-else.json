@@ -1,0 +1,89 @@
+[{
+        "title": "#mark_code[if]",
+        "desc": [
+            "Di dalam bahasa pemrograman java ada sebuah cara di mana kita bisa mengeksekusi sebuah kode, jika syarat yang kita tentukan sudah terpenuhi (#mark_code[true]) yakni dengan menggunakan statement if biasanya syarat di if statement menggunakan comparison (perbandingan) operator ataupun logical (logika) operator kode yang di dalam if statement akan dieksekusi hanya jika syarat mengeluarkan nilai #mark_code[true]."
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/StrukturKontrol/Percabangan/PercabanganIf.java]",
+            "",
+            "#m[package learn.basic.] #w[S] #m[truktur] #w[K] #m[ontrol.] #w[P] #m[ercabangan] #_[;]",
+            "",
+            "#m[public class ] #y[PercabanganIf ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        if] #_[(] #o[true] #_[) {]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[else]",
+        "desc": [
+            "Java juga memiliki sebuah cara untuk mengeksekusi sebuah kode jika syarat yang kita tentukan tidak terpenuhi (#mark_code[false]) yakni dengan menggunakan statement else jika kode di dalam if tidak dieksekusi karena syarat tidak terpenuhi atau mengeluarkan nilai false, maka kode di dalam blok else akan dieksekusi."
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/StrukturKontrol/Percabangan/PercabanganElse.java]",
+            "",
+            "#m[package learn.basic.] #w[S] #m[truktur] #w[K] #m[ontrol.] #w[P] #m[ercabangan] #_[;]",
+            "",
+            "#m[public class ] #y[PercabanganElse ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        if] #_[(] #o[false] #_[) {]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[        } ] #m[else ] #_[{]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[else if]",
+        "desc": [
+            "Ada metode lain untuk melakukan pengecekan ber-urut yakni dengan else if. Jika blok if pertama bernilai false, maka kode akan melakukan pengecekan dengan syarat kedua di blok else if. Jika syarat kedua bernilai true, maka blok else if akan dijalankan."
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/StrukturKontrol/Percabangan/PercabanganElseIf.java]",
+            "",
+            "#m[package learn.basic.] #w[S] #m[truktur] #w[K] #m[ontrol.] #w[P] #m[ercabangan] #_[;]",
+            "",
+            "#m[public class ] #y[PercabanganElseIf ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        if] #_[(] #o[false] #_[) {]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[        } ] #m[else if ] #_[{]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#_[        } ] #m[else ] #_[{]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[nested if]",
+        "desc": [
+            "Ada metode lain untuk melakukan pengecekan ber-urut yakni dengan else if. Jika blok if pertama bernilai false, maka kode akan melakukan pengecekan dengan syarat kedua di blok else if. Jika syarat kedua bernilai true, maka blok else if akan dijalankan."
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/StrukturKontrol/Percabangan/PercabanganNestedIf.java]",
+            "",
+            "#m[package learn.basic.] #w[S] #m[truktur] #w[K] #m[ontrol.] #w[P] #m[ercabangan] #_[;]",
+            "",
+            "#m[public class ] #y[PercabanganNestedIf ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        if] #_[(] #o[true] #_[) {]",
+            "#m[            if] #_[(] #o[false] #_[) {]",
+            "#y[                System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[            } ] #m[else ] #_[{]",
+            "#y[                System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini pasti dijalankan\"] #_[);]",
+            "#_[            }]",
+            "#_[        } ] #m[else ] #_[{]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(] #g[\"Kode ini tidak akan pernah dijalankan\"] #_[);]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+]
