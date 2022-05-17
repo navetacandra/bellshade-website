@@ -1,0 +1,110 @@
+[
+    {
+        "title": "#mark_code[==] (sama dengan)",
+        "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai sama dengan nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/SamaDengan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[SamaDengan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[== ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[!=] (tidak sama)",
+        "desc": "Operator ini digunakan untuk mengecek apakah suatu nilai tidak sama dengan nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/TidakSamaDengan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[TidakSamaDengan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[!= ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[>] (lebih besar dari)",
+        "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah lebih besar daripada nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/LebihDari.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[LebihDari ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[> ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[<] (kurang dari)",
+        "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah kurang daripada nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/KurangDari.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[KurangDari ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[< ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[>=] (lebih besar sama dengan)",
+        "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah lebih besar daripada atau sama dengan nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/LebihBesar_SamaDengan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[LebihBesar_SamaDengan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[>= ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[<=] (kurang dari sama dengan)",
+        "desc": "Operator ini digunakan untuk membandingkan sebuah nilai apakah kurang daripada atau sama dengan nilai yang lain.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Komparasi/KurangDari_SamaDengan.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[K] #m[omparasi] #_[;]",
+            "",
+            "#m[public class ] #y[KurangDari_SamaDengan ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#m[        int ] #p[angka_kedua ] #c[= ] #o[12] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[<= ] #_[angka_kedua);]",
+            "#cmt[        // ]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+]

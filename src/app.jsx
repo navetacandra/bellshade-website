@@ -32,6 +32,7 @@ function App() {
       TipeData: lazy(() => import("./pages/java/basic/002_TipeData")),
       DataCasting: lazy(() => import("./pages/java/basic/003_DataCasting")),
       OperatorAritmatika: lazy(() => import("./pages/java/basic/004_OperatorAritmatika")),
+      OperatorKomparasi: lazy(() => import("./pages/java/basic/005_OperatorKomparasi")),
     }
   }
 
@@ -67,6 +68,7 @@ function App() {
             <Route path="/java/basic/variabel-dan-tipe-data" element={<JavaPage.Basic.TipeData />} />
             <Route path="/java/basic/data-casting" element={<JavaPage.Basic.DataCasting />} />
             <Route path="/java/basic/operator-aritmatika" element={<JavaPage.Basic.OperatorAritmatika />} />
+            <Route path="/java/basic/operator-komparasi" element={<JavaPage.Basic.OperatorKomparasi />} />
             {/* End Java Route */}
 
 
