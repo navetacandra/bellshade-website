@@ -45,6 +45,16 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.bulb-theme-toggler {
+  opacity: .7;
+  transition: all .3s;
+}
+
+.dark .bulb-theme-toggler {
+  opacity: 1;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, .5)) drop-shadow(0 0 5px rgba(255, 255, 255, .5)) drop-shadow(0 0 5px rgba(255, 255, 255, .5));
+}
+
 .section_text {
   font-size: 1.125rem;
   margin-top: .75rem;

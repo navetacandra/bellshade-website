@@ -64,7 +64,7 @@ function WelcomeJS() {
                                                     <td className='px-6 py-4'>
                                                         {
                                                             val.status === 'done' ? (
-                                                                <a href={window.location.protocol + '//' + window.location.host + '/java/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
+                                                                <a href={window.location.protocol + '//' + window.location.host + '/javascript/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
                                                             ) : (
                                                                 <p className="text-slate-500 text-base">{val.topik}</p>
                                                             )
