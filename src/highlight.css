@@ -1,0 +1,73 @@
+.highlight pre code .w {
+    color: #ffffff;
+}
+
+.highlight pre code ._ {
+    color: #a9aeb8;
+}
+
+.highlight pre code .cmt {
+    color: #7F8482;
+}
+
+.highlight pre code .c {
+    color: #56B6C2;
+}
+
+.highlight pre code .m {
+    color: #BC78BE;
+}
+
+.highlight pre code .y {
+    color: #EDD466;
+}
+
+.highlight pre code .g {
+    color: #98C365;
+}
+
+.highlight pre code .b {
+    color: #61AFEF;
+}
+
+.highlight pre code .p {
+    color: #E06C75;
+}
+
+.highlight pre code .o {
+    color: #D19A66;
+}
+
+
+/* Dark Mode */
+html.dark .highlight pre code .cmt {
+    color: #787878;
+}
+
+html.dark .highlight pre code .c {
+    color: #4ba0ab;
+}
+
+html.dark .highlight pre code .m {
+    color: #a960ab;
+}
+
+html.dark .highlight pre code .y {
+    color: #dbc45e;
+}
+
+html.dark .highlight pre code .g {
+    color: #8cb858;
+}
+
+html.dark .highlight pre code .b {
+    color: #519fe0;
+}
+
+html.dark .highlight pre code .p {
+    color: #de5d67;
+}
+
+html.dark .highlight pre code .o {
+    color: #c28348;
+}

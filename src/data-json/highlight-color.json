@@ -37,9 +37,5 @@
     {
         "name": "o",
         "color": "#D19A66"
-    },
-    {
-        "name": "error",
-        "color": "#dc2626"
     }
 ]
