@@ -25,78 +25,91 @@
                 "langkah": "01",
                 "topik": "Pengenalan",
                 "target_pembelajaran": "Memahami bagaimana JavaScript bekerja",
+                "id": "pengenalan",
                 "status": "done"
             },
             {
                 "langkah": "02",
                 "topik": "Variabel dan Tipe Data",
                 "target_pembelajaran": "Memahami apa itu variabel dan tipe data yang ada di JavaScript",
+                "id": "variabel-dan-tipe-data",
                 "status": "done"
             },
             {
                 "langkah": "03",
                 "topik": "Operator",
                 "target_pembelajaran": "Memahami Operator dalam Javascript seperti Perbandingan, Kelogisan, dan Aritmatika",
+                "id": "operator",
                 "status": "done"
             },
             {
                 "langkah": "04",
                 "topik": "String dan Manipulasi String",
                 "target_pembelajaran": "Memahami cara Mendeklarasikan String dan Memanipulasi String pada Javascript",
+                "id": "string-dan-manipulasi-string",
                 "status": "done"
             },
             {
                 "langkah": "05",
                 "topik": "Operator Aritmatik",
                 "target_pembelajaran": "Dapat melakukan operasi aritmatika sederhana",
+                "id": "operator-aritmatik",
                 "status": "done"
             },
             {
                 "langkah": "06",
                 "topik": "Perulangan",
                 "target_pembelajaran": "Memahami inti kedua dari pemograman yaitu melakukan perulangan",
+                "id": "perulangan",
                 "status": "done"
             },
             {
                 "langkah": "07",
                 "topik": "Pengkondisian",
                 "target_pembelajaran": "Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian",
+                "id": "pengkondisian",
                 "status": "done"
             },
             {
                 "langkah": "08",
                 "topik": "Fungsi",
                 "target_pembelajaran": "Mengenal konsep fungsi dalam teknik pemograman",
+                "id": "fungsi",
                 "status": "done"
             },
             {
                 "langkah": "09",
                 "topik": "Konsep Array",
                 "target_pembelajaran": "Memahami konsep Array dan mencoba untuk mengimplementasikannya dalam program",
+                "id": "konsep-array",
                 "status": "done"
             },
             {
                 "langkah": "10",
                 "topik": "Manipulasi Array",
                 "target_pembelajaran": "Memahami cara memanipulasi Array dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program",
+                "id": "manipulasi-array",
                 "status": "done"
             },
             {
                 "langkah": "11",
                 "topik": "Konsep Objek",
                 "target_pembelajaran": "Mengenal konsep Object yang menjadi konsep paling penting di Javascript",
+                "id": "konsep-objek",
                 "status": "done"
             },
             {
                 "langkah": "12",
                 "topik": "Manipulasi Objek",
                 "target_pembelajaran": "Memahami cara memanipulasi Object dengan beberapa metode dan mencoba untuk mengimplementasikan dalam program",
+                "id": "manipulasi-objek",
                 "status": "done"
             },
             {
                 "langkah": "13",
                 "topik": "Strict Mode",
                 "target_pembelajaran": "Mengenal Strict Mode dan penggunaannya pada Javascript",
+                "id": "strict-mode",
                 "status": "done"
             }
         ],

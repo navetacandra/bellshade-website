@@ -1,0 +1,53 @@
+[
+    {
+        "title": "#mark_code[&&] (AND operator, dan)",
+        "desc": "Operator yang digunakan untuk mengecek apakah nilai satu dan yang lain apakah keduanya true. Jika salah satunya false maka akan mereturn nilai false.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Logika/AndOperator.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[L] #m[ogika] #_[;]",
+            "",
+            "#m[public class ] #y[AndOperator ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[> ] #o[9 ] #c[&& ] #_[angka ] #c[< ] #o[20] #_[);]",
+            "#cmt[        // true, karena angka lebih kecil dari 20 dan lebih besar dari 9]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[||] (OR operator, atau)",
+        "desc": "Operator yang digunakan untuk mengecek apakah salah satu nilai dari dua nilai yang diuji hasilnya true. Jika dua nilai yang diuji hasilnya false maka yang direturn.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Logika/OrOperator.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[L] #m[ogika] #_[;]",
+            "",
+            "#m[public class ] #y[OrOperator ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(angka ] #c[> ] #o[9 ] #c[|| ] #_[angka ] #c[< ] #o[20] #_[);]",
+            "#cmt[        // true, karena angka lebih kecil dari 20 atau lebih besar dari 9]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    },
+    {
+        "title": "#mark_code[!] (NOT operator, bukan)",
+        "desc": "Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang diinginkan maksudnya adalah apa benar pernyataan itu adalah kebalikannya.",
+        "code": [
+            "#cmt[// ./learn/basic/Operator/Logika/NotOperator.java]",
+            "",
+            "#m[package learn.basic.] #w[O] #m[perator.] #w[L] #m[ogika] #_[;]",
+            "",
+            "#m[public class ] #y[NotOperator ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[10] #_[;]",
+            "#y[        System] #_[.] #y[out] #_[.] #b[println] #_[(] #c[!] #_[(angka ] #c[> ] #o[9] #_[));]",
+            "#cmt[        // false, karena nilai variabel angka lebih besar dari 9]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+]

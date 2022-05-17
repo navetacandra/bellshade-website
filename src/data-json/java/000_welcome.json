@@ -3,96 +3,112 @@
             "langkah": "01",
             "topik": "Pendahuluan Pemrograman dan Java",
             "target_pembelajaran": "Memahami program dasar Java",
+            "id": "pendahuluan-pemrograman-dan-java",
             "status": "done"
         },
         {
             "langkah": "02",
             "topik": "Variabel dan Tipe Data",
             "target_pembelajaran": "Memahami apa itu variabel dan tipe data di Java",
+            "id": "variabel-dan-tipe-data",
             "status": "done"
         },
         {
             "langkah": "03",
             "topik": "Data Casting",
             "target_pembelajaran": "Memahami data casting pada sebuah variabel di Java",
+            "id": "data-casting",
             "status": "done"
         },
         {
             "langkah": "04",
             "topik": "Operator Aritmatika",
             "target_pembelajaran": "Memahami operator perhitungan aritmatika dalam Java",
+            "id": "operator-aritmatika",
             "status": "done"
         },
         {
             "langkah": "05",
             "topik": "Operator Komparasi",
             "target_pembelajaran": "Memahami operator perbandingan dalam Java",
+            "id": "operator-komparasi",
             "status": "done"
         },
         {
             "langkah": "06",
-            "topik": "Operator Boolean",
+            "topik": "Operator Logika",
             "target_pembelajaran": "Memahami operator logika (boolean) dalam Java",
+            "id": "operator-logika",
             "status": "on_progress"
         },
         {
             "langkah": "07",
             "topik": "Struktur Kontrol (If-Else)",
             "target_pembelajaran": "Memahami pengkondisian atau struktur kontrol if-else dalam Java",
+            "id": "pengkondisian-if-else",
             "status": "on_progress"
         },
         {
             "langkah": "08",
             "topik": "Struktur Kontrol (Switch-Case)",
             "target_pembelajaran": "Memahami pengkondisian atau struktur kontrol switch-case dalam Java",
+            "id": "pengkondisian-switch-case",
             "status": "on_progress"
         },
         {
             "langkah": "09",
             "topik": "Perulangan atau Looping (While)",
             "target_pembelajaran": "Memahami perulangan while dalam Java",
+            "id": "perulangan-while",
             "status": "on_progress"
         },
         {
             "langkah": "10",
             "topik": "Perulangan atau Looping (Do-While)",
             "target_pembelajaran": "Memahami perulangan do-while dalam Java",
+            "id": "perulangan-do-while",
             "status": "on_progress"
         },
         {
             "langkah": "11",
             "topik": "Perulangan atau Looping (For)",
             "target_pembelajaran": "Memahami perulangan for dalam Java",
+            "id": "perulangan-for",
             "status": "on_progress"
         },
         {
             "langkah": "12",
             "topik": "Rekursif",
             "target_pembelajaran": "Memahami rekursif dalam Java",
+            "id": "rekursif",
             "status": "on_progress"
         },
         {
             "langkah": "13",
             "topik": "Array",
             "target_pembelajaran": "Memahami array dalam Java",
+            "id": "array",
             "status": "on_progress"
         },
         {
             "langkah": "14",
             "topik": "Array Multi Dimensi",
             "target_pembelajaran": "Memahami array multi dimensi dalam Java",
+            "id": "array-multi-dimensi",
             "status": "on_progress"
         },
         {
             "langkah": "15",
             "topik": "String",
             "target_pembelajaran": "Memahami string dalam Java",
+            "id": "string",
             "status": "on_progress"
         },
         {
             "langkah": "16",
             "topik": "String Method",
             "target_pembelajaran": "Memahami berbagai metode string dalam Java",
+            "id": "string-method",
             "status": "on_progress"
         }
     ]

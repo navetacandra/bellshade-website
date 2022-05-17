@@ -63,8 +63,8 @@ function WelcomeJS() {
                                                     <td className='font-semibold text-base px-6 py-4 text-gray-900 dark:text-white whitespace-nowrap'>{val.langkah}</td>
                                                     <td className='px-6 py-4'>
                                                         {
-                                                            val.status === 'done' ? (
-                                                                <a href={window.location.protocol + '//' + window.location.host + '/javascript/basic/' + val.topik.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
+                                                            val.status === 'done' && val.id ? (
+                                                                <a href={window.location.protocol + '//' + window.location.host + '/javascript/basic/' + val.id.toLowerCase().replace(/ /g, '-')} className="text-blue_primary text-base">{val.topik}</a>
                                                             ) : (
                                                                 <p className="text-slate-500 text-base">{val.topik}</p>
                                                             )
