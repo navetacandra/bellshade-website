@@ -14,7 +14,8 @@ module.exports = {
         dark: '#111827',
         f2: '#F2F2F2',
         white: '#FFFFFF',
-        blue_primary: '#0D6EFD'
+        blue_primary: '#0D6EFD',
+        github_btn: '#637FE3'
       }
     }
   },

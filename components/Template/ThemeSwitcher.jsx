@@ -13,7 +13,7 @@ function BulbIcon() {
     )
 }
 
-function ThemeSwitcher() {
+function ThemeSwitcher({ setTheme }) {
     const [dark, setDark] = useState(true);
 
     function setItem(key, item) {
@@ -27,19 +27,21 @@ function ThemeSwitcher() {
 
     useEffect(() => {
         document.querySelector('html').classList.add(getItem('color-theme'));
+        setTheme(getItem('color-theme'));
     }, []);
 
     function changeTheme() {
         document.querySelector('html').classList.remove(getItem('color-theme'));
         let dark_ = !(getItem('color-theme') === 'dark') ? 'dark' : 'light';
         document.querySelector('html').classList.add(dark_);
+        setTheme(dark_);
         setItem('color-theme', dark_)
         setDark(dark_ === 'dark');
     }
 
     return (
-        <div className="fixed bottom-3 right-3 text-dark dark:text-slate-50 opacity-70 dark:opacity-100">
-            <button className='block rounded-lg cursor-pointer shadow-lg bg-slate-600' onClick={() => changeTheme()}>
+        <div className="fixed bottom-7 right-5 text-dark dark:text-slate-50 opacity-70 dark:opacity-100">
+            <button className='block lg:w-max lg:h-max xs:w-12 xs:h-12 rounded-lg cursor-pointer shadow-lg bg-slate-600' onClick={() => changeTheme()}>
                 <BulbIcon dark={dark} />
             </button>
         </div>
