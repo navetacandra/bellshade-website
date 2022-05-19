@@ -1,9 +1,9 @@
-import OrderedList from '../../../components/List/OrderedList'
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
-import TextStyle from '../../../components/TextStyle'
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from '../../../components/Template/WrapperTemplate'
-import data_json from '../../../data-json/javascript/basic/002_data-type.json'
+import OrderedList from '@/components/List/OrderedList'
+import SyntaxHighlighter from '@/components/SyntaxHighlighter'
+import TextStyle from '@/components/TextStyle'
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import data_json from '@/data-json/javascript/basic/002_data-type.json'
 
 export default function Page() {
     return (    

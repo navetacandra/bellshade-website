@@ -1,10 +1,10 @@
 import { Fragment } from 'react'
-import OrderedList from '../../../components/List/OrderedList';
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter';
-import TextStyle from '../../../components/TextStyle'
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from '../../../components/Template/WrapperTemplate';
-import data_json from '../../../data-json/javascript/basic/003_operator.json'
+import OrderedList from '@/components/List/OrderedList';
+import SyntaxHighlighter from '@/components/SyntaxHighlighter';
+import TextStyle from '@/components/TextStyle'
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from '@/components/Template/WrapperTemplate';
+import data_json from '@/data-json/javascript/basic/003_operator.json'
 
 export default function Page() {
     return (    

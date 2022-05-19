@@ -1,7 +1,7 @@
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from '../../../components/Template/WrapperTemplate'
-import data_json from "../../../data-json/java/basic/001_pendahuluan.json"
+import SyntaxHighlighter from '@/components/SyntaxHighlighter'
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import data_json from "@/data-json/java/basic/001_pendahuluan.json"
 
 
 export default function Page() {

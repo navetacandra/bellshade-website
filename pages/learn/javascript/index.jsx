@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import Layout from '../../components/Template/Layout'
-import OrderedList from '../../components/List/OrderedList'
-import WrapperTemplate from '../../components/Template/WrapperTemplate'
-import TextStyle from '../../components/TextStyle'
-import data_json from "../../data-json/javascript/000_home.json"
+import Layout from '@/components/Template/Layout'
+import OrderedList from '@/components/List/OrderedList'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import TextStyle from '@/components/TextStyle'
+import data_json from "@/data-json/javascript/000_home.json"
 
 export default function Page() {
     return (
@@ -66,7 +66,7 @@ export default function Page() {
                                                     {
                                                         val.status === 'done' && val.id ? (
                                                             <p className="text-blue_primary text-base">
-                                                                <Link href={'/javascript/basic/' + val.id.toLowerCase().replace(/ /g, '-')}>{val.topik}</Link>
+                                                                <Link href={'/learn/javascript/basic/' + val.id.toLowerCase().replace(/ /g, '-')}>{val.topik}</Link>
                                                             </p>
                                                         ) : (
                                                             <p className="text-slate-500 text-base">{val.topik}</p>

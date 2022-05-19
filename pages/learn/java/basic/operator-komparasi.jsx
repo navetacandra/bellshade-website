@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from "../../../components/Template/WrapperTemplate";
-import SyntaxHighlighter from "../../../components/SyntaxHighlighter";
-import data_json from "../../../data-json/java/basic/005_operator-komparasi.json";
-import OrderedList from '../../../components/List/OrderedList';
-import TextStyle from "../../../components/TextStyle";
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from "@/components/Template/WrapperTemplate";
+import SyntaxHighlighter from "@/components/SyntaxHighlighter";
+import data_json from "@/data-json/java/basic/005_operator-komparasi.json";
+import OrderedList from '@/components/List/OrderedList';
+import TextStyle from "@/components/TextStyle";
 
 export default function Page() {
     return (    

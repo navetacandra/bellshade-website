@@ -24,7 +24,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className="space-x-7">
-                            <Link href="/">
+                            <Link href="/learn">
                                 <a className="hover:text-main">
                                     <Icon
                                         icon="ic:round-school"
@@ -57,7 +57,7 @@ const Navbar = () => {
                                     Leaderboard
                                 </a>
                             </Link> */}
-                            <Link href="/">
+                            <Link href="/teams">
                                 <a className="hover:text-main">
                                     <Icon
                                         icon="ri:team-fill"

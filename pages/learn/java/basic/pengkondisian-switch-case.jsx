@@ -1,8 +1,8 @@
-import UnorderedList from "../../../components/List/UnorderedList";
-import SyntaxHighlighter from "../../../components/SyntaxHighlighter";
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from "../../../components/Template/WrapperTemplate";
-import data_json from "../../../data-json/java/basic/008_pengkondisian-switch-case.json";
+import UnorderedList from "@/components/List/UnorderedList";
+import SyntaxHighlighter from "@/components/SyntaxHighlighter";
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from "@/components/Template/WrapperTemplate";
+import data_json from "@/data-json/java/basic/008_pengkondisian-switch-case.json";
 
 export default function Page() {
     return (    

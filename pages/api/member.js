@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 
-export default async function (req, res) {
+export default async function GetMembers(req, res) {
     let members = [];
     let currentPage = 1;
     let has_next_page = true;
@@ -36,5 +36,4 @@ export default async function (req, res) {
         members_count: members.length,
         members: members
     });
-
 }

@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import Layout from '../../components/Template/Layout'
-import UnorderedList from '../../components/List/UnorderedList'
-import TextStyle from '../../components/TextStyle'
-import WrapperTemplate from '../../components/Template/WrapperTemplate'
-import data_json from '../../data-json/java/000_home.json'
+import Layout from '@/components/Template/Layout'
+import UnorderedList from '@/components/List/UnorderedList'
+import TextStyle from '@/components/TextStyle'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import data_json from '@/data-json/java/000_home.json'
 
 function Page() {
     return (
@@ -61,7 +61,7 @@ function Page() {
                                                     {
                                                         val.status === 'done' && val.id ? (
                                                             <p className="text-blue_primary text-base">
-                                                                <Link href={'/java/basic/' + val.id.toLowerCase().replace(/ /g, '-')}>{val.topik}</Link>
+                                                                <Link href={'/learn/java/basic/' + val.id.toLowerCase().replace(/ /g, '-')}>{val.topik}</Link>
                                                             </p>
                                                         ) : (
                                                             <p className="text-slate-500 text-base">{val.topik}</p>

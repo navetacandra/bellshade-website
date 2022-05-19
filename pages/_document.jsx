@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main } from 'next/document'
+import DeferNextScript from '@/utils/lib/DeferNextScript';
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -9,7 +10,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta charset="utf-8" />
+                    <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link
@@ -36,7 +37,7 @@ export default class MyDocument extends Document {
                 </Head>
                 <body className='bg-white dark:bg-slate-900 relative transition-all ease-out duration-200'>
                     <Main />
-                    <NextScript />
+                    <DeferNextScript />
                 </body>
             </Html>
         )

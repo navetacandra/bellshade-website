@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import OrderedList from '../../../components/List/OrderedList';
-import SyntaxHighlighter from "../../../components/SyntaxHighlighter";
-import TextStyle from "../../../components/TextStyle";
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from "../../../components/Template/WrapperTemplate";
-import data_json from "../../../data-json/java/basic/006_operator-logika.json"
+import OrderedList from '@/components/List/OrderedList';
+import SyntaxHighlighter from "@/components/SyntaxHighlighter";
+import TextStyle from "@/components/TextStyle";
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from "@/components/Template/WrapperTemplate";
+import data_json from "@/data-json/java/basic/006_operator-logika.json"
 
 export default function Page() {
     return (    

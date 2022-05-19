@@ -1,8 +1,8 @@
-import data_json from '../../../data-json/javascript/basic/009_konsep-array.json'
-import TextStyle from '../../../components/TextStyle'
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from '../../../components/Template/WrapperTemplate'
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
+import data_json from '@/data-json/javascript/basic/009_konsep-array.json'
+import TextStyle from '@/components/TextStyle'
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import SyntaxHighlighter from '@/components/SyntaxHighlighter'
 
 export default function Page() {
     return (    

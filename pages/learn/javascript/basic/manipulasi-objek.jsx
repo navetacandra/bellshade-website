@@ -1,9 +1,9 @@
 import { Fragment } from 'react'
-import data_json from '../../../data-json/javascript/basic/012_manipulasi-object.json'
-import TextStyle from '../../../components/TextStyle'
-import Layout from '../../../components/Template/Layout'
-import WrapperTemplate from '../../../components/Template/WrapperTemplate'
-import SyntaxHighlighter from '../../../components/SyntaxHighlighter'
+import data_json from '@/data-json/javascript/basic/012_manipulasi-object.json'
+import TextStyle from '@/components/TextStyle'
+import Layout from '@/components/Template/Layout'
+import WrapperTemplate from '@/components/Template/WrapperTemplate'
+import SyntaxHighlighter from '@/components/SyntaxHighlighter'
 
 export default function Page() {
     return (    
