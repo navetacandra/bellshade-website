@@ -4,6 +4,7 @@ import OrderedList from '@/components/List/OrderedList'
 import WrapperTemplate from '@/components/Template/WrapperTemplate'
 import TextStyle from '@/components/TextStyle'
 import data_json from "@/data-json/javascript/000_home.json"
+import Image from 'next/image'
 
 export default function Page() {
     return (
@@ -20,7 +21,7 @@ export default function Page() {
                     <p className="section_text">
                         Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemula alias beginner-friendly yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh Stackoverflow.
                     </p>
-                    <img src="/img/javascript-poll.png" alt="Javascript Poll" className="my-5 shadow-lg w-full mt-5" />
+                    <Image src="/img/javascript-poll.png" alt="Javascript Poll" className="my-5 shadow-lg w-full mt-5" />
                 </section>
                 <section className="my-5">
                     <h2 className="title-2">Contoh Penggunaan Javascript</h2>

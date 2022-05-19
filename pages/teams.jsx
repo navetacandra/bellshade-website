@@ -1,4 +1,4 @@
-import Layout from '../../components/Template/Layout'
+import Layout from '../components/Template/Layout'
 import Image from 'next/image';
 
 export default function Page(props) {
@@ -15,7 +15,7 @@ export default function Page(props) {
                         {
                             Members.map((val, i) => (
                                 val ? (
-                                    <a href={`https://github.com/${val.username}`} target='_blank' key={i}>
+                                    <a href={`https://github.com/${val.username}`} target='_blank' rel='noreferrer' key={i}>
                                         <div className="inline-flex gap-4 p-4 w-full shadow-md bg-white dark:bg-slate-800 rounded-md transition-all hover:shadow-lg dark:hover:bg-slate-700 cursor-pointer">
                                             <div className="mx-1 relative max-w-max tooltip top max-h-16 my-auto">
                                                 <div className="relative flex justify-start items-center rounded-full overflow-hidden w-16 h-16 shadow-lg">
@@ -42,7 +42,7 @@ export default function Page(props) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     let members_data = await (await fetch(`${process.env.PUBLIC_URI}/api/member`)).json();
     return {
         props: {
@@ -50,4 +50,4 @@ export async function getStaticProps() {
             MembersCount: members_data.members.length || 0
         }
     }
-}
+} 

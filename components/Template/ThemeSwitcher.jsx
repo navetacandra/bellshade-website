@@ -28,6 +28,7 @@ function ThemeSwitcher({ setTheme }) {
     useEffect(() => {
         document.querySelector('html').classList.add(getItem('color-theme'));
         setTheme(getItem('color-theme'));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     function changeTheme() {

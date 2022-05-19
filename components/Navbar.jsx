@@ -75,7 +75,7 @@ const Navbar = () => {
                             // style={{ background: "#637FE3" }}
                             className="text-white bg-github_btn dark:bg-gray-700 p-2.5 h-10 rounded-lg flex items-center "
                         >
-                            <a href="https://github.com/bellshade" target='_blank'>Github</a>
+                            <a href="https://github.com/bellshade" target='_blank' rel="noreferrer">Github</a>
                         </button>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ const Navbar = () => {
                     <button
                         className="text-white bg-github_btn dark:bg-gray-700 p-2.5 h-10 rounded-lg flex items-center "
                     >
-                        <a href="https://github.com/bellshade">Github</a>
+                        <a href="https://github.com/bellshade" target='_blank' rel="noreferrer">Github</a>
                     </button>
                 </div>
             </div>
