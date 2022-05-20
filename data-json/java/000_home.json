@@ -57,10 +57,10 @@
         },
         {
             "langkah": "09",
-            "topik": "Perulangan atau Looping (While)",
-            "target_pembelajaran": "Memahami perulangan while dalam Java",
-            "id": "perulangan-while",
-            "status": "on_progress"
+            "topik": "Perulangan atau Looping",
+            "target_pembelajaran": "Memahami perulangan dalam Java",
+            "id": "perulangan",
+            "status": "done"
         },
         {
             "langkah": "10",

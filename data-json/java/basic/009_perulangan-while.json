@@ -1,0 +1,29 @@
+{
+    "for": {
+        "draft": [
+            "#_[for(nilai_awal; kondisi; modifier) {]",
+            "#_[    statement;]",
+            "#_[}]"
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/Looping/For.java]",
+            "",
+            "#m[package learn.basic.] #w[L] #m[ooping] #_[;]",
+            "",
+            "#m[public class ] #y[For ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        for] #_[(] #m[int ] #p[ulang ] #c[= ] #o[0] #_[; ulang ] #c[< ] #o[5] #_[; ulang] #c[++] #_[) {]",
+            "#cmt[            // variabel ulang akan menabah terus sampai kondisi statement_kedua tidak terpenuhi]",
+            "#cmt[            // disini kondisinya yaitu kurang dari 5]",
+            "#cmt[            // dan yang kurang dari 5 adalah 0 1 2 3 4 maka akan terprint]",
+            "#cmt[            // variabel 0 akan menambah terus sampai kondisi statement_kedua sudah terpenuhi]",
+            "#cmt[            // output akan terus menampilkan angka 0 1 2 3 4 ]",
+            "",
+            "#cmt[            // output akan menampilkan tiap kodisi sudah di dalam for sudah dijalankan]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(ulang);]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
+    }
+}
