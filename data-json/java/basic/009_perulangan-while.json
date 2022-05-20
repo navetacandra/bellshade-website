@@ -25,5 +25,34 @@
             "#_[    }]",
             "#_[}]"
         ]
+    },
+    "while": {
+        "draft": [
+            "#_[while (kondisi) {]",
+            "#_[    Statement;]",
+            "#_[}]"
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/Looping/While.java]",
+            "",
+            "#m[package learn.basic.] #w[L] #m[ooping] #_[;]",
+            "",
+            "#m[public class ] #y[While ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[0] #_[;]",
+            "",
+            "#m[        while] #_[(angka ] #c[< ] #o[10] #_[) {]",
+            "#cmt[            // ketika angka kurang dari 10 maka perulagan akan berjalan]",
+            "#cmt[            // sampai kondisi angka sudah terpenuhi]",
+            "#cmt[            // ia akan looping dimulai dari angka 0 1 2 3 4 5 6 7 8 9]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(angka);]",
+            "#cmt[            // menambahkan operator penambahan agar tidak terjadi]",
+            "#cmt[            // looping infinite]",
+            "#cmt[            // angka akan bertambah 1 setiap looping]",
+            "#_[            angka] #c[++] #_[;]",
+            "#_[        }]",
+            "#_[    }]",
+            "#_[}]"
+        ]
     }
 }
