@@ -13,14 +13,14 @@ export default function Page() {
             {data.title ? <h2 className="title-2">{data.title}</h2> : null}{" "}
             {data.text_1.map((val, key) => (
               <p className="section_text" key={key}>
-                <TextStyle list_text={val} />
+                <TextStyle Text={val} />
               </p>
             ))}
             <SyntaxHighlighter code={data.code} />
             {data.text_2
               ? data.text_2.map((val, key) => (
                   <p className="section_text" key={key}>
-                    <TextStyle list_text={val} />
+                    <TextStyle Text={val} />
                   </p>
                 ))
               : null}

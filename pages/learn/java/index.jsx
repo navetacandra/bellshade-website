@@ -132,7 +132,7 @@ function Page() {
                         )}
                       </td>
                       <td className="px-6 py-4 text-base">
-                        <TextStyle list_text={val.target_pembelajaran} />
+                        <TextStyle Text={val.target_pembelajaran} />
                       </td>
                     </tr>
                   ))}

@@ -24,14 +24,14 @@ export default function Page() {
                 </h4>
                 {data.desc.map((val, key) => (
                   <p className="section_text" key={key}>
-                    <TextStyle list_text={val} />
+                    <TextStyle Text={val} />
                   </p>
                 ))}{" "}
                 <SyntaxHighlighter code={data.draft} />
                 {data.desc_1
                   ? data.desc_1.map((val, key) => (
                       <p className="section_test" key={key}>
-                        <TextStyle list_text={val} />
+                        <TextStyle Text={val} />
                       </p>
                     ))
                   : null}
@@ -39,7 +39,7 @@ export default function Page() {
                   {data.list.map((val, key) => (
                     <li key={key}>
                       <p className="section_text">
-                        <TextStyle list_text={val} />
+                        <TextStyle Text={val} />
                       </p>
                     </li>
                   ))}
@@ -48,7 +48,7 @@ export default function Page() {
                 {data.desc_2
                   ? data.desc.map((val, key) => (
                       <p className="section_text" key={key}>
-                        <TextStyle list_text={val} />
+                        <TextStyle Text={val} />
                       </p>
                     ))
                   : null}

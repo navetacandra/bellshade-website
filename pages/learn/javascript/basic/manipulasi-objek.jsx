@@ -15,7 +15,7 @@ export default function Page() {
             <Fragment key={i}>
               <h4 className="subtitle-h4">{data.title}</h4>
               <p className="section_text">
-                <TextStyle list_text={data.desc} />
+                <TextStyle Text={data.desc} />
               </p>
               <SyntaxHighlighter code={data.code} />
             </Fragment>

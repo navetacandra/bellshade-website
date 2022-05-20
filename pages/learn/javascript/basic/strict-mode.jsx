@@ -16,14 +16,14 @@ export default function Page() {
               {typeof data.title === "string" && !!data.title.length
                 ? [data.title].map((val, i) => (
                     <h4 className="subtitle-h4" key={i}>
-                      <TextStyle list_text={val} />
+                      <TextStyle Text={val} />
                     </h4>
                   ))
                 : null}{" "}
               {typeof data.desc === "object" && !!data.desc.length
                 ? data.desc.map((val, i) => (
                     <p className="section_text" key={i}>
-                      <TextStyle list_text={val} />
+                      <TextStyle Text={val} />
                     </p>
                   ))
                 : null}

@@ -15,7 +15,7 @@ export default function Page() {
           <section className="my-5" key={key}>
             <h4 className="subtitle-h4">{val.title}</h4>
             <p className="section_text">
-              <TextStyle list_text={val.desc} />
+              <TextStyle Text={val.desc} />
             </p>
             {val.note ? (
               <div className="note-text mb-3">

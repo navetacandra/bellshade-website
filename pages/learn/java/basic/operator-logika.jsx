@@ -28,7 +28,7 @@ export default function Page() {
                 {[val.title].map((val1, key1) => (
                   <li key={key1}>
                     <p className="section_text">
-                      <TextStyle list_text={val1} />
+                      <TextStyle Text={val1} />
                     </p>
                   </li>
                 ))}

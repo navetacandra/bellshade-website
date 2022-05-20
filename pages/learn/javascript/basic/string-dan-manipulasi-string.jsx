@@ -18,7 +18,7 @@ export default function Page() {
               ) : null}{" "}
               <p className="section_text">
                 {data.desc.map((val, key) => (
-                  <TextStyle list_text={val} key={key} />
+                  <TextStyle Text={val} key={key} />
                 ))}
               </p>
               {data.note ? (
@@ -36,14 +36,14 @@ export default function Page() {
               {data.title
                 ? [data.title].map((val, key) => (
                     <p className="section_text" key={key}>
-                      <TextStyle list_text={val} />
+                      <TextStyle Text={val} />
                     </p>
                   ))
                 : null}
 
               <p className="section_text">
                 {data.desc.map((val, key) => (
-                  <TextStyle list_text={val} key={key} />
+                  <TextStyle Text={val} key={key} />
                 ))}
               </p>
               <p className="section_text">Contoh:</p>

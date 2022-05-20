@@ -16,11 +16,11 @@ export default function Page() {
             {dataJson.map((val, key) => (
               <Fragment key={key}>
                 <li className="section_text">
-                  <TextStyle list_text={val.title} />
+                  <TextStyle Text={val.title} />
                 </li>
                 {val.desc.map((val1, key1) => (
                   <p className="section_text" key={key1}>
-                    <TextStyle list_text={val1} />
+                    <TextStyle Text={val1} />
                   </p>
                 ))}
                 <p className="section_text">Contoh:</p>

@@ -43,7 +43,7 @@ export default function Page() {
                 </li>
                 {val.desc.map((val1, key1) => (
                   <p className="section_text" key={key1}>
-                    <TextStyle list_text={val1} />
+                    <TextStyle Text={val1} />
                   </p>
                 ))}
               </div>

@@ -38,10 +38,10 @@ export default function Page() {
                         0{key + 1}
                       </td>
                       <td className="px-6 py-4">
-                        <TextStyle list_text={val.type} />
+                        <TextStyle Text={val.type} />
                       </td>
                       <td className="px-6 py-4">
-                        <TextStyle list_text={val.size} />
+                        <TextStyle Text={val.size} />
                       </td>
                       <td className="px-6 py-4 text-base">{val.long_value}</td>
                     </tr>
@@ -55,16 +55,16 @@ export default function Page() {
           <UnorderedList>
             {dataJson.data_type_list.map((data, i) => (
               <Fragment key={i}>
-                {/* eslint-disable-next-line no-extra-boolean-cast */}
+                {/* eslint-disable-next-line */}
                 {!!data.type ? (
                   <li className="section_text">
-                    <TextStyle list_text={data.type} />
+                    <TextStyle Text={data.type} />
                   </li>
                 ) : null}
-                {/* eslint-disable-next-line no-extra-boolean-cast */}
+                {/* eslint-disable-next-line */}
                 {!!data.desc ? (
                   <p className="section_text">
-                    <TextStyle list_text={data.desc} />
+                    <TextStyle Text={data.desc} />
                   </p>
                 ) : null}
                 {data.code && !!data.code.length ? (
