@@ -98,7 +98,7 @@ export default function Page() {
                         {val.status === "done" && val.id ? (
                           <p className="text-blue_primary text-base">
                             <Link
-                              href={`/learn/javascript/basic/ ${val.id
+                              href={`/learn/javascript/basic/${val.id
                                 .toLowerCase()
                                 .replace(/ /g, "-")}`}
                             >

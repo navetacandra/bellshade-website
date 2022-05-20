@@ -118,7 +118,7 @@ function Page() {
                         {val.status === "done" && val.id ? (
                           <p className="text-blue_primary text-base">
                             <Link
-                              href={`/learn/java/basic/ ${val.id
+                              href={`/learn/java/basic/${val.id
                                 .toLowerCase()
                                 .replace(/ /g, "-")}`}
                             >
