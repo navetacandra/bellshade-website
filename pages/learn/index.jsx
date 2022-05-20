@@ -1,7 +1,7 @@
+import Link from "next/link";
 import Layout from "@/components/Template/Layout";
 import JavascriptSVG from "@/components/svg-image/JavascriptSVG";
 import JavaSVG from "@/components/svg-image/JavaSVG";
-import Link from "next/link";
 
 export default function Page() {
   return (
@@ -18,7 +18,8 @@ export default function Page() {
                   Tutorial Dasar Javascript
                 </h3>
                 <p className="text-sm line-clamp-2 text-slate-700 dark:text-slate-300">
-                  Pelajari dasar-dasar pemrograman Javascript untuk membuat website yang interaktif.
+                  Pelajari dasar-dasar pemrograman Javascript untuk membuat
+                  website yang interaktif.
                 </p>
               </div>
             </div>
@@ -41,5 +42,5 @@ export default function Page() {
         </section>
       </div>
     </Layout>
-  )
+  );
 }

@@ -1,13 +1,13 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: 'class',
   theme: {
     container: {
       center: true,
-      padding: '10px'
+      padding: '10px',
     },
     extend: {
       colors: {
@@ -16,9 +16,9 @@ module.exports = {
         white: '#FFFFFF',
         blue_primary: '#0D6EFD',
         'blue-gray': '#637FE3',
-        'github_btn-hv': '#5875db'
-      }
-    }
+        'github_btn-hv': '#5875db',
+      },
+    },
   },
   plugins: [],
-}
+};

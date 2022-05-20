@@ -1,12 +1,12 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@/lib/*": ["utils/lib/*"],
-            "@/components/*": ["components/*"],
-            "@/utils/*": ["utils/*"],
-            "@/styles/*": ["styles/*"],
-            "@/data-json/*": ["data-json/*"],
-        }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/lib/*": ["utils/lib/*"],
+      "@/components/*": ["components/*"],
+      "@/utils/*": ["utils/*"],
+      "@/styles/*": ["styles/*"],
+      "@/data-json/*": ["data-json/*"]
     }
+  }
 }

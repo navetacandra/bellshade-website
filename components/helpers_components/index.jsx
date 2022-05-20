@@ -1,30 +1,31 @@
 /**
- * 
- * @param {String} string 
- * @param {String} find_char 
+ *
+ * @param {String} string
+ * @param {String} findChar
  */
-function find_last(string, find_char) {
-    let position_list = string.split('').map((char, i) => {
-        return char === find_char ? i : false;
-    }).filter(el => el);
+function findLast(string, findChar) {
+  const positionList = string
+    .split("")
+    .map((char, i) => (char === findChar ? i : false))
+    .filter((el) => el);
 
-    return position_list.length > 0 ? position_list[position_list.length - 1] : undefined;
+  return positionList.length > 0
+    ? positionList[positionList.length - 1]
+    : undefined;
 }
 
 /**
- * 
- * @param {String} string 
- * @param {String} find_char 
+ *
+ * @param {String} string
+ * @param {String} findChar
  */
-function find_first(string, find_char) {
-    let position_list = string.split('').map((char, i) => {
-        return char === find_char ? i : false;
-    }).filter(el => el);
+function findFirst(string, findChar) {
+  const positionList = string
+    .split("")
+    .map((char, i) => (char === findChar ? i : false))
+    .filter((el) => el);
 
-    return position_list.length > 0 ? position_list[0] : undefined;
+  return positionList.length > 0 ? positionList[0] : undefined;
 }
 
-export {
-    find_first,
-    find_last
-}
+export { findFirst, findLast };
