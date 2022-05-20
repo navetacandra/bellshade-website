@@ -55,12 +55,14 @@ export default function Page() {
           <UnorderedList>
             {dataJson.data_type_list.map((data, i) => (
               <Fragment key={i}>
-                {data.type ? (
+                {/* eslint-disable-next-line no-extra-boolean-cast */}
+                {!!data.type ? (
                   <li className="section_text">
                     <TextStyle list_text={data.type} />
                   </li>
                 ) : null}
-                {data.desc ? (
+                {/* eslint-disable-next-line no-extra-boolean-cast */}
+                {!!data.desc ? (
                   <p className="section_text">
                     <TextStyle list_text={data.desc} />
                   </p>
