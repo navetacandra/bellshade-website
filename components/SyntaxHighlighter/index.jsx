@@ -64,7 +64,7 @@ function SyntaxHighlighter({ code = [] }) {
     return (
         <div className="relative highlight border border-slate-200 my-3 shadow-md dark:shadow-xl">
             <ClipboardCopier />
-            <pre><code>
+            <pre><code className='font-mono'>
                 {
                     typeof code === 'object' && !!code.length
                         ? (

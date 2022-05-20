@@ -10,8 +10,8 @@ export default function Page(props) {
                 <div className="w-full mb-16 md:mb-20 text-center">
                     <h2 className="text-5xl md:text-[67px] font-bold text-dark dark:text-white">Meet Our Team</h2>
                 </div>
-                <div className="container mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 mx-auto">
+                <div className="container mx-auto mb-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto my-5">
                         {
                             Members.map((val, i) => (
                                 val ? (

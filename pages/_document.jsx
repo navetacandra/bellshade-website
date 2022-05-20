@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
                     <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
                     <link rel="manifest" href="/manifest.json" />
                 </Head>
-                <body className='bg-white dark:bg-slate-900 relative transition-all ease-out duration-200'>
+                <body className='bg-slate-100 dark:bg-slate-900 relative transition-all ease-out duration-200'>
                     <Main />
                     <DeferNextScript />
                 </body>

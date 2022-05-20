@@ -1,31 +1,41 @@
 [{
+        "code": "w",
         "name": "white"
     },
     {
-        "name": "_"
+        "code": "_",
+        "name": "normal"
     },
     {
-        "name": "cmt"
+        "code": "cmt",
+        "name": "comment"
     },
     {
-        "name": "c"
+        "code": "c",
+        "name": "cyan"
     },
     {
-        "name": "m"
+        "code": "m",
+        "name": "magenta"
     },
     {
-        "name": "y"
+        "code": "y",
+        "name": "yellow"
     },
     {
-        "name": "g"
+        "code": "g",
+        "name": "green"
     },
     {
-        "name": "b"
+        "code": "b",
+        "name": "blue"
     },
     {
-        "name": "p"
+        "code": "p",
+        "name": "pink"
     },
     {
-        "name": "o"
+        "code": "o",
+        "name": "orange"
     }
 ]

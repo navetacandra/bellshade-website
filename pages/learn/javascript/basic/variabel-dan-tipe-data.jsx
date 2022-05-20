@@ -4,10 +4,9 @@ import TextStyle from '@/components/TextStyle'
 import Layout from '@/components/Template/Layout'
 import WrapperTemplate from '@/components/Template/WrapperTemplate'
 import data_json from '@/data-json/javascript/basic/002_data-type.json'
-import Image from 'next/image'
 
 export default function Page() {
-    return (    
+    return (
         <Layout pageTitle="Bellshade | Javascript - Variabel dan Tipe Data">
             <WrapperTemplate>
                 <section className='my-5'>
@@ -71,7 +70,7 @@ export default function Page() {
                         contoh dari penggunaan <i>typeOf</i> adalah:
                     </p>
                     <SyntaxHighlighter code={data_json['typeof-code']} />
-                    <Image className='my-3 shadow-lg rounded-lg border-b' src={`https://res.cloudinary.com/demo/image/fetch/https://camo.githubusercontent.com/78d5a112c5f275f4381703a3598662637fc257f5323b30fc331e36baf0acc212/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f447573434f667958634141395f46373f666f726d61743d6a7067266e616d653d6c61726765`} alt="Javascript Meme" />
+                        <img className="my-3 shadow-lg rounded-lg border-b" src={`https://res.cloudinary.com/demo/image/fetch/https://camo.githubusercontent.com/78d5a112c5f275f4381703a3598662637fc257f5323b30fc331e36baf0acc212/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f447573434f667958634141395f46373f666f726d61743d6a7067266e616d653d6c61726765`} alt="Javascript Meme" layout='fll' />
                     <div className="note-text my-3">
                         <p>
                             Catatan: Ketiga jenis variabel bisa menggunakan semua jenis tipe data yang ada di JavaScript

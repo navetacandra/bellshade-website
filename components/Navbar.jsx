@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import styles from '@/styles/navbar.module.css'
 
 const Navbar = () => {
     const [navbarResponsive, setNavbarResponsive] = useState(false);
@@ -11,21 +12,24 @@ const Navbar = () => {
             <div className="hidden lg:block max-w-[1920px] mb-5 py-3 px-10">
                 <div className="flex justify-between">
                     <div className="flex items-center space-x-16">
-                        <div>
+                        <div className="opacity-80 hover:opacity-100 transition-all duration-300 ease-out">
                             <Link href="/">
                                 <a className="flex items-center">
                                     <Image
-                                        src={"/img/bellshade-logo.png"}
+                                        src={"/icon/ms-icon-310x310.png"}
                                         alt="Bellshade Logo"
-                                        width={"178px"}
+                                        width={"48px"}
                                         height={"48px"}
                                     />
+                                    <span className={`ml-2 text-dark dark:text-white ${styles.brand}`}>
+                                        Bellshade
+                                    </span>
                                 </a>
                             </Link>
                         </div>
                         <div className="space-x-7">
                             <Link href="/learn">
-                                <a className="hover:text-main">
+                                <a className="hover:text-main opacity-80 hover:opacity-100">
                                     <Icon
                                         icon="ic:round-school"
                                         width={24}
@@ -36,7 +40,7 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             {/* <Link href="/">
-                                <a className="hover:text-main">
+                                <a className="hover:text-main opacity-80 hover:opacity-100">
                                     <Icon
                                         icon="mdi:sword-cross"
                                         width={24}
@@ -47,7 +51,7 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             <Link href="/">
-                                <a className="hover:text-main">
+                                <a className="hover:text-main opacity-80 hover:opacity-100">
                                     <Icon
                                         icon="ic:baseline-leaderboard"
                                         width={24}
@@ -58,7 +62,7 @@ const Navbar = () => {
                                 </a>
                             </Link> */}
                             <Link href="/teams">
-                                <a className="hover:text-main">
+                                <a className="hover:text-main opacity-80 hover:opacity-100">
                                     <Icon
                                         icon="ri:team-fill"
                                         width={24}
@@ -73,7 +77,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-8">
                         <button
                             // style={{ background: "#637FE3" }}
-                            className="text-white bg-github_btn dark:bg-gray-700 p-2.5 h-10 rounded-lg flex items-center "
+                            className="text-white bg-blue-gray hover:bg-github_btn-hv dark:bg-gray-700 dark:hover:bg-slate-600 p-2.5 h-10 rounded-lg flex items-center transition-all duration-150"
                         >
                             <a href="https://github.com/bellshade" target='_blank' rel="noreferrer">Github</a>
                         </button>
@@ -82,15 +86,20 @@ const Navbar = () => {
             </div>
 
             <div className="lg:hidden flex items-center mb-5 py-3 px-10 justify-between">
-                <div className="flex items-center space-x-16">
-                    <div className="flex items-center">
-                        <Image
-                            src={"/img/bellshade-logo.png"}
-                            alt="Bellshade Logo"
-                            width={"178px"}
-                            height={"48px"}
-                        />
-                    </div>
+                <div className="opacity-80 hover:opacity-100 transition-all duration-300 ease-out">
+                    <Link href="/">
+                        <a className="flex items-center">
+                            <Image
+                                src={"/icon/ms-icon-310x310.png"}
+                                alt="Bellshade Logo"
+                                width={"48px"}
+                                height={"48px"}
+                            />
+                            <span className={`ml-2 text-dark dark:text-white ${styles.brand}`}>
+                                Bellshade
+                            </span>
+                        </a>
+                    </Link>
                 </div>
                 <div>
                     <button
@@ -106,7 +115,7 @@ const Navbar = () => {
                     }`}
             >
                 <Link href="/">
-                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600">
+                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
                         <Icon
                             icon="ic:round-school"
                             width={24}
@@ -117,7 +126,7 @@ const Navbar = () => {
                     </a>
                 </Link>
                 {/* <Link href="/">
-                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600">
+                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
                         <Icon
                             icon="mdi:sword-cross"
                             width={24}
@@ -128,7 +137,7 @@ const Navbar = () => {
                     </a>
                 </Link>
                 <Link href="/">
-                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600">
+                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
                         <Icon
                             icon="ic:baseline-leaderboard"
                             width={24}
@@ -139,7 +148,7 @@ const Navbar = () => {
                     </a>
                 </Link> */}
                 <Link href="/">
-                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600">
+                    <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
                         <Icon
                             icon="ri:team-fill"
                             width={24}
@@ -151,7 +160,7 @@ const Navbar = () => {
                 </Link>
                 <div className="flex justify-between space-x-8 py-6 px-6">
                     <button
-                        className="text-white bg-github_btn dark:bg-gray-700 p-2.5 h-10 rounded-lg flex items-center "
+                        className="text-white bg-blue-gray hover:bg-github_btn-hv dark:bg-gray-700 dark:hover:bg-slate-600 p-2.5 h-10 rounded-lg flex items-center transition-all duration-150"
                     >
                         <a href="https://github.com/bellshade" target='_blank' rel="noreferrer">Github</a>
                     </button>
