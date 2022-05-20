@@ -29,8 +29,9 @@ export default function Page() {
                             <p id="for_desc" className="section_text">
                                 <TextStyle list_text='Looping atau Perulangan #mark_code[for] (beberapa orang menyebutnya <i>counted loop</i>) merupakan perulangan yang akan melakukan eksekusi perintah yang telah diketahui jumlah banyaknya. Sehingga perulangan #mark_code[for] akan melakukan perulangan kode sejumlah tertentu. Perulangan ini terstruktur untuk mengulangi kode sampai tercapai batas yang telah ditentukan.' />
                             </p>
+                            <SyntaxHighlighter code={data_json.for.draft} />
                             <p className="section_text">
-                            ket: Dari contoh diatas, jika hanya satu pernyataan yang hendak diulang, maka diperbolehkan tidak memakai pasangan kurung kurawal. Perulangan for mengulangi statement sejumlah tertentu menggunakan:
+                                ket: Dari contoh diatas, jika hanya satu pernyataan yang hendak diulang, maka diperbolehkan tidak memakai pasangan kurung kurawal. Perulangan for mengulangi statement sejumlah tertentu menggunakan:
                             </p>
                             <UnorderedList className='section_text my-3'>
                                 <li className='my-2'>
@@ -43,11 +44,10 @@ export default function Page() {
                                     <TextStyle list_text="#mark_code[modifier] untuk menspesifikasikan cara variabel kendali dimodifikasi sebelum iterasi berikutnya atau bagian untuk memberikan penambahan nilai atau pengurangan Jika semua sudah terpenuhi, maka program mengeluarkan output langsung dari <i>syntax</i> #mark_code[Statement;]" />
                                 </li>
                             </UnorderedList>
-                            <SyntaxHighlighter code={data_json.for.draft} />
                             <p className="section_text">Contoh:</p>
                             <SyntaxHighlighter code={data_json.for.code} />
                         </Fragment>
-                        {/************************************* For Loop *************************************/}
+                        {/************************************* End For Loop *************************************/}
                         {/************************************* While Loop *************************************/}
                         <Fragment id="while">
                             <li>
@@ -67,7 +67,37 @@ export default function Page() {
                             <p className="section_text">Contoh:</p>
                             <SyntaxHighlighter code={data_json.while.code} />
                         </Fragment>
-                        {/************************************* For Loop *************************************/}
+                        {/************************************* End While Loop *************************************/}
+                        {/************************************* Do..While Loop *************************************/}
+                        <Fragment id="do..while">
+                            <li>
+                                <p className='section_text'>
+                                    <TextStyle list_text='#mark_code[do..while]' />
+                                </p>
+                            </li>
+                            <p id="while_desc" className="section_text">
+                                Do-while adalah salah satu pernyataan pengulangan yang memungkinkan kita untuk membuat program berjalan secara fleksibel berdasarkan keinginan pengguna.
+                            </p>
+                            <p id="while_desc" className="section_text">
+                                Do-while berfungsi untuk mengulangi pengeksekusian beberapa substatement berdasarkan conditional expression yang ada.
+                            </p>
+                            <p id="while_desc" className="section_text">
+                                Do-while berbeda dengan pernyataan while. Do-while pertama kali akan mengeksekusi pernyataannya terlebih dahulu, setelah itu baru akan memeriksa conditional expression.
+                            </p>
+                            <SyntaxHighlighter code={data_json['do..while'].draft} />
+                            <div id="do..while-more-desc" className='my-3'>
+                                <h4 className="subtitle-h4">Kapankah Waktu yang Tepat Menggunakan while dan do/while?</h4>
+                                <p className="section_text">
+                                    Tergantung dari kasusnya. syarat perulangannya tidak berkaitan dengan hasil hitung pada blok kode yang diulang, maka pakailah while. Tetapi, bila syarat perulangannya berkaitan dengan hasil perhitungan di blok kode yang diulang, maka pakailah do/while.
+                                </p>
+                                <p className="section_text">
+                                    Selain itu juga, jika kita menggunakan elemen semantik, dokumen HTML kita akan mudah dibaca, baik itu oleh mesin maupun oleh kita sebagai manusia.
+                                </p>
+                            </div>
+                            <p className="section_text">Contoh:</p>
+                            <SyntaxHighlighter code={data_json['do..while'].code} />
+                        </Fragment>
+                        {/************************************* End Do..While Loop *************************************/}
                     </OrderedList>
                 </section>
             </WrapperTemplate>

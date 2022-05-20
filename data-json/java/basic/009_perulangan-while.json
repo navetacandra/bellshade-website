@@ -54,5 +54,28 @@
             "#_[    }]",
             "#_[}]"
         ]
+    },
+    "do..while": {
+        "draft": [
+            "#_[do {]",
+            "#_[    Statement;]",
+            "#_[} while (kondisi);]"
+        ],
+        "code": [
+            "#cmt[// ./learn/basic/Looping/DoWhile.java]",
+            "",
+            "#m[package learn.basic.] #w[L] #m[ooping] #_[;]",
+            "",
+            "#m[public class ] #y[DoWhile ] #_[{]",
+            "#m[    public static void ] #b[main] #_[(] #y[String] #_[[] ] #p[<i>args</i>] #_[) {]",
+            "#m[        int ] #p[angka ] #c[= ] #o[0] #_[;]",
+            "",
+            "#m[        do] #_[{]",
+            "#y[            System] #_[.] #y[out] #_[.] #b[println] #_[(angka); ] #cmt[// ekpetasi output: 1 2 3 4 5 6 7 8 9 10]",
+            "#_[            angka] #c[++] #_[;]",
+            "#_[        }] #m[while] #_[(angka ] #c[< ] #o[10] #_[);]",
+            "#_[    }]",
+            "#_[}]"
+        ]
     }
 }
