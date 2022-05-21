@@ -21,22 +21,22 @@ export default function Page() {
               Belajar materi tentang coding, quiz, dan juga bisa belajar bareng
               di komunitas Web Programming UNPAS
             </p>
-            <button
-              type="button"
-              className="text-white py-3 px-7 bg-blue-gray hover:bg-github_btn-hv dark:bg-blue-700 dark:hover:bg-blue-600 rounded-2xl"
-            >
-              <Link href="/learn">Get Started</Link>
-            </button>
-          </div>
-          <div className="ml-10 hidden lg:block">
-            <Image
-              src={"/img/home-header.png"}
-              alt="Home-Header-Image"
-              width={"724px"}
-              height={"623px"}
-            />
-          </div>
-        </div>
+                      <button
+                        type="button"
+                        className="text-white py-3 px-7 bg-blue-gray hover:bg-github_btn-hv dark:bg-blue-700 dark:hover:bg-blue-600 rounded-2xl"
+                      >
+                        <Link href="/learn">Get Started</Link>
+                      </button>
+                    </div>
+                    <div className="ml-10 hidden lg:block">
+                      <Image
+                        src={"/img/home-header.png"}
+                        alt="Home-Header-Image"
+                        width={"724px"}
+                        height={"623px"}
+                      />
+                    </div>
+                  </div>
       </section>
     </Layout>
   );
