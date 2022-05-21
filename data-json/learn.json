@@ -1,0 +1,74 @@
+[
+  {
+    "lang": "Assembly",
+    "id": "assembly",
+    "link": "/learn/assembly",
+    "img": "/img/language/Assembly.svg"
+  },
+  {
+    "lang": "CPP",
+    "id": "cpp",
+    "link": "/learn/cpp",
+    "img": "/img/language/CPP.png"
+  },
+  {
+    "lang": "Dart",
+    "id": "dart",
+    "link": "/learn/dart",
+    "img": "/img/language/Dart.svg"
+  },
+  {
+    "lang": "Golang",
+    "id": "golang",
+    "link": "/learn/golang",
+    "img": "/img/language/Golang.svg"
+  },
+  {
+    "lang": "HTML-CSS",
+    "id": "html-css",
+    "link": "/learn/html-css",
+    "img": "/img/language/HTML.png"
+  },
+  {
+    "lang": "Java",
+    "id": "java",
+    "link": "/learn/java",
+    "img": "/img/language/Java.svg"
+  },
+  {
+    "lang": "Javascript",
+    "id": "javascript",
+    "link": "/learn/javascript",
+    "img": "/img/language/Javascript.png"
+  },
+  {
+    "lang": "PHP",
+    "id": "php",
+    "link": "/learn/php",
+    "img": "/img/language/PHP.png"
+  },
+  {
+    "lang": "Python",
+    "id": "python",
+    "link": "/learn/python",
+    "img": "/img/language/Python.png"
+  },
+  {
+    "lang": "SQL",
+    "id": "sql",
+    "link": "/learn/sql",
+    "img": "/img/language/SQL.svg"
+  },
+  {
+    "lang": "Shell",
+    "id": "shell",
+    "link": "/learn/shell",
+    "img": "/img/language/Shell.svg"
+  },
+  {
+    "lang": "Typescript",
+    "id": "typescript",
+    "link": "/learn/typescript",
+    "img": "/img/language/Typescript.svg"
+  }
+]
