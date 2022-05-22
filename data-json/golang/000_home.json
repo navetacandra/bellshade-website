@@ -1,0 +1,67 @@
+{
+  "alur_belajar": [
+    {
+      "langkah": "1",
+      "topik": "Pengenalan dan Persiapan",
+      "target_pembelajaran": "Mengetahui apa yang harus disiapkan sebelum mulai mempelajari Golang",
+      "id": "pengenalan-dan-persiapan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "2",
+      "topik": "Variabel dan Tipe Data",
+      "target_pembelajaran": "Memahami fungsi dari masing-masing tipe data dasar serta dapat mendeklarasikan variabel dengan tipe data yang sesuai",
+      "id": "variabel-dan-tipe-data",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "3",
+      "topik": "Operator",
+      "target_pembelajaran": "Mengetahui peran setiap operator dan dapat melakukan operasi yang sesuai dengan operator tersebut",
+      "id": "operator",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "4",
+      "topik": "Pengkondisian",
+      "target_pembelajaran": "Memahami konsep pengambilan keputusan dalam pemrograman",
+      "id": "pengkondisian",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "5",
+      "topik": "Perulangan",
+      "target_pembelajaran": "Memahami konsep perulangan atau iterasi dalam pemrograman",
+      "id": "perulangan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "6",
+      "topik": "Tipe Data Lanjutan",
+      "target_pembelajaran": "Memahami array. slice, map, dan struct secara mendalam serta mengetahui implementasinya dalam program",
+      "id": "tipe-data-lanjutan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "7",
+      "topik": "Fungsi",
+      "target_pembelajaran": "Memahami konsep dasar fungsi serta macam-macam fungsi dalam Golang",
+      "id": "fungsi",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "8",
+      "topik": "Pointer",
+      "target_pembelajaran": "Memahami peran pointer dalam Golang dan mengetahui kapan harus menggunakannya",
+      "id": "pointer",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "9",
+      "topik": "Method dan Interface",
+      "target_pembelajaran": "Mengetahui apa itu method dan interface beserta cara deklarasi dan implementasi keduanya",
+      "id": "method-dan-interface",
+      "status": "on_progress"
+    }
+  ]
+}

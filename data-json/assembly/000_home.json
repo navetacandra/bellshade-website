@@ -1,0 +1,144 @@
+{
+  "alur_belajar": [
+    {
+      "langkah": "01",
+      "topik": "pemahaman dari bahasa assembly",
+      "target_pembelajaran": "Memahami konsep dasar dari pemograman assembly sebelum masuk ke langkah berikutnya",
+      "id": "pemahaman-dari-bahasa-assembly",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "02",
+      "topik": "hello world!",
+      "target_pembelajaran": "Hello world !",
+      "id": "hello-world!",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "03",
+      "topik": "semegmentasi memori",
+      "target_pembelajaran": "Memahami konsep dasar segmentasi memori",
+      "id": "semegmentasi-memori",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "04",
+      "topik": "register",
+      "target_pembelajaran": "Memahami konsep dari register pada assembly",
+      "id": "register",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "05",
+      "topik": "pemanggilan sistem",
+      "target_pembelajaran": "Memahami konsep dasar pemanggilan sistem assembly",
+      "id": "pemanggilan-sistem",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "06",
+      "topik": "mode adressing",
+      "target_pembelajaran": "Memahami dari mode adressing assembly",
+      "id": "mode-adressing",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "07",
+      "topik": "variabel",
+      "target_pembelajaran": "Memahami konsep dasar dari variabel pada assembly",
+      "id": "variabel",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "08",
+      "topik": "konstant",
+      "target_pembelajaran": "Memahami konsep dari konstant dari assembly",
+      "id": "konstant",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "09",
+      "topik": "fungsi aritmatika",
+      "target_pembelajaran": "Memahami konsep dasar aritmatika assembly",
+      "id": "fungsi-aritmatika",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "10",
+      "topik": "instruksi logika",
+      "target_pembelajaran": "Memahami konsep dasar logika assembly",
+      "id": "instruksi-logika",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "11",
+      "topik": "instruksi kondisi",
+      "target_pembelajaran": "Memahami instruksi kondisi pada assembly",
+      "id": "instruksi-kondisi",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "12",
+      "topik": "perulangan",
+      "target_pembelajaran": "Memahami konsep dasar perulangan pada assembly",
+      "id": "perulangan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "13",
+      "topik": "data_angka",
+      "target_pembelajaran": "Memahami tentang data angka pada assembly",
+      "id": "data_angka",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "14",
+      "topik": "string",
+      "target_pembelajaran": "Memahami tentang string pada assembly",
+      "id": "string",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "15",
+      "topik": "array",
+      "target_pembelajaran": "Memahami tentang basic array pada assembly",
+      "id": "array",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "16",
+      "topik": "prosedur",
+      "target_pembelajaran": "Memahami tentang basic prosedur pada assembly",
+      "id": "prosedur",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "17",
+      "topik": "rekursif",
+      "target_pembelajaran": "Memahami tentang basic rekursif pada assembly",
+      "id": "rekursif",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "18",
+      "topik": "makro",
+      "target_pembelajaran": "Memahami tentang basic makro",
+      "id": "makro",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "19",
+      "topik": "manejemen file",
+      "target_pembelajaran": "Memahami tentang basic tentang manajemen file",
+      "id": "manejemen-file",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "20",
+      "topik": "manajemen memori",
+      "target_pembelajaran": "Memahami tentang basic manajemen memori",
+      "id": "manajemen-memori",
+      "status": "on_progress"
+    }
+  ]
+}

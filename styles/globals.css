@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: inherit
+  background-color: inherit;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -18,22 +18,21 @@ body::-webkit-scrollbar-thumb {
 
 @layer components {
   .title-1 {
-    @apply my-4 block text-5xl font-bold text-dark dark:text-slate-50;
+    @apply my-4 block text-5xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .title-2 {
-    @apply my-4 block text-4xl font-bold text-dark dark:text-slate-50;
+    @apply my-4 block text-4xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .subtitle-h3 {
-    @apply my-3 block text-3xl font-bold text-dark dark:text-slate-50;
+    @apply my-3 block text-3xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .subtitle-h4 {
-    @apply my-3 block text-2xl font-bold text-dark dark:text-slate-50;
+    @apply my-3 block text-2xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
   }
 
-  
   .mark-text {
     @apply text-dark dark:text-slate-200;
     background-color: rgba(110, 118, 129, 0.4);
@@ -46,21 +45,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bulb-theme-toggler {
-  opacity: .7;
-  transition: all .3s;
+  opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .dark .bulb-theme-toggler {
   opacity: 1;
-  filter: drop-shadow(0 .1rem 5px rgba(255, 255, 255, .5)) drop-shadow(0 0 5px rgba(255, 255, 255, .5)) drop-shadow(0 -.3rem 8px rgba(255, 255, 255, .5));
+  filter: drop-shadow(0 0.1rem 5px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 -0.3rem 8px rgba(255, 255, 255, 0.5));
 }
 
 .section_text {
   font-size: 1.125rem;
-  margin-top: .75rem;
-  margin-bottom: .75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   font-weight: 400;
   color: #000000;
+  transition: all 0.05s;
 }
 
 .dark .section_text {
@@ -81,8 +83,9 @@ body::-webkit-scrollbar-thumb {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  padding: 1em 1em;
-  padding-top: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
   border-radius: 10px;
 }
 

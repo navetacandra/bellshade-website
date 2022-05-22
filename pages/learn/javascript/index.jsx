@@ -9,6 +9,9 @@ export default function Page() {
   return (
     <Layout pageTitle="Bellshade | Javascript">
       <WrapperTemplate>
+        <section className="mx-auto text-center my-8">
+          <h1 className="title-1">🎉🎉 Selamat Datang di Javascript 🎉🎉</h1>
+        </section>
         <section className="my-5">
           <h2 className="title-2">Apa itu Javascript?</h2>
           <p className="section_text">
@@ -29,7 +32,7 @@ export default function Page() {
             menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh
             Stackoverflow.
           </p>
-          <div className="realtive">
+          <div className="relative">
             <img
               src="/img/javascript-poll.png"
               alt="Javascript Poll"

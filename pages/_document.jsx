@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/icon/favicon.ico" />
           <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -95,7 +95,7 @@ export default class MyDocument extends Document {
           />
           <link rel="manifest" href="/manifest.json" />
         </Head>
-        <body className="bg-slate-100 dark:bg-slate-900 relative transition-all ease-out duration-200">
+        <body className="bg-slate-100 dark:bg-slate-900 relative transition-all ease-out duration-75">
           <Main />
           <DeferNextScript />
         </body>

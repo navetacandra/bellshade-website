@@ -8,7 +8,7 @@ function Navbar() {
   const [navbarResponsive, setNavbarResponsive] = useState(false);
 
   return (
-    <nav className="bg-white text-dark dark:bg-slate-800 dark:text-white drop-shadow mx-auto">
+    <nav className="bg-white text-dark dark:bg-slate-800 dark:text-white drop-shadow mx-auto transition-all ease-out duration-200">
       <div className="hidden lg:block max-w-[1920px] mb-5 py-3 px-10">
         <div className="flex justify-between">
           <div className="flex items-center space-x-16">

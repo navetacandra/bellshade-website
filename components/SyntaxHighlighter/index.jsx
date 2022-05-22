@@ -56,7 +56,7 @@ function ClipboardCopier() {
   }
   return (
     <button
-      className="button absolute top-2 text-slate-50 right-8 opacity-70 hover:opacity-100"
+      className="button absolute top-0.5 right-2 lg:top-2 lg:right-6 text-slate-50 opacity-20 hover:opacity-100"
       onClick={(el) => handleClick(el.target)}
       type="button"
     >
@@ -74,7 +74,7 @@ function SyntaxHighlighter({ code = [] }) {
   return (
     <div className="relative highlight border border-slate-200 my-3 shadow-md dark:shadow-xl">
       <ClipboardCopier />
-      <pre>
+      <pre className="pt-4 lg:pt-8">
         <code className="font-mono">
           {typeof code === "object" && !!code.length
             ? code.map((val, key) =>

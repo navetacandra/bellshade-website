@@ -1,0 +1,88 @@
+{
+  "alur_belajar": [
+    {
+      "langkah": "01",
+      "topik": "Pengenalan",
+      "target_pembelajaran": "Memahami apa itu SQL, Database Relational, dan Query Database",
+      "id": "pengenalan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "02",
+      "topik": "Data Manipulation Language",
+      "target_pembelajaran": "Memahami cara menampilkan data, input data, update data, dan menghapus data",
+      "id": "data-manipulation-language",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "03",
+      "topik": "Data Definition Language",
+      "target_pembelajaran": "Memahami cara memembuat object, menampilkan object, modifikasi object, menghapus object, menghilangkan data dalam object, dan mengganti nama object",
+      "id": "data-definition-language",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "04",
+      "topik": "Data Control Language",
+      "target_pembelajaran": "Memahami bagaimana cara menerima akses dan menolak akses",
+      "id": "data-control-language",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "05",
+      "topik": "SQL Operator",
+      "target_pembelajaran": "Memahami apa saja operator yang ada pada SQL",
+      "id": "sql-operator",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "06",
+      "topik": "Numeric Functions",
+      "target_pembelajaran": "Memahami apa saja fungsi yang digunakand dalam operasi matematika",
+      "id": "numeric-functions",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "07",
+      "topik": "String Functions",
+      "target_pembelajaran": "Memahami bagaimana cara memanipulasi setiap data yang akan diolah berupa tipe data string",
+      "id": "string-functions",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "08",
+      "topik": "DateTime Functions",
+      "target_pembelajaran": "Memahami bagaimana cara melakukan manipulasi date (tanggal) dan time (waktu) pada database SQL",
+      "id": "datetime-functions",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "09",
+      "topik": "Table",
+      "target_pembelajaran": "Memahami bagaimana cara membuat tabel pada SQL",
+      "id": "table",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "10",
+      "topik": "Join Table",
+      "target_pembelajaran": "Memahami bagaimana cara menggabungkan antar tabel",
+      "id": "join-table",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "11",
+      "topik": "GroupBy",
+      "target_pembelajaran": "Memahami bagaimana cara mengatur data yang rapih ke dalam grup",
+      "id": "groupby",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "12",
+      "topik": "SQL Schema",
+      "target_pembelajaran": "Memahami bagaimana cara mengatur data yang identik ke dalam grup",
+      "id": "sql-schema",
+      "status": "on_progress"
+    }
+  ]
+}

@@ -9,6 +9,9 @@ function Page() {
   return (
     <Layout pageTitle="Bellshade | Java">
       <WrapperTemplate>
+        <section className="mx-auto text-center my-8">
+          <h1 className="title-1">🎉🎉 Selamat Datang di Java 🎉🎉</h1>
+        </section>
         <section className="my-5">
           <h2 className="title-2">Apa itu Java?</h2>
           <p className="section_text">
@@ -127,7 +130,7 @@ function Page() {
                           </p>
                         ) : (
                           <p className="text-slate-500 text-base">
-                            {val.topik}
+                            {`${val.topik} - On Progress`}
                           </p>
                         )}
                       </td>

@@ -10,14 +10,14 @@ export default function Page() {
           {dataJson.map((data, i) => (
             <Link href={data.link} key={`${i}-${data.id}`}>
               <div className="inline-flex gap-4 p-4 shadow-md bg-white dark:bg-slate-800 rounded-md transition-all hover:shadow-lg dark:hover:bg-slate-700 ease-out duration-300 cursor-pointer">
-                <div className="shrink-0 h-16 w-16 md:h-32 md:w-32 my-auto">
+                <div className="shrink-0 h-16 w-16 md:h-20 md:w-20 my-auto">
                   <picture className="inline-block w-full h-full">
                     <img src={data.img} alt={`${data.lang}'s Icon`} />
                   </picture>
                 </div>
-                <div className="my-auto">
+                <div className="ml-2 mt-2">
                   <h3 className="font-Semibold text-3xl line-clamp-1 dark:text-slate-50">
-                    Tutorial {data.lang}
+                    Belajar {data.lang}
                   </h3>
                 </div>
               </div>

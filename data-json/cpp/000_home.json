@@ -1,0 +1,67 @@
+{
+  "alur_belajar": [
+    {
+      "langkah": "01",
+      "topik": "Introduksi Pemograman dan C++",
+      "target_pembelajaran": "Memahami apa itu membuat program dan apa peran C++ dalam proses pembuatan program",
+      "id": "introduksi-pemograman-dan-c++",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "02",
+      "topik": "Variabel dan Tipe Data",
+      "target_pembelajaran": "Memahami apa itu variabel dan tipe data berserta dengan perannya terhadap memori dan pointer",
+      "id": "variabel-dan-tipe-data",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "03",
+      "topik": "Operasi Aritmatik",
+      "target_pembelajaran": "Dapat melakukan operasi aritmatika sederhana menggunakan program yang ditulis menggunakan C++",
+      "id": "operasi-aritmatik",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "04",
+      "topik": "Operasi Boolean",
+      "target_pembelajaran": "Mengenal operasi boolean dan perannya dalam proses pemograman",
+      "id": "operasi-boolean",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "05",
+      "topik": "Pengkondisian",
+      "target_pembelajaran": "Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian",
+      "id": "pengkondisian",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "06",
+      "topik": "Perulangan",
+      "target_pembelajaran": "Memahami inti kedua dari pemograman yaitu melakukan perulangan",
+      "id": "perulangan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "07",
+      "topik": "Konsep Array",
+      "target_pembelajaran": "Memahami konsep Array dan mencoba untuk mengimplemntasikannya dalam program",
+      "id": "konsep-array",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "08",
+      "topik": "Array Multi-dimensi",
+      "target_pembelajaran": "Mengenal berbagai macam konsep array multi-dimensi dan implementasinya dalam program",
+      "id": "array-multi-dimensi",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "09",
+      "topik": "Fungsi",
+      "target_pembelajaran": "Mengenal konsep fungsi dalam teknik pemograman",
+      "id": "fungsi",
+      "status": "on_progress"
+    }
+  ]
+}

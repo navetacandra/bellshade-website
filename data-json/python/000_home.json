@@ -1,0 +1,116 @@
+{
+  "alur_belajar": [
+    {
+      "langkah": "01",
+      "topik": "Introduksi Pemograman dan Python",
+      "target_pembelajaran": "Memahami apa itu membuat program dan apa peran Python dalam proses pembuatan program",
+      "id": "introduksi-pemograman-dan-python",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "02",
+      "topik": "Tipe data",
+      "target_pembelajaran": "Memahami apa itu tipe data",
+      "id": "tipe-data",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "03",
+      "topik": "Variabel",
+      "target_pembelajaran": "Memahami apa itu variabel",
+      "id": "variabel",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "04",
+      "topik": "Operasi",
+      "target_pembelajaran": "Dapat melakukan operasi sederhana menggunakan program yang ditulis menggunakan Python",
+      "id": "operasi",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "05",
+      "topik": "String",
+      "target_pembelajaran": "Memahami String",
+      "id": "string",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "06",
+      "topik": "Input dan Output",
+      "target_pembelajaran": "Memahami cara mengambil input dari user",
+      "id": "input-dan-output",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "07",
+      "topik": "Pengkondisian",
+      "target_pembelajaran": "Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian",
+      "id": "pengkondisian",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "08",
+      "topik": "Perulangan",
+      "target_pembelajaran": "Memahami inti kedua dari pemograman yaitu melakukan perulangan",
+      "id": "perulangan",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "09",
+      "topik": "Fungsi",
+      "target_pembelajaran": "Mengenal konsep fungsi dalam teknik pemograman",
+      "id": "fungsi",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "10",
+      "topik": "List dan Tuple",
+      "target_pembelajaran": "Memahami konsep list dan tuple secara mendalam",
+      "id": "list-dan-tuple",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "11",
+      "topik": "Manipulasi String",
+      "target_pembelajaran": "Memahami cara memanipulasi sebuah string",
+      "id": "manipulasi-string",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "12",
+      "topik": "Exception",
+      "target_pembelajaran": "Memahami konsep exception pada python",
+      "id": "exception",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "13",
+      "topik": "Module",
+      "target_pembelajaran": "Memahami cara mengimport sebuah module pada python",
+      "id": "module",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "14",
+      "topik": "Datetime",
+      "target_pembelajaran": "Mengenal module datetime pada python",
+      "id": "datetime",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "15",
+      "topik": "Math",
+      "target_pembelajaran": "Mengenal module math pada python",
+      "id": "math",
+      "status": "on_progress"
+    },
+    {
+      "langkah": "16",
+      "topik": "kelas",
+      "target_pembelajaran": "Mengenal kelas pada python",
+      "id": "kelas",
+      "status": "on_progress"
+    }
+  ]
+}
