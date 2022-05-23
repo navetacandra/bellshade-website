@@ -126,7 +126,7 @@ function Navbar() {
           navbarResponsive ? "" : "hidden"
         }`}
       >
-        <Link href="/">
+        <Link href="/learn">
           <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
             <Icon
               icon="ic:round-school"
@@ -159,7 +159,7 @@ function Navbar() {
                         Leaderboard
                     </a>
                 </Link> */}
-        <Link href="/">
+        <Link href="/teams">
           <a className="block py-4 px-6 hover:bg-gray-200 hover:text-main dark:hover:bg-gray-600 opacity-80 hover:opacity-100">
             <Icon
               icon="ri:team-fill"
