@@ -84,7 +84,7 @@
         "#y[console] #_[.] #b[log] #_[(] #y[orang] #_[.] #p[nik] #_[); ] #cmt[// undefined]"
     ],
     "typeof-code": [
-        "#m[const ] #y[umur ] #c[= ] #m[17] #_[;]",
+        "#m[const ] #y[umur ] #c[= ] #o[17] #_[;]",
         "#y[console] #_[.] #b[log] #_[(] #p[] #m[typeof ] #y[umur] #_[);] #cmt[ // number]",
         "",
         "#m[let ] #p[namaBuah ] #c[= ] #g[\"Pepaya\"] #_[;]",
