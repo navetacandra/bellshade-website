@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx}": "eslint --fix",
     "*.{js,jsx,css,md}": "prettier --write"
   },
   "dependencies": {
