@@ -10,9 +10,6 @@ export default function Page() {
   return (
     <Layout pageTitle="Bellshade | Assembly">
       <WrapperTemplate>
-        <section className="mx-auto text-center my-8">
-          <h1 className="title-1">🎉🎉 Selamat Datang di Assembly 🎉🎉</h1>
-        </section>
         <section className="my-5">
           <div className="container mx-auto px-auto">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">

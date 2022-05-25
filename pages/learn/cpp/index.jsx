@@ -8,9 +8,6 @@ export default function Page() {
   return (
     <Layout pageTitle="Bellshade | C++">
       <WrapperTemplate>
-        <section className="mx-auto text-center my-8">
-          <h1 className="title-1">🎉🎉 Selamat Datang di C++ 🎉🎉</h1>
-        </section>
         <section className="my-5">
           <p className="section_text">
             <TextStyle Text="C++ adalah bahasa pemograman multi fungsi dengan tipe #italic[compiled language]. Artinya, kode yang ditulis dalam C++ harus dikompilasi atau diubah terlebih dahulu menjadi file #mark_code[binary] yang dapat dimengerti komputer." />

@@ -9,9 +9,6 @@ export default function Page() {
   return (
     <Layout pageTitle="Bellshade | Python">
       <WrapperTemplate>
-        <section className="mx-auto text-center my-8">
-          <h1 className="title-1">🎉🎉 Selamat Datang di Python 🎉🎉</h1>
-        </section>
         <section className="my-5">
           <p className="section_text">
             Python dibuat dan dikembangkan oleh Guido Van Rossum, programmer
