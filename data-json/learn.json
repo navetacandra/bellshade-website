@@ -15,13 +15,13 @@
     "lang": "Dart",
     "id": "dart",
     "link": "/learn/dart",
-    "img": "/img/language/Dart.svg"
+    "img": "/img/language/Dart.jpg"
   },
   {
     "lang": "Golang",
     "id": "golang",
     "link": "/learn/golang",
-    "img": "/img/language/Golang.svg"
+    "img": "/img/language/Golang.jpg"
   },
   {
     "lang": "HTML-CSS",
@@ -63,12 +63,12 @@
     "lang": "Shell",
     "id": "shell",
     "link": "/learn/shell",
-    "img": "/img/language/Shell.svg"
+    "img": "/img/language/Shell.jpg"
   },
   {
     "lang": "Typescript",
     "id": "typescript",
     "link": "/learn/typescript",
-    "img": "/img/language/Typescript.svg"
+    "img": "/img/language/Typescript.jpg"
   }
 ]
