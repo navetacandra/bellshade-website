@@ -90,7 +90,26 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
               : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
           }
         />
-        {metaImage ? <meta property="og:image" content={metaImage} /> : null}
+        {metaImage ? (
+          <>
+            <meta property="og:image" content={metaImage} />
+            <meta property="facebook:image" content={metaImage} />
+            <meta property="twitter:image" content={metaImage} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="facebook:image:width" content="1200" />
+            <meta property="twitter:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="facebook:image:height" content="630" />
+            <meta property="twitter:image:height" content="630" />
+            {pageTitle ? (
+              <>
+                <meta property="og:image:alt" content={pageTitle} />
+                <meta property="facebook:image:alt" content={pageTitle} />
+                <meta property="twitter:image:alt" content={pageTitle} />
+              </>
+            ) : null}
+          </>
+        ) : null}
       </Head>
       <Navbar />
       {children}
