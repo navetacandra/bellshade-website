@@ -72,6 +72,7 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:locale" content="id_ID" />
         <meta
           name="msapplication-TileColor"
           content={theme === "dark" ? "#000000" : "#ffffff"}
@@ -80,6 +81,7 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
           name="theme-color"
           content={theme === "dark" ? "#000000" : "#ffffff"}
         />
+        <meta property="og:type" content="article" />
         {pageTitle ? (
           <>
             <title>{pageTitle}</title>
@@ -97,6 +99,15 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
               : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
           }
         />
+        <meta
+          name="og:description"
+          content={
+            // eslint-disable-next-line no-unneeded-ternary
+            pageDescription
+              ? pageDescription
+              : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
+          }
+        />
         {metaImage ? (
           <>
             <meta property="og:image" content={metaImage} itemProp="image" />
@@ -107,6 +118,12 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
             />
             <meta name="twitter:image" content={metaImage} itemProp="image" />
             <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              property="og:image:url"
+              content={metaImage}
+              itemProp="image"
+            />
+            <meta property="og:image:type" content="image/png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
             {pageTitle ? (
