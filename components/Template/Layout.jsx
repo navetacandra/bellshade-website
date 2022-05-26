@@ -80,7 +80,14 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
           name="theme-color"
           content={theme === "dark" ? "#000000" : "#ffffff"}
         />
-        <title>{pageTitle}</title>
+        {pageTitle ? (
+          <>
+            <title>{pageTitle}</title>
+            <meta property="og:title" content={pageTitle} />
+            <meta property="facebook:title" content={pageTitle} />
+            <meta name="twitter:title" content={pageTitle} />
+          </>
+        ) : null}
         <meta
           name="description"
           content={
@@ -92,20 +99,21 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
         />
         {metaImage ? (
           <>
-            <meta property="og:image" content={metaImage} />
-            <meta property="facebook:image" content={metaImage} />
-            <meta property="twitter:image" content={metaImage} />
+            <meta property="og:image" content={metaImage} itemProp="image" />
+            <meta
+              property="facebook:image"
+              content={metaImage}
+              itemProp="image"
+            />
+            <meta name="twitter:image" content={metaImage} itemProp="image" />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta property="og:image:width" content="1200" />
-            <meta property="facebook:image:width" content="1200" />
-            <meta property="twitter:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            <meta property="facebook:image:height" content="630" />
-            <meta property="twitter:image:height" content="630" />
             {pageTitle ? (
               <>
                 <meta property="og:image:alt" content={pageTitle} />
                 <meta property="facebook:image:alt" content={pageTitle} />
-                <meta property="twitter:image:alt" content={pageTitle} />
+                <meta name="twitter:image:alt" content={pageTitle} />
               </>
             ) : null}
           </>
