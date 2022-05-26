@@ -66,7 +66,7 @@ function ThemeSwitcher({ setTheme }) {
   );
 }
 
-function Layout({ children, pageTitle, pageDescription = "" }) {
+function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
   const [theme, setTheme] = useState();
   return (
     <>
@@ -90,6 +90,7 @@ function Layout({ children, pageTitle, pageDescription = "" }) {
               : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
           }
         />
+        {metaImage ? <meta property="og:image" content={metaImage} /> : null}
       </Head>
       <Navbar />
       {children}

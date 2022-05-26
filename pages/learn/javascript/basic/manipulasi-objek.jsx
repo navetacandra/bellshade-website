@@ -7,7 +7,10 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Manipulasi Objek">
+    <Layout
+      pageTitle="Bellshade | Javascript - Manipulasi Objek"
+      metaImage="/meta-image/javascript/basic/manipulasi-objek.png"
+    >
       <WrapperTemplate>
         <section>
           <h2 className="title-2">Method-Method untuk Memanipulasi Object</h2>

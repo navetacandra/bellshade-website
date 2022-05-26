@@ -5,7 +5,10 @@ import dataJson from "@/data-json/javascript/basic/001_pengenalan.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Pengenalan">
+    <Layout
+      pageTitle="Bellshade | Javascript - Pengenalan"
+      metaImage="/meta-image/javascript/basic/pengenalan.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengenalan Javascript</h2>

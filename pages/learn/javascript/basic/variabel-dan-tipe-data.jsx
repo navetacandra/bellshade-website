@@ -7,7 +7,10 @@ import dataJson from "@/data-json/javascript/basic/002_data-type.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Variabel dan Tipe Data">
+    <Layout
+      pageTitle="Bellshade | Javascript - Variabel dan Tipe Data"
+      metaImage="/meta-image/javascript/basic/variabel-dan-tipe-data.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Variabel dan Tipe Data</h2>

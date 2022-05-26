@@ -8,7 +8,10 @@ import dataJson from "@/data-json/javascript/basic/003_operator.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Operator">
+    <Layout
+      pageTitle="Bellshade | Javascript - Operator"
+      metaImage="/meta-image/javascript/basic/operator.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Operator</h2>

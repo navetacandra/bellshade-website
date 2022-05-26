@@ -5,7 +5,10 @@ import dataJson from "@/data-json/javascript/basic/005_aritmatik.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Operator Aritmatik">
+    <Layout
+      pageTitle="Bellshade | Javascript - Operator Aritmatik"
+      metaImage="/meta-image/javascript/basic/operator-aritmatik.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Operasi Aritmatika pada Javascript</h2>

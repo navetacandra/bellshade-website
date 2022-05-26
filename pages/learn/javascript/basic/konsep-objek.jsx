@@ -6,7 +6,10 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Konsep Objek">
+    <Layout
+      pageTitle="Bellshade | Javascript - Konsep Objek"
+      metaImage="/meta-image/javascript/basic/konsep-objek.png"
+    >
       <WrapperTemplate>
         {dataJson.map((data, i) => (
           <section key={i} className="my-5">

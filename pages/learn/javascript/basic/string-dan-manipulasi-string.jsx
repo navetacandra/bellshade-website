@@ -7,7 +7,10 @@ import dataJson from "@/data-json/javascript/basic/004_string-dan-manipulasi-str
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - String dan Manipulasi String">
+    <Layout
+      pageTitle="Bellshade | Javascript - String dan Manipulasi String"
+      metaImage="/meta-image/javascript/basic/string-dan-manipulasi-string.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">String dan Cara Memanipulasinya</h2>

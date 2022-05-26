@@ -7,7 +7,10 @@ import dataJson from "@/data-json/javascript/basic/013_strict-mode.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Strict Mode">
+    <Layout
+      pageTitle="Bellshade | Javascript - Strict Mode"
+      metaImage="/meta-image/javascript/basic/strict-mode.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Strict Mode</h2>

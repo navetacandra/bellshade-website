@@ -8,7 +8,10 @@ import dataJson from "@/data-json/javascript/basic/007_pengkondisian.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Pengkondisian">
+    <Layout
+      pageTitle="Bellshade | Javascript - Pengkondisian"
+      metaImage="/meta-image/javascript/basic/pengkondisian.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengkondisian</h2>

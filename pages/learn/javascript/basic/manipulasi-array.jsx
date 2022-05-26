@@ -9,7 +9,10 @@ import UnorderedList from "@/components/List/UnorderedList";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Manipulasi Array">
+    <Layout
+      pageTitle="Bellshade | Javascript - Manipulasi Array"
+      metaImage="/meta-image/javascript/basic/manipulasi-array.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Manipulasi Array</h2>

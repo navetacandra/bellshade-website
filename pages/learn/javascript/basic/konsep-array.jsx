@@ -6,7 +6,10 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Konsep Array">
+    <Layout
+      pageTitle="Bellshade | Javascript - Konsep Array"
+      metaImage="/meta-image/javascript/basic/konsep-array.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Belajar Penggunaan Array di Javascript</h2>

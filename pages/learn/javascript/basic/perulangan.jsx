@@ -8,7 +8,10 @@ import dataJson from "@/data-json/javascript/basic/006_perulangan.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript - Perulangan">
+    <Layout
+      pageTitle="Bellshade | Javascript - Perulangan"
+      metaImage="/meta-image/javascript/basic/perulangan.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengulangan (Looping)</h2>
