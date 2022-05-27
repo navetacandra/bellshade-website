@@ -112,17 +112,17 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
           <>
             <meta
               property="og:image"
-              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              content={`https://bellshade-website.vercel.app/${metaImage}`}
               itemProp="image"
             />
             <meta
               property="facebook:image"
-              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              content={`https://bellshade-website.vercel.app/${metaImage}`}
               itemProp="image"
             />
             <meta
               name="twitter:image"
-              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              content={`https://bellshade-website.vercel.app/${metaImage}`}
               itemProp="image"
             />
             <meta property="og:image:alt" content={pageTitle} />
@@ -131,7 +131,7 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
             <meta name="twitter:card" content="summary_large_image" />
             <meta
               property="og:image:url"
-              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              content={`https://bellshade-website.vercel.app/${metaImage}`}
               itemProp="image"
             />
             <meta property="og:image:type" content="image/png" />
