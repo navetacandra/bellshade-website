@@ -8,7 +8,10 @@ import dataJson from "@/data-json/java/basic/006_operator-logika.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Operator Logika">
+    <Layout
+      pageTitle="Bellshade | Java - Operator Logika"
+      metaImage="/meta-image/java/basic/operator-logika.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Java operator boolean (logika)</h2>

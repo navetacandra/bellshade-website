@@ -9,7 +9,10 @@ import dataJson from "@/data-json/java/basic/009_perulangan-while.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Perulangan While">
+    <Layout
+      pageTitle="Bellshade | Java - Perulangan While"
+      metaImage="/meta-image/java/basic/perulangan.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Looping (Perulangan)</h2>

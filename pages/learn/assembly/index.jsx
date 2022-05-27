@@ -8,7 +8,10 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Assembly">
+    <Layout
+      pageTitle="Bellshade | Assembly"
+      metaImage="/meta-image/learn/assembly.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <div className="container mx-auto px-auto">

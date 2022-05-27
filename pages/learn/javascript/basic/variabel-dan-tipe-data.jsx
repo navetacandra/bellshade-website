@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Variabel dan Tipe Data"
-      metaImage="/meta-image/javascript/basic/variabel-dan-tipe-data.png"
+      metaImage="/meta-image/learn/javascript/basic/variabel-dan-tipe-data.png"
     >
       <WrapperTemplate>
         <section className="my-5">

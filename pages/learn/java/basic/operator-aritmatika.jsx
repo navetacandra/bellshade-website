@@ -5,7 +5,10 @@ import dataJson from "@/data-json/java/basic/004_aritmatika.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Operator Aritmatika">
+    <Layout
+      pageTitle="Bellshade | Java - Operator Aritmatika"
+      metaImage="/meta-image/java/basic/operator-aritmatika.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Operator Aritmatika</h2>

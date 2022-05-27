@@ -6,7 +6,10 @@ import dataJson from "@/data-json/java/basic/008_pengkondisian-switch-case.json"
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Struktur Kontrol (Switch-Case)">
+    <Layout
+      pageTitle="Bellshade | Java - Struktur Kontrol (Switch-Case)"
+      metaImage="/meta-image/java/basic/pengkondisian-switch-case.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengkondisian If-Else</h2>

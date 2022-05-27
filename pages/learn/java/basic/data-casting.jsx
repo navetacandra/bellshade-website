@@ -5,7 +5,10 @@ import dataJson from "@/data-json/java/basic/003_data-casting.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Data Casting">
+    <Layout
+      pageTitle="Bellshade | Java - Data Casting"
+      metaImage="/meta-image/java/basic/data-casting.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Data Casting</h2>

@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Fungsi"
-      metaImage="/meta-image/javascript/basic/fungsi.png"
+      metaImage="/meta-image/learn/javascript/basic/fungsi.png"
     >
       <WrapperTemplate>
         <section className="my-5">

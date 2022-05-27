@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Manipulasi Array"
-      metaImage="/meta-image/javascript/basic/manipulasi-array.png"
+      metaImage="/meta-image/learn/javascript/basic/manipulasi-array.png"
     >
       <WrapperTemplate>
         <section className="my-5">

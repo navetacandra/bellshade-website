@@ -7,7 +7,10 @@ import dataJson from "@/data-json/javascript/000_home.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Javascript">
+    <Layout
+      pageTitle="Bellshade | Javascript"
+      metaImage="/meta-image/learn/javascript.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Apa itu Javascript?</h2>

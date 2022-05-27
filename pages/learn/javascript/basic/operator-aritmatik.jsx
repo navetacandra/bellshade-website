@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Operator Aritmatik"
-      metaImage="/meta-image/javascript/basic/operator-aritmatik.png"
+      metaImage="/meta-image/learn/javascript/basic/operator-aritmatik.png"
     >
       <WrapperTemplate>
         <section className="my-5">

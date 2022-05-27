@@ -8,7 +8,10 @@ import dataJson from "@/data-json/java/basic/002_tipe-data.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Variabel dan Tipe Data">
+    <Layout
+      pageTitle="Bellshade | Java - Variabel dan Tipe Data"
+      metaImage="/meta-image/java/basic/variabel-dan-tipe-data.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Tipe Data</h2>

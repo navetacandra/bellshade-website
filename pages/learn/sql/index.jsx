@@ -7,7 +7,7 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | SQL">
+    <Layout pageTitle="Bellshade | SQL" metaImage="/meta-image/learn/sql.png">
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengertian SQL</h2>

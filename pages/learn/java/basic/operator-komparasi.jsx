@@ -8,7 +8,10 @@ import TextStyle from "@/components/TextStyle";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Operator Komparasi">
+    <Layout
+      pageTitle="Bellshade | Java - Operator Komparasi"
+      metaImage="/meta-image/java/basic/operator-komparasi.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Operator Komparasi/Perbandingan</h2>

@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Operator"
-      metaImage="/meta-image/javascript/basic/operator.png"
+      metaImage="/meta-image/learn/javascript/basic/operator.png"
     >
       <WrapperTemplate>
         <section className="my-5">

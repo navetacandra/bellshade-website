@@ -5,7 +5,10 @@ import dataJson from "@/data-json/java/basic/001_pendahuluan.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Pendahuluan Pemrograman dan Java">
+    <Layout
+      pageTitle="Bellshade | Java - Pendahuluan Pemrograman dan Java"
+      metaImage="/meta-image/java/basic/pendahuluan-pemrograman-dan-java.png"
+    >
       <WrapperTemplate>
         <h2 className="title-2">Pendahuluan</h2>
         <h4 className="subtitle-h4">Menulis Program Java</h4>

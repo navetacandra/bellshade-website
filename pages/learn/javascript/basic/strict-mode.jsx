@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Strict Mode"
-      metaImage="/meta-image/javascript/basic/strict-mode.png"
+      metaImage="/meta-image/learn/javascript/basic/strict-mode.png"
     >
       <WrapperTemplate>
         <section className="my-5">

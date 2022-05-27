@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - String dan Manipulasi String"
-      metaImage="/meta-image/javascript/basic/string-dan-manipulasi-string.png"
+      metaImage="/meta-image/learn/javascript/basic/string-dan-manipulasi-string.png"
     >
       <WrapperTemplate>
         <section className="my-5">

@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle="Bellshade | Javascript - Konsep Array"
-      metaImage="/meta-image/javascript/basic/konsep-array.png"
+      metaImage="/meta-image/learn/javascript/basic/konsep-array.png"
     >
       <WrapperTemplate>
         <section className="my-5">

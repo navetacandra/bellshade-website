@@ -7,7 +7,10 @@ import dataJson from "@/data-json/python/000_home.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Python">
+    <Layout
+      pageTitle="Bellshade | Python"
+      metaImage="/meta-image/learn/python.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <p className="section_text">

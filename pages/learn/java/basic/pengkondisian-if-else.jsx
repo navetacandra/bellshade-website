@@ -8,7 +8,10 @@ import dataJson from "@/data-json/java/basic/007_pengkondisian-if-else.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java - Struktur Kontrol (If-Else)">
+    <Layout
+      pageTitle="Bellshade | Java - Struktur Kontrol (If-Else)"
+      metaImage="/meta-image/java/basic/pengkondisian-if-else.png"
+    >
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Pengkondisian If-Else</h2>

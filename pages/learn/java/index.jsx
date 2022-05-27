@@ -7,7 +7,7 @@ import dataJson from "@/data-json/java/000_home.json";
 
 function Page() {
   return (
-    <Layout pageTitle="Bellshade | Java">
+    <Layout pageTitle="Bellshade | Java" metaImage="/meta-image/learn/java.png">
       <WrapperTemplate>
         <section className="my-5">
           <h2 className="title-2">Apa itu Java?</h2>
