@@ -117,6 +117,9 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
               itemProp="image"
             />
             <meta name="twitter:image" content={metaImage} itemProp="image" />
+            <meta property="og:image:alt" content={pageTitle} />
+            <meta property="facebook:image:alt" content={pageTitle} />
+            <meta name="twitter:image:alt" content={pageTitle} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta
               property="og:image:url"
@@ -126,13 +129,6 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            {pageTitle ? (
-              <>
-                <meta property="og:image:alt" content={pageTitle} />
-                <meta property="facebook:image:alt" content={pageTitle} />
-                <meta name="twitter:image:alt" content={pageTitle} />
-              </>
-            ) : null}
           </>
         ) : null}
       </Head>
