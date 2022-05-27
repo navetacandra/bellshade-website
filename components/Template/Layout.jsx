@@ -110,20 +110,28 @@ function Layout({ children, pageTitle, pageDescription = "", metaImage = "" }) {
         />
         {metaImage ? (
           <>
-            <meta property="og:image" content={metaImage} itemProp="image" />
             <meta
-              property="facebook:image"
-              content={metaImage}
+              property="og:image"
+              content={`${process.env.PUBLIC_URI}/${metaImage}`}
               itemProp="image"
             />
-            <meta name="twitter:image" content={metaImage} itemProp="image" />
+            <meta
+              property="facebook:image"
+              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              itemProp="image"
+            />
+            <meta
+              name="twitter:image"
+              content={`${process.env.PUBLIC_URI}/${metaImage}`}
+              itemProp="image"
+            />
             <meta property="og:image:alt" content={pageTitle} />
             <meta property="facebook:image:alt" content={pageTitle} />
             <meta name="twitter:image:alt" content={pageTitle} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta
               property="og:image:url"
-              content={metaImage}
+              content={`${process.env.PUBLIC_URI}/${metaImage}`}
               itemProp="image"
             />
             <meta property="og:image:type" content="image/png" />
