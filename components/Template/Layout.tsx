@@ -42,7 +42,6 @@ function BulbIcon(props: BulbIconProps) {
 function ThemeSwitcher(props: ThemeSwitcherProps) {
   const { setTheme } = props;
   const [dark, setDark] = useState(true);
-  const html = document.querySelector("html");
 
   function setItem(key: string, item: string) {
     localStorage?.setItem(key, JSON.stringify(item));
@@ -54,18 +53,22 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
   }
 
   useEffect(() => {
-    html?.classList.add(getItem("color-theme"));
+    document.querySelector("html")?.classList.add(getItem("color-theme"));
     setTheme(getItem("color-theme"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function changeTheme() {
-    html?.classList.remove(getItem("color-theme"));
-    const ColorTheme = !(getItem("color-theme") === "dark") ? "dark" : "light";
-    html?.classList.add(ColorTheme);
-    setTheme(ColorTheme);
-    setItem("color-theme", ColorTheme);
-    setDark(ColorTheme === "dark");
+    if (typeof document === "object" && typeof localStorage === "object") {
+      document.querySelector("html")?.classList.remove(getItem("color-theme"));
+      const ColorTheme = !(getItem("color-theme") === "dark")
+        ? "dark"
+        : "light";
+      document.querySelector("html")?.classList.add(ColorTheme);
+      setTheme(ColorTheme);
+      setItem("color-theme", ColorTheme);
+      setDark(ColorTheme === "dark");
+    }
   }
 
   return (
