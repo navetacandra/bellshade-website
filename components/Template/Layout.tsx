@@ -49,9 +49,19 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
   }
 
   function getItem(key: string) {
-    const item = localStorage?.getItem(key) || "";
+    const item = localStorage?.getItem(key) || '""';
+    console.log(item);
     return JSON.parse(item);
   }
+
+  useEffect(() => {
+    if(typeof window === "object") {
+      if(!getItem("color-theme")) {
+        setItem("color-theme", "light");
+        setTheme("light");
+      }
+    }
+  }, []);
 
   useEffect(() => {
     document.querySelector("html")?.classList.add(getItem("color-theme"));
