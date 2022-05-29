@@ -131,7 +131,9 @@ function Layout(props: LayoutProps) {
           {/* Open Graph Image URL and Alt */}
           <meta
             property='og:image'
-            content={`https://bellshade-website.vercel.app${metaImage}`}
+            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+              metaImage || "/meta-image/home.png"
+            }`}
             itemProp='image'
           />
           <meta property='og:image:alt' content={pageTitle} />
@@ -140,7 +142,9 @@ function Layout(props: LayoutProps) {
           {/* Facebook Image URL and Alt */}
           <meta
             property='facebook:image'
-            content={`https://bellshade-website.vercel.app${metaImage}`}
+            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+              metaImage || "/meta-image/home.png"
+            }`}
             itemProp='image'
           />
           <meta property='facebook:image:alt' content={pageTitle} />
@@ -149,7 +153,9 @@ function Layout(props: LayoutProps) {
           {/* Twitter Image URL and Alt */}
           <meta
             name='twitter:image'
-            content={`https://bellshade-website.vercel.app${metaImage}`}
+            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+              metaImage || "/meta-image/home.png"
+            }`}
             itemProp='image'
           />
           <meta name='twitter:image:alt' content={pageTitle} />
@@ -159,7 +165,9 @@ function Layout(props: LayoutProps) {
           {/* Open Graph Image Details */}
           <meta
             property='og:image:url'
-            content={`https://bellshade-website.vercel.app${metaImage}`}
+            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+              metaImage || "/meta-image/home.png"
+            }`}
             itemProp='image'
           />
           <meta property='og:image:type' content='image/png' />
