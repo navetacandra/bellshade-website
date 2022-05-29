@@ -134,7 +134,7 @@ function Layout(props: LayoutProps) {
           {/* Open Graph Image URL and Alt */}
           <meta
             property='og:image'
-            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+            content={`https://bellshade-website.vercel.app${
               metaImage || "/meta-image/home.png"
             }`}
             itemProp='image'
@@ -145,7 +145,7 @@ function Layout(props: LayoutProps) {
           {/* Facebook Image URL and Alt */}
           <meta
             property='facebook:image'
-            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+            content={`https://bellshade-website.vercel.app${
               metaImage || "/meta-image/home.png"
             }`}
             itemProp='image'
@@ -156,7 +156,7 @@ function Layout(props: LayoutProps) {
           {/* Twitter Image URL and Alt */}
           <meta
             name='twitter:image'
-            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+            content={`https://bellshade-website.vercel.app${
               metaImage || "/meta-image/home.png"
             }`}
             itemProp='image'
@@ -168,7 +168,7 @@ function Layout(props: LayoutProps) {
           {/* Open Graph Image Details */}
           <meta
             property='og:image:url'
-            content={`https://res.cloudinary.com/demo/image/fetch/https://bellshade-website.vercel.app${
+            content={`https://bellshade-website.vercel.app${
               metaImage || "/meta-image/home.png"
             }`}
             itemProp='image'
