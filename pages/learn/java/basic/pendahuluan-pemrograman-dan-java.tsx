@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Pendahuluan Pemrograman dan Java'
-      metaImage='/meta-image/java/basic/pendahuluan-pemrograman-dan-java.png'
+      metaImage='/meta-image/learn/java/basic/pendahuluan-pemrograman-dan-java.png'
     >
       <WrapperTemplate>
         <h2 className='title-2'>Pendahuluan</h2>

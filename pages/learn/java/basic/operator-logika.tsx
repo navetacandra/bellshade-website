@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Operator Logika'
-      metaImage='/meta-image/java/basic/operator-logika.png'
+      metaImage='/meta-image/learn/java/basic/operator-logika.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

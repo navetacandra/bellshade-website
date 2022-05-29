@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Struktur Kontrol (If-Else)'
-      metaImage='/meta-image/java/basic/pengkondisian-if-else.png'
+      metaImage='/meta-image/learn/java/basic/pengkondisian-if-else.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

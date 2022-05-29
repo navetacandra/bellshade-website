@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Operator Komparasi'
-      metaImage='/meta-image/java/basic/operator-komparasi.png'
+      metaImage='/meta-image/learn/java/basic/operator-komparasi.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

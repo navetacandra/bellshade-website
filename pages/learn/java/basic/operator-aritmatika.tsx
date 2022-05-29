@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Operator Aritmatika'
-      metaImage='/meta-image/java/basic/operator-aritmatika.png'
+      metaImage='/meta-image/learn/java/basic/operator-aritmatika.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

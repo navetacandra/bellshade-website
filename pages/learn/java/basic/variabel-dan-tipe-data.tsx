@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Variabel dan Tipe Data'
-      metaImage='/meta-image/java/basic/variabel-dan-tipe-data.png'
+      metaImage='/meta-image/learn/java/basic/variabel-dan-tipe-data.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Struktur Kontrol (Switch-Case)'
-      metaImage='/meta-image/java/basic/pengkondisian-switch-case.png'
+      metaImage='/meta-image/learn/java/basic/pengkondisian-switch-case.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Perulangan While'
-      metaImage='/meta-image/java/basic/perulangan.png'
+      metaImage='/meta-image/learn/java/basic/perulangan.png'
     >
       <WrapperTemplate>
         <section className='my-5'>

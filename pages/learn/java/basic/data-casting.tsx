@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <Layout
       pageTitle='Bellshade | Java - Data Casting'
-      metaImage='/meta-image/java/basic/data-casting.png'
+      metaImage='/meta-image/learn/java/basic/data-casting.png'
     >
       <WrapperTemplate>
         <section className='my-5'>
