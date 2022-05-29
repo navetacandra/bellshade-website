@@ -13,6 +13,9 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>Python</h1>
+          </div>
           <p className='section_text'>
             Python dibuat dan dikembangkan oleh Guido Van Rossum, programmer
             yang berasal dari Belanda. Pemilihan nama python itu sendiri diambil

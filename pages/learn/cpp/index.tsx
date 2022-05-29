@@ -9,6 +9,9 @@ export default function Page() {
     <Layout pageTitle='Bellshade | C++' metaImage='/meta-image/learn/cpp.png'>
       <WrapperTemplate>
         <section className='my-5'>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>C++</h1>
+          </div>
           <p className='section_text'>
             <TextStyle Text='C++ adalah bahasa pemograman multi fungsi dengan tipe #italic[compiled language]. Artinya, kode yang ditulis dalam C++ harus dikompilasi atau diubah terlebih dahulu menjadi file #mark_code[binary] yang dapat dimengerti komputer.' />
           </p>

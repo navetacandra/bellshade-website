@@ -10,7 +10,10 @@ export default function Page() {
     <Layout pageTitle='Bellshade | SQL' metaImage='/meta-image/learn/sql.png'>
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Pengertian SQL</h2>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>SQL</h1>
+          </div>
+          <h1 className='title-2'>Pengertian SQL</h1>
           <p className='section_text'>
             <Link href='https://id.wikipedia.org/wiki/SQL'>
               <i className='text-blue_primary cursor-pointer'>

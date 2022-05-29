@@ -13,7 +13,10 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Apa itu Javascript?</h2>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>Javascript</h1>
+          </div>
+          <h1 className='title-2'>Apa itu Javascript?</h1>
           <p className='section_text'>
             JavaScript adalah bahasa pemrograman yang digunakan dalam
             pengembangan website agar lebih dinamis dan interaktif. Jika
@@ -23,7 +26,7 @@ export default function Page() {
           </p>
         </section>
         <section className='my-5'>
-          <h2 className='title-2'>Kenapa Javascript?</h2>
+          <h1 className='title-2'>Kenapa Javascript?</h1>
           <p className='section_text'>
             Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan
             yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk
@@ -41,7 +44,7 @@ export default function Page() {
           </div>
         </section>
         <section className='my-5'>
-          <h2 className='title-2'>Contoh Penggunaan Javascript</h2>
+          <h1 className='title-2'>Contoh Penggunaan Javascript</h1>
           <p className='section_text'>
             Dengan JavaScript kita bisa membuat website yang jauh lebih baik
             pastinya. Seperti membuat navbar, slider, timer, hingga membuat
@@ -70,7 +73,7 @@ export default function Page() {
           </OrderedList>
         </section>
         <section className='my-5'>
-          <h2 className='title-2'>Tahapan Belajar Javascript</h2>
+          <h1 className='title-2'>Tahapan Belajar Javascript</h1>
           <hr />
           <h4 className='subtitle-h4'>Jalur Belajar Javascript</h4>
           <p className='section_text'>

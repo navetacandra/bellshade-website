@@ -10,7 +10,10 @@ function Page() {
     <Layout pageTitle='Bellshade | Java' metaImage='/meta-image/learn/java.png'>
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Apa itu Java?</h2>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>Java</h1>
+          </div>
+          <h1 className='title-2'>Apa itu Java?</h1>
           <p className='section_text'>
             Java adalah bahasa pemrograman multifungsi dengan tipe{" "}
             <i>compiled language</i>. Artinya, kode yang ditulis dalam Java

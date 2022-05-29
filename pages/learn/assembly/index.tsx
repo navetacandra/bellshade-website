@@ -14,6 +14,9 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
+          <div className='text-center mb-3'>
+            <h1 className='title-1'>Assembly</h1>
+          </div>
           <div className='container mx-auto px-auto'>
             <div className='relative overflow-x-auto shadow-md sm:rounded-lg'>
               <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>

@@ -16,9 +16,9 @@ export default function Page() {
                   </picture>
                 </div>
                 <div className='ml-2 mt-2'>
-                  <h3 className='font-Semibold text-3xl line-clamp-1 dark:text-slate-50'>
+                  <h1 className='font-Semibold text-3xl line-clamp-1 dark:text-slate-50'>
                     Belajar {data.lang}
-                  </h3>
+                  </h1>
                 </div>
               </div>
             </Link>
