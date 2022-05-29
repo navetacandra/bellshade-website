@@ -3,7 +3,7 @@
     "lang": "Assembly",
     "id": "assembly",
     "link": "/learn/assembly",
-    "img": "/img/language/Assembly.svg"
+    "img": "/img/language/Assembly.png"
   },
   {
     "lang": "CPP",
@@ -57,7 +57,7 @@
     "lang": "SQL",
     "id": "sql",
     "link": "/learn/sql",
-    "img": "/img/language/SQL.svg"
+    "img": "/img/language/SQL.png"
   },
   {
     "lang": "Shell",
