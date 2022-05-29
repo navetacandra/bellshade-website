@@ -26,10 +26,24 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
+#lock file
+*lock.json
+
+#compressed file
+*.tar
+*.rar
+*.zip
+*.7z
+
+#test file
+*test*.*
+
+
+#eslintcache
+.eslintcache
