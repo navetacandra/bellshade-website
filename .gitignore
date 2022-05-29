@@ -31,18 +31,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-#lock file
-*lock.json
-
-#compressed file
-*.tar
-*.rar
-*.zip
-*.7z
-
-#test file
-*test*.*
-
-
-#eslintcache
-.eslintcache
+# typescript
+*.tsbuildinfo
