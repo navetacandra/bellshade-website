@@ -106,7 +106,7 @@ function Layout(props: LayoutProps) {
         <meta property='og:type' content='article' />
         <meta
           name='keywords'
-          content='bellshade, bellshade-website, tutorial, komunitas, komunitas pemrograman, bahasa indonesia, indonesia, wpu, web programming unpas, mod, helper, bellshade-website, website bellshade, bellshade team, team, bellshade tim, tim bellshade, tim'
+          content='bellshade-website, tutorial, komunitas, komunitas pemrograman, bahasa indonesia, indonesia, wpu, web programming unpas, mod, helper, bellshade-website, website bellshade, bellshade team, bellshade tim, tim bellshade, tim, belajar, bellshade, github, team, journey, assembly, learning, untuk, kode, dart'
         />
         {/* End Graph Property */}
 

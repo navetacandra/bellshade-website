@@ -94,6 +94,7 @@ export default class MyDocument extends Document {
             content='/icon/ms-icon-144x144.png'
           />
           <link rel='manifest' href='/manifest.json' />
+          <link rel='canonical' href='https://bellshade-website.vercel.app/' />
         </Head>
         <body className='bg-slate-100 dark:bg-slate-900 relative transition-all ease-out duration-75'>
           <Main />
