@@ -1,3 +1,4 @@
+/* eslint-disable no-unneeded-ternary */
 /* eslint-disable react/require-default-props */
 import Head from "next/head";
 import { useState, useEffect, ReactNode } from "react";
@@ -103,28 +104,43 @@ function Layout(props: LayoutProps) {
         {/* Open Graph Property */}
         <meta property='og:locale' content='id_ID' />
         <meta property='og:type' content='article' />
+        <meta
+          name='keywords'
+          content='bellshade, bellshade-website, tutorial, komunitas, komunitas pemrograman, bahasa indonesia, indonesia, wpu, web programming unpas, mod, helper, bellshade-website, website bellshade, bellshade team, team, bellshade tim, tim bellshade, tim'
+        />
         {/* End Graph Property */}
 
         {/* Title Pages */}
-        <title>{pageTitle || "Bellshade"}</title>
-        <meta property='og:title' content={pageTitle || "Bellshade"} />
-        <meta property='facebook:title' content={pageTitle || "Bellshade"} />
-        <meta name='twitter:title' content={pageTitle || "Bellshade"} />
+        <title>{pageTitle ? pageTitle : "Bellshade"}</title>
+        <meta
+          property='og:title'
+          content={pageTitle ? pageTitle : "Bellshade"}
+        />
+        <meta
+          property='facebook:title'
+          content={pageTitle ? pageTitle : "Bellshade"}
+        />
+        <meta
+          name='twitter:title'
+          content={pageTitle ? pageTitle : "Bellshade"}
+        />
         {/* End Title Pages */}
 
         {/* Description Page */}
         <meta
           name='description'
           content={
-            pageDescription ||
-            "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
+            pageDescription
+              ? pageDescription
+              : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
           }
         />
         <meta
           name='og:description'
           content={
-            pageDescription ||
-            "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
+            pageDescription
+              ? pageDescription
+              : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
           }
         />
         {/* Description Page */}
@@ -135,33 +151,42 @@ function Layout(props: LayoutProps) {
           <meta
             property='og:image'
             content={`https://bellshade-website.vercel.app${
-              metaImage || "/meta-image/home.png"
+              metaImage ? metaImage : "/meta-image/home.png"
             }`}
             itemProp='image'
           />
-          <meta property='og:image:alt' content={pageTitle} />
+          <meta
+            property='og:image:alt'
+            content={pageTitle ? pageTitle : "Bellshade"}
+          />
           {/* Open Graph Image URL and Alt */}
 
           {/* Facebook Image URL and Alt */}
           <meta
             property='facebook:image'
             content={`https://bellshade-website.vercel.app${
-              metaImage || "/meta-image/home.png"
+              metaImage ? metaImage : "/meta-image/home.png"
             }`}
             itemProp='image'
           />
-          <meta property='facebook:image:alt' content={pageTitle} />
+          <meta
+            property='facebook:image:alt'
+            content={pageTitle ? pageTitle : "Bellshade"}
+          />
           {/* End Facebook Image URL and Alt */}
 
           {/* Twitter Image URL and Alt */}
           <meta
             name='twitter:image'
             content={`https://bellshade-website.vercel.app${
-              metaImage || "/meta-image/home.png"
+              metaImage ? metaImage : "/meta-image/home.png"
             }`}
             itemProp='image'
           />
-          <meta name='twitter:image:alt' content={pageTitle} />
+          <meta
+            name='twitter:image:alt'
+            content={pageTitle ? pageTitle : "Bellshade"}
+          />
           <meta name='twitter:card' content='summary_large_image' />
           {/* End Twitter Image URL and Alt */}
 
@@ -169,7 +194,7 @@ function Layout(props: LayoutProps) {
           <meta
             property='og:image:url'
             content={`https://bellshade-website.vercel.app${
-              metaImage || "/meta-image/home.png"
+              metaImage ? metaImage : "/meta-image/home.png"
             }`}
             itemProp='image'
           />
