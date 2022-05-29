@@ -50,7 +50,6 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
 
   function getItem(key: string) {
     const item = localStorage?.getItem(key) || '""';
-    console.log(item);
     return JSON.parse(item);
   }
 
