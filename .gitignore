@@ -33,7 +33,7 @@ yarn-error.log*
 .vercel
 
 #lock file
-*lock.json
+*-lock.*
 
 #compressed file
 *.tar
