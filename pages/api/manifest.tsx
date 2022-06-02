@@ -1,13 +1,17 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default function ManifestGenerator(req: any, res: any) {
   const { query } = req;
-  const { theme } = query;
+  const { theme, description, title } = query;
   const manifest = {
     $schema: "https://json.schemastore.org/web-manifest-combined.json",
-    name: "Bellshade",
-    short_name: "Bellshade",
-    start_url: "/",
+    background_color: theme,
+    description,
     display: "standalone",
+    id: process.env.PUBLIC_URI || "/",
+    name: title || "Bellshade",
+    orientation: "portrait-primary",
+    short_name: "Bellshade",
+    start_url: process.env.PUBLIC_URI || "/",
     theme_color: theme,
     icons: [
       {

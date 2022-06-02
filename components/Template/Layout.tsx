@@ -98,128 +98,62 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
 function Layout(props: LayoutProps) {
   const { children, pageTitle, pageDescription, metaImage } = props;
   const [theme, setTheme] = useState();
+  const Title = pageTitle
+    ? pageTitle
+    : "Bellshade Merupakan Platform Belajar Dasar Pemrograman Dengan Sumber Terbuka Yang di Kelola Oleh Para Moderator dan Helper Server Discord Web Programming UNPAS";
+  const Description = pageDescription
+    ? pageDescription
+    : "Bellshade merupakan komunitas yang mengelola dan menulis kode untuk platform belajar open source Indonesia yang di-maintenance oleh para moderator dan helper dari Server Discord Web Programming UNPAS dengan tujuan memberikan pembelajaran dasar-dasar pemrograman dengan dokumentasi berbahasa Indonesia.";
+  const MetaImage = `${
+    process.env.PUBLIC_URI
+      ? process.env.PUBLIC_URI
+      : "https://bellshade-website.vercel.app"
+  }${metaImage ? metaImage : "/meta-image/home.png"}`;
+  const themeColor = theme === "dark" ? "#000000" : "#ffffff";
   return (
     <>
       <Head>
         <link
           rel='manifest'
-          href={`/api/manifest/?theme=${
-            theme === "dark" ? "%23000000" : "%23ffffff"
-          }`}
+          href={`/api/manifest/?theme=${encodeURIComponent(
+            themeColor,
+          )}&description=${encodeURIComponent(
+            Description,
+          )}&title=${encodeURIComponent(Title)}`}
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta
-          name='msapplication-TileColor'
-          content={theme === "dark" ? "#000000" : "#ffffff"}
-        />
-        <meta
-          name='theme-color'
-          content={theme === "dark" ? "#000000" : "#ffffff"}
-        />
+        <meta name='msapplication-TileColor' content={themeColor} />
+        <meta name='theme-color' content={themeColor} />
 
-        {/* Open Graph Property */}
+        <title>{Title}</title>
+        <meta name='keywords' content='bellshade,website' />
+
+        <meta itemProp='name' content={Title} />
+        <meta itemProp='description' content={Description} />
+        <meta itemProp='image' content={MetaImage} />
+
+        <meta
+          property='og:url'
+          content={
+            process.env.PUBLIC_URI
+              ? process.env.PUBLIC_URI
+              : "https://bellshade-website.vercel.app/"
+          }
+        />
+        <meta property='og:type' content='website' />
         <meta property='og:locale' content='id_ID' />
-        <meta property='og:type' content='article' />
-        <meta
-          name='keywords'
-          content='bellshade-website, tutorial, komunitas, komunitas pemrograman, bahasa indonesia, indonesia, wpu, web programming unpas, mod, helper, bellshade-website, website bellshade, bellshade team, bellshade tim, tim bellshade, tim, belajar, bellshade, github, team, journey, assembly, learning, untuk, kode, dart'
-        />
-        {/* End Graph Property */}
+        <meta property='og:title' content={Title} />
+        <meta property='og:description' content={Description} />
+        <meta property='og:image' content={MetaImage} />
 
-        {/* Title Pages */}
-        <title>{pageTitle ? pageTitle : "Bellshade"}</title>
-        <meta
-          property='og:title'
-          content={pageTitle ? pageTitle : "Bellshade"}
-        />
-        <meta
-          property='facebook:title'
-          content={pageTitle ? pageTitle : "Bellshade"}
-        />
-        <meta
-          name='twitter:title'
-          content={pageTitle ? pageTitle : "Bellshade"}
-        />
-        {/* End Title Pages */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={Title} />
+        <meta name='twitter:description' content={Description} />
+        <meta name='twitter:image' content={MetaImage} />
 
-        {/* Description Page */}
-        <meta
-          name='description'
-          content={
-            pageDescription
-              ? pageDescription
-              : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
-          }
-        />
-        <meta
-          name='og:description'
-          content={
-            pageDescription
-              ? pageDescription
-              : "Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia"
-          }
-        />
-        {/* Description Page */}
-
-        {/* Meta Image Property */}
-        <>
-          {/* Open Graph Image URL and Alt */}
-          <meta
-            property='og:image'
-            content={`https://bellshade-website.vercel.app${
-              metaImage ? metaImage : "/meta-image/home.png"
-            }`}
-            itemProp='image'
-          />
-          <meta
-            property='og:image:url'
-            content={`https://bellshade-website.vercel.app${
-              metaImage ? metaImage : "/meta-image/home.png"
-            }`}
-            itemProp='image'
-          />
-          <meta
-            property='og:image:alt'
-            content={pageTitle ? pageTitle : "Bellshade"}
-          />
-          {/* Open Graph Image URL and Alt */}
-
-          {/* Facebook Image URL and Alt */}
-          <meta
-            property='facebook:image'
-            content={`https://bellshade-website.vercel.app${
-              metaImage ? metaImage : "/meta-image/home.png"
-            }`}
-            itemProp='image'
-          />
-          <meta
-            property='facebook:image:alt'
-            content={pageTitle ? pageTitle : "Bellshade"}
-          />
-          {/* End Facebook Image URL and Alt */}
-
-          {/* Twitter Image URL and Alt */}
-          <meta
-            name='twitter:image'
-            content={`https://bellshade-website.vercel.app${
-              metaImage ? metaImage : "/meta-image/home.png"
-            }`}
-            itemProp='image'
-          />
-          <meta
-            name='twitter:image:alt'
-            content={pageTitle ? pageTitle : "Bellshade"}
-          />
-          <meta name='twitter:card' content='summary_large_image' />
-          {/* End Twitter Image URL and Alt */}
-
-          {/* Open Graph Image Details */}
-          <meta property='og:image:type' content='image/png' />
-          <meta property='og:image:width' content='1200' />
-          <meta property='og:image:height' content='630' />
-          {/* End Open Graph Image Details */}
-        </>
-        {/* End Meta Image Property */}
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
       </Head>
       <Navbar />
       {children}
