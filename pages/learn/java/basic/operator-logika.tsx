@@ -14,7 +14,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Java operator boolean (logika)</h2>
+          <h1 className='title-2'>Java operator boolean (logika)</h1>
           <p className='section_text'>
             Logika secara harfiahnya adalah hasil pertimbangan dari akal dan
             pikiran seseorang, disampaikan dan diutarakan dengan bahasa.
@@ -35,9 +35,11 @@ export default function Page() {
                     </p>
                   </li>
                 ))}
-                <p className='section_text'>{val.desc}</p>
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>{val.desc}</p>
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

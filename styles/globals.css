@@ -18,19 +18,19 @@ body::-webkit-scrollbar-thumb {
 
 @layer components {
   .title-1 {
-    @apply my-4 block text-5xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
+    @apply my-4 block text-5xl font-bold break-words text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .title-2 {
-    @apply my-4 block text-4xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
+    @apply my-4 block text-4xl font-bold break-words text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .subtitle-h3 {
-    @apply my-3 block text-3xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
+    @apply my-3 block text-3xl font-bold break-words text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .subtitle-h4 {
-    @apply my-3 block text-2xl font-bold text-dark dark:text-slate-50 transition-all duration-75;
+    @apply my-3 block text-2xl font-bold break-words text-dark dark:text-slate-50 transition-all duration-75;
   }
 
   .mark-text {
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s;
 }
 
-.dark .bulb-theme-toggler {
+html.dark .bulb-theme-toggler {
   opacity: 1;
   filter: drop-shadow(0 0.1rem 5px rgba(255, 255, 255, 0.5))
     drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))
@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   color: #000000;
   transition: all 0.05s;
+  overflow-wrap: break-word;
 }
 
 .dark .section_text {
@@ -79,12 +80,12 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   white-space: pre;
   color: #f8f8f2;
-  background-color: #1d1f23;
+  background-color: #1c1d21;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.7em;
+  padding-right: 1.4em;
   padding-bottom: 1em;
   border-radius: 10px;
 }

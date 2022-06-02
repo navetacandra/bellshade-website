@@ -9,12 +9,14 @@ interface OrderedListProps {
 export default function OrderedList(props: OrderedListProps) {
   const { className, children } = props;
   return (
-    <ol
-      className={
-        className ? `${className} ml-4 list-decimal` : "ml-4 list-decimal"
-      }
-    >
-      <div className='ml-4'>{children}</div>
-    </ol>
+    <div className='ml-4'>
+      <ol
+        className={
+          className ? `${className} ml-4 list-decimal` : "ml-4 list-decimal"
+        }
+      >
+        {children}
+      </ol>
+    </div>
   );
 }

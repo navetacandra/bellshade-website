@@ -67,7 +67,10 @@ function ClipboardCopier() {
   }
   return (
     <button
-      className='button absolute top-0.5 right-2 lg:top-2 lg:right-6 text-slate-50 opacity-20 hover:opacity-100'
+      className='button absolute top-0.5 right-2 lg:top-2 lg:right-6 opacity-80 hover:opacity-100'
+      style={{
+        color: "#abb2bf",
+      }}
       onClick={(el: any) => handleClick(el.target)}
       type='button'
     >

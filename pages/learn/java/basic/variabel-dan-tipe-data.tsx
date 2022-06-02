@@ -14,7 +14,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Tipe Data</h2>
+          <h1 className='title-2'>Tipe Data</h1>
           <p className='section_text'>
             <i>Tipe data</i> adalah value dengan jenis tertentu yang sangat
             berguna mempermudah dalam melakukan operasi dll sehigga tidak
@@ -23,7 +23,7 @@ export default function Page() {
           <div className='container mx-auto px-auto'>
             <div className='relative overflow-x-auto shadow-md sm:rounded-lg'>
               <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
-                <thead className='text-base text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400'>
+                <thead className='text-base text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-slate-200'>
                   <tr>
                     <th className='px-6 py-3'>#</th>
                     <th className='px-6 py-3'>Tipe Data</th>
@@ -64,15 +64,17 @@ export default function Page() {
                     <TextStyle Text={data.type} />
                   </li>
                 ) : null}
-                {/* eslint-disable-next-line */}
-                {!!data.desc ? (
-                  <p className='section_text'>
-                    <TextStyle Text={data.desc} />
-                  </p>
-                ) : null}
-                {data.code && !!data.code.length ? (
-                  <SyntaxHighlighter code={data.code} />
-                ) : null}
+                <div role='listitem'>
+                  {/* eslint-disable-next-line */}
+                  {!!data.desc ? (
+                    <p className='section_text'>
+                      <TextStyle Text={data.desc} />
+                    </p>
+                  ) : null}
+                  {data.code && !!data.code.length ? (
+                    <SyntaxHighlighter code={data.code} />
+                  ) : null}
+                </div>
               </Fragment>
             ))}
           </UnorderedList>

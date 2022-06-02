@@ -11,7 +11,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Data Casting</h2>
+          <h1 className='title-2'>Data Casting</h1>
           <p className='section_text'>
             Data Casting (atau biasa disebut type casting) adalah salah satu
             teknik dimana merubah tipe data primitif tipe data primitif lainnya.
@@ -19,7 +19,7 @@ export default function Page() {
         </section>
         {dataJson.map((data, i) => (
           <section className='my-5' key={i}>
-            <h3 className='subtitle-h3'>{data.title}</h3>
+            <h2 className='subtitle-h3'>{data.title}</h2>
             <p className='section_text'>{data.desc}</p>
             <div className='note-text'>
               <p>{data.notes}</p>

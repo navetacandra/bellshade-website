@@ -7,12 +7,12 @@ import dataJson from "@/data-json/java/basic/008_pengkondisian-switch-case.json"
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Java - Struktur Kontrol (Switch-Case)'
+      pageTitle='Bellshade | Java - Pengkondisian (Switch-Case)'
       metaImage='/meta-image/learn/java/basic/pengkondisian-switch-case.png'
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Pengkondisian If-Else</h2>
+          <h1 className='title-2'>Pengkondisian If-Else</h1>
           <p className='section_text'>Syarat khusus pada java meliputi :</p>
           <UnorderedList className='section_text'>
             {dataJson.requirements.map((data, key) => (

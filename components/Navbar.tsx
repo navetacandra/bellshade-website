@@ -80,6 +80,7 @@ function Navbar() {
             <button
               className='text-white bg-blue-gray hover:bg-github_btn-hv dark:bg-gray-700 dark:hover:bg-slate-600 p-2.5 h-10 rounded-lg flex items-center transition-all duration-150'
               type='button'
+              aria-label='github-link'
             >
               <a
                 href='https://github.com/bellshade'
@@ -116,6 +117,7 @@ function Navbar() {
             onClick={() => setNavbarResponsive(!navbarResponsive)}
             className='menu-btn'
             type='button'
+            aria-label='navbar-toggler'
           >
             <Icon icon='charm:menu-hamburger' width={32} height={32} />
           </button>
@@ -174,6 +176,7 @@ function Navbar() {
           <button
             className='text-white bg-blue-gray hover:bg-github_btn-hv dark:bg-gray-700 dark:hover:bg-slate-600 p-2.5 h-10 rounded-lg flex items-center transition-all duration-150'
             type='button'
+            aria-label='github-link'
           >
             <a
               href='https://github.com/bellshade'

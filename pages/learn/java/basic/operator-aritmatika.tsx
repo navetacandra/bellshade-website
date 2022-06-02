@@ -11,7 +11,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Operator Aritmatika</h2>
+          <h1 className='title-2'>Operator Aritmatika</h1>
           <p className='section_text'>
             Aritmatika atau biasa disebut penghitungan merupakan cabang
             matematika yang mempelajari operasi dasar bilangan seperti
@@ -25,7 +25,7 @@ export default function Page() {
         </section>
         {dataJson.map((data, i) => (
           <section className='my-5' key={i}>
-            <h4 className='subtitle-h4'>{data.title}</h4>
+            <h2 className='subtitle-h4'>{data.title}</h2>
             <p className='section_text'>{data.desc}</p>
             <p className='section_text'>Contoh:</p>
             <SyntaxHighlighter code={data.code} />

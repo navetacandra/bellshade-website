@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='id'>
         <Head>
           <meta charSet='utf-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
@@ -93,7 +93,6 @@ export default class MyDocument extends Document {
             name='msapplication-TileImage'
             content='/icon/ms-icon-144x144.png'
           />
-          <link rel='manifest' href='/manifest.json' />
           <link rel='canonical' href='https://bellshade-website.vercel.app/' />
         </Head>
         <body className='bg-slate-100 dark:bg-slate-900 relative transition-all ease-out duration-75'>

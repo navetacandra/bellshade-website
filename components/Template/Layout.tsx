@@ -50,12 +50,12 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
 
   function getItem(key: string) {
     const item = localStorage?.getItem(key) || '""';
-    return JSON.parse(item);
+    return item.startsWith('"') ? JSON.parse(item) : item;
   }
 
   useEffect(() => {
-    if(typeof window === "object") {
-      if(!getItem("color-theme")) {
+    if (typeof window === "object") {
+      if (!getItem("color-theme")) {
         setItem("color-theme", "light");
         setTheme("light");
       }
@@ -87,6 +87,7 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
         className='block lg:w-max lg:h-max xs:w-12 xs:h-12 rounded-lg cursor-pointer shadow-lg bg-slate-600'
         onClick={() => changeTheme()}
         type='button'
+        aria-label='theme-switcher'
       >
         <BulbIcon dark={dark} />
       </button>
@@ -100,6 +101,12 @@ function Layout(props: LayoutProps) {
   return (
     <>
       <Head>
+        <link
+          rel='manifest'
+          href={`/api/manifest/?theme=${
+            theme === "dark" ? "%23000000" : "%23ffffff"
+          }`}
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
           name='msapplication-TileColor'
@@ -165,6 +172,13 @@ function Layout(props: LayoutProps) {
             itemProp='image'
           />
           <meta
+            property='og:image:url'
+            content={`https://bellshade-website.vercel.app${
+              metaImage ? metaImage : "/meta-image/home.png"
+            }`}
+            itemProp='image'
+          />
+          <meta
             property='og:image:alt'
             content={pageTitle ? pageTitle : "Bellshade"}
           />
@@ -200,13 +214,6 @@ function Layout(props: LayoutProps) {
           {/* End Twitter Image URL and Alt */}
 
           {/* Open Graph Image Details */}
-          <meta
-            property='og:image:url'
-            content={`https://bellshade-website.vercel.app${
-              metaImage ? metaImage : "/meta-image/home.png"
-            }`}
-            itemProp='image'
-          />
           <meta property='og:image:type' content='image/png' />
           <meta property='og:image:width' content='1200' />
           <meta property='og:image:height' content='630' />

@@ -10,8 +10,8 @@ export default function Page() {
       metaImage='/meta-image/learn/java/basic/pendahuluan-pemrograman-dan-java.png'
     >
       <WrapperTemplate>
-        <h2 className='title-2'>Pendahuluan</h2>
-        <h4 className='subtitle-h4'>Menulis Program Java</h4>
+        <h1 className='title-2'>Pendahuluan</h1>
+        <h2 className='subtitle-h4'>Menulis Program Java</h2>
         <SyntaxHighlighter code={dataJson.code} />
       </WrapperTemplate>
     </Layout>

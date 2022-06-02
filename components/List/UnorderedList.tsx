@@ -9,10 +9,12 @@ interface UnorderedListProps {
 export default function UnorderedList(props: UnorderedListProps) {
   const { className, children } = props;
   return (
-    <ul
-      className={className ? `${className} ml-4 list-disc` : "ml-4 list-disc"}
-    >
-      <div className='ml-4'>{children}</div>
-    </ul>
+    <div className='ml-4'>
+      <ul
+        className={className ? `${className} ml-4 list-disc` : "ml-4 list-disc"}
+      >
+        {children}
+      </ul>
+    </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Operator Komparasi/Perbandingan</h2>
+          <h1 className='title-2'>Operator Komparasi/Perbandingan</h1>
           <p className='section_text'>
             Operator dalam bahasa pemrograman berguna untuk memberi informasi
             kepada compiler atau intepreter untuk melakukan sebuah operasi
@@ -27,7 +27,7 @@ export default function Page() {
           </p>
         </section>
         <section className='my-5'>
-          <h3 className='subtitle-h3'>Java operator komparasis/perbandingan</h3>
+          <h2 className='subtitle-h3'>Java operator komparasi/perbandingan</h2>
           <p className='section_text'>
             Banyak jenis operasi perbandingan. Macam-macamnya yaitu:
           </p>
@@ -41,9 +41,11 @@ export default function Page() {
                     </p>
                   </li>
                 ))}
-                <p className='section_text'>{val.desc}</p>
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>{val.desc}</p>
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

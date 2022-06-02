@@ -13,7 +13,7 @@ export default function Page() {
           <div className='my-auto'>
             <h1 className='grow text-4xl font-medium text-dark dark:text-white'>
               Funky Study Coding with{" "}
-              <span className='text-blue-gray dark:text-blue-700 font-bold'>
+              <span className='text-blue-gray dark:text-blue-600 font-bold'>
                 Bellshade
               </span>
             </h1>
