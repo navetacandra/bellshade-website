@@ -129,12 +129,12 @@ function Page() {
                             </Link>
                           </p>
                         ) : (
-                          <p className='text-slate-400 text-base'>
+                          <p className='text-dark dark:text-slate-400 text-base'>
                             {`${val.topik} - On Progress`}
                           </p>
                         )}
                       </td>
-                      <td className='px-6 py-4 text-base text-slate-400'>
+                      <td className='px-6 py-4 text-base text-dark dark:text-slate-400'>
                         <TextStyle Text={val.target_pembelajaran} />
                       </td>
                     </tr>
