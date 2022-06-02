@@ -8,7 +8,7 @@ import dataJson from "@/data-json/python/000_home.json";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Python'
+      pageTitle='Bellshade | Python - Materi Pembelajaran Python Bellshade'
       metaImage='/meta-image/learn/python.png'
     >
       <WrapperTemplate>

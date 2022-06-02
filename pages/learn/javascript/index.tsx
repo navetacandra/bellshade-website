@@ -8,7 +8,7 @@ import dataJson from "@/data-json/javascript/000_home.json";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Javascript'
+      pageTitle='Bellshade | Javascript - Materi Pembelajaran Javascript Bellshade'
       metaImage='/meta-image/learn/javascript.png'
     >
       <WrapperTemplate>

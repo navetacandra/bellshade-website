@@ -7,7 +7,10 @@ import dataJson from "@/data-json/java/000_home.json";
 
 function Page() {
   return (
-    <Layout pageTitle='Bellshade | Java' metaImage='/meta-image/learn/java.png'>
+    <Layout
+      pageTitle='Bellshade | Java - Materi Pembelajaran Java Bellshade'
+      metaImage='/meta-image/learn/java.png'
+    >
       <WrapperTemplate>
         <section className='my-5'>
           <div className='text-center mb-3'>

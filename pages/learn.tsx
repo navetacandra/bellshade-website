@@ -4,7 +4,11 @@ import dataJson from "@/data-json/learn.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade | Learn' metaImage='/meta-image/learn.png'>
+    <Layout
+      pageTitle='Bellshade | Learn - Mulai Perjalan Belajar Dasar Pemrograman'
+      pageDescription='Mari mulai perjalanan belajar dasar-dasar pemrograman di Bellshade dengan dokumentasi berbahasa Indonesia.'
+      metaImage='/meta-image/learn.png'
+    >
       <div className='container mx-auto mb-10'>
         <section className='my-5 grid grid-cols-1 md:grid-cols-2 gap-4'>
           {dataJson.map((data, i) => (

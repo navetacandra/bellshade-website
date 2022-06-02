@@ -3,7 +3,10 @@ import Layout from "@/components/Template/Layout";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade | 404' metaImage='/meta-image/home.png'>
+    <Layout
+      pageTitle='Bellshade | 404 - Halaman Yang Kamu Cari Tidak Ditemukan'
+      metaImage='/meta-image/home.png'
+    >
       <div className='container mx-auto'>
         <div className='flex flex-warp'>
           <div className='self-center w-full px-5 bg-white dark:bg-slate-900 dark:text-white my-10'>

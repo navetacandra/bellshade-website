@@ -4,7 +4,11 @@ import Members from "@/data-json/bellshade-member.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade | Teams' metaImage='/meta-image/team.png'>
+    <Layout
+      pageTitle={"Bellshade | Teams - Mari Berkenalan dengan Bellshade's Teams"}
+      pageDescription='Berkenalan dan bertemu dengan orang-orang yang mengelola repository Bellshade untuk materi pembelajaran sumber terbuka.'
+      metaImage='/meta-image/team.png'
+    >
       <section className='w-full m-auto' style={{ width: "90%" }}>
         <div className='w-full mb-16 md:mb-20 text-center'>
           <h1 className='text-5xl md:text-[67px] font-bold text-dark dark:text-white'>

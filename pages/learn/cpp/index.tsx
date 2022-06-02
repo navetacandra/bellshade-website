@@ -6,7 +6,10 @@ import dataJson from "@/data-json/cpp/000_home.json";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade | C++' metaImage='/meta-image/learn/cpp.png'>
+    <Layout
+      pageTitle='Bellshade | C++ - Materi Pembelajaran C++ Bellshade'
+      metaImage='/meta-image/learn/cpp.png'
+    >
       <WrapperTemplate>
         <section className='my-5'>
           <div className='text-center mb-3'>

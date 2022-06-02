@@ -7,7 +7,10 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade | SQL' metaImage='/meta-image/learn/sql.png'>
+    <Layout
+      pageTitle='Bellshade | SQL - Materi Pembelajaran SQL Bellshade'
+      metaImage='/meta-image/learn/sql.png'
+    >
       <WrapperTemplate>
         <section className='my-5'>
           <div className='text-center mb-3'>

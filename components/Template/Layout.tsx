@@ -17,6 +17,8 @@ interface LayoutProps {
   pageTitle?: string;
   pageDescription?: string;
   metaImage?: string;
+  keyword?: string;
+  overrideKeyword?: boolean;
 }
 
 function BulbIcon(props: BulbIconProps) {
@@ -60,6 +62,7 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
         setTheme("light");
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -96,7 +99,14 @@ function ThemeSwitcher(props: ThemeSwitcherProps) {
 }
 
 function Layout(props: LayoutProps) {
-  const { children, pageTitle, pageDescription, metaImage } = props;
+  const {
+    children,
+    pageTitle,
+    pageDescription,
+    metaImage,
+    keyword,
+    overrideKeyword,
+  } = props;
   const [theme, setTheme] = useState();
   const Title = pageTitle
     ? pageTitle
@@ -110,6 +120,11 @@ function Layout(props: LayoutProps) {
       : "https://raw.githubusercontent.com/navetacandra/bellshade-website/main/public"
   }${metaImage ? metaImage : "/meta-image/home.png"}`;
   const themeColor = theme === "dark" ? "#000000" : "#ffffff";
+  const Keywords = overrideKeyword
+    ? keyword
+    : `bellshade,website,learning,journey,teams,belajar${
+        keyword ? `,${keyword}` : ""
+      }`;
   return (
     <>
       <Head>
@@ -126,10 +141,10 @@ function Layout(props: LayoutProps) {
         <meta name='theme-color' content={themeColor} />
 
         <title>{Title}</title>
-        <meta name='keywords' content='bellshade,website' />
+        <meta name='description' content={Description} itemProp='description' />
+        <meta name='keywords' content={Keywords} />
 
         <meta itemProp='name' content={Title} />
-        <meta itemProp='description' content={Description} />
         <meta itemProp='image' content={MetaImage} />
 
         <meta

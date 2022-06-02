@@ -4,7 +4,10 @@ import Layout from "@/components/Template/Layout";
 
 export default function Page() {
   return (
-    <Layout pageTitle='Bellshade' metaImage='/meta-image/home.png'>
+    <Layout
+      pageTitle='Bellshade - Belajar Dasar Pemrograman dengan Dokumentasi Berbahasa Indonesia'
+      metaImage='/meta-image/home.png'
+    >
       <section id='home-header' className='max-h-max overflow-y-hidden'>
         <div
           className='flex flex-row mx-auto'

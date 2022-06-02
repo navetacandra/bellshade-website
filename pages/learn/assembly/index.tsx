@@ -9,7 +9,7 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Assembly'
+      pageTitle='Bellshade | Assembly - Materi Pembelajaran Assembly Bellshade'
       metaImage='/meta-image/learn/assembly.png'
     >
       <WrapperTemplate>
@@ -111,7 +111,7 @@ export default function Page() {
                 </li>
               </UnorderedList>
             </div>
-            <div className='my-3'>
+            <div className='my-3' role='listitem'>
               <li>Mac</li>
               <p className='section_text'>
                 <TextStyle Text='lakukan perintah pada teriminal dengan perintah brew (untuk membuka terminal dilakukan dengan cara tombol #mark_code[command] + #mark_code[spasi])' />
@@ -122,7 +122,7 @@ export default function Page() {
                 ]}
               />
             </div>
-            <div className='my-3'>
+            <div className='my-3' role='listitem'>
               <li>Windows</li>
               <p className='section_text'>
                 installasi pada windows support pada arsitektur 64bit dengan

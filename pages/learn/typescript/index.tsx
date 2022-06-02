@@ -4,7 +4,7 @@ import WrapperTemplate from "@/components/Template/WrapperTemplate";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Typescript'
+      pageTitle='Bellshade | Typescript - Materi Pembelajaran Typescript Bellshade'
       metaImage='/meta-image/learn/typescript.png'
     >
       <WrapperTemplate>

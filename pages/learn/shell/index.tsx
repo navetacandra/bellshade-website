@@ -4,7 +4,7 @@ import WrapperTemplate from "@/components/Template/WrapperTemplate";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Shell'
+      pageTitle='Bellshade | Shell - Materi Pembelajaran Shell Bellshade'
       metaImage='/meta-image/learn/shell.png'
     >
       <WrapperTemplate>

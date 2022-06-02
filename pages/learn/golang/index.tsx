@@ -4,7 +4,7 @@ import WrapperTemplate from "@/components/Template/WrapperTemplate";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Golang'
+      pageTitle='Bellshade | Golang - Materi Pembelajaran Golang Bellshade'
       metaImage='/meta-image/learn/golang.png'
     >
       <WrapperTemplate>
