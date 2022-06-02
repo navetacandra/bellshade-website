@@ -5,7 +5,7 @@ import dataJson from "@/data-json/learn.json";
 export default function Page() {
   return (
     <Layout
-      pageTitle='Bellshade | Learn - Mulai Perjalan Belajar Dasar Pemrograman'
+      pageTitle='Bellshade | Learn - Mulai Perjalanan Belajar Dasar Pemrograman'
       pageDescription='Mari mulai perjalanan belajar dasar-dasar pemrograman di Bellshade dengan dokumentasi berbahasa Indonesia.'
       metaImage='/meta-image/learn.png'
     >
