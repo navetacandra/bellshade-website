@@ -44,6 +44,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.text-blue_primary {
+  color: blue;
+}
+
+html.dark .text-blue_primary {
+  color: #2e9ff5;
+}
+
 .bulb-theme-toggler {
   opacity: 0.7;
   transition: all 0.3s;

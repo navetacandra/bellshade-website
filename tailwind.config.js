@@ -14,7 +14,6 @@ module.exports = {
         dark: "#111827",
         f2: "#F2F2F2",
         white: "#FFFFFF",
-        blue_primary: "#2E9FF5",
         "blue-gray": "#637FE3",
         "github_btn-hv": "#5875db",
       },
