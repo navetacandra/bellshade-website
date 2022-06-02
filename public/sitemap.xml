@@ -1,27 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
   <url>
     <loc>https://bellshade-website.vercel.app/</loc>
-    <lastmod>2022-05-29T10:48:51+00:00</lastmod>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
+
+  <!-- Learn Page -->
   <url>
     <loc>https://bellshade-website.vercel.app/learn</loc>
-    <lastmod>2022-05-29T10:48:51+00:00</lastmod>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-
-  <!-- Learn Javascript -->
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/assembly</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/cpp</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/dart</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/golang</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/html-css</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://bellshade-website.vercel.app/learn/javascript</loc>
-    <lastmod>2022-05-29T10:48:51+00:00</lastmod>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/php</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/python</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/shell</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/sql</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/typescript</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- End Learn Page -->
 
+  <!-- Learn Java Page -->
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/data-casting</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/operator-aritmatika</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/operator-komparasi</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/operator-logika</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/pendahuluan-pemrograman-dan-java</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/pengkondisian-if-else</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/pengkondisian-switch-case</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/perulangan</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/java/basic/variabel-dan-tipe-data</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- End Learn Java Page -->
+
+  <!-- Learn Javascript Page -->
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/fungsi</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/konsep-array</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/konsep-objek</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/manipulasi-array</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/manipulasi-objek</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/operator</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/operator-aritmatik</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/pengenalan</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/pengkondisian</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/perulangan</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/strict-mode</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/string-dan-manipulasi-string</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bellshade-website.vercel.app/learn/javascript/basic/variabel-dan-tipe-data</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- End Learn Javascript Page -->
+
+  <!-- Teams Page -->
   <url>
     <loc>https://bellshade-website.vercel.app/teams</loc>
-    <lastmod>2022-05-29T10:48:51+00:00</lastmod>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+  <!-- Teams Page -->
+
 </urlset>
