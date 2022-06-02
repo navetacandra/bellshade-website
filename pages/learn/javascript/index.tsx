@@ -37,7 +37,7 @@ export default function Page() {
           </p>
           <div className='relative'>
             <img
-              src='/img/javascript-poll.png'
+              src='https://raw.githubusercontent.com/navetacandra/bellshade-website/main/public/img/javascript-poll.png'
               alt='Javascript Poll'
               className='my-5 shadow-lg w-full mt-5'
             />

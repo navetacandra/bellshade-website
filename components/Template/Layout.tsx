@@ -107,7 +107,7 @@ function Layout(props: LayoutProps) {
   const MetaImage = `${
     process.env.PUBLIC_URI
       ? process.env.PUBLIC_URI
-      : "https://bellshade-website.vercel.app"
+      : "https://raw.githubusercontent.com/navetacandra/bellshade-website/main/public"
   }${metaImage ? metaImage : "/meta-image/home.png"}`;
   const themeColor = theme === "dark" ? "#000000" : "#ffffff";
   return (

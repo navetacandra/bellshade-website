@@ -30,7 +30,7 @@ export default function Page() {
           </div>
           <div className='ml-10 hidden lg:block'>
             <Image
-              src='/img/home-header.png'
+              src='https://raw.githubusercontent.com/navetacandra/bellshade-website/main/public/img/home-header.png'
               alt='Home-Header-Image'
               width='724px'
               height='623px'
