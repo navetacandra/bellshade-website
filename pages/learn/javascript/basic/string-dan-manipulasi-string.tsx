@@ -13,11 +13,11 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>String dan Cara Memanipulasinya</h2>
+          <h1 className='title-2'>String dan Cara Memanipulasinya</h1>
           {dataJson.declare_string.map((data, i) => (
             <Fragment key={i}>
               {data.title ? (
-                <h3 className='subtitle-h3'>{data.title}</h3>
+                <h2 className='subtitle-h3'>{data.title}</h2>
               ) : null}{" "}
               <p className='section_text'>
                 {data.desc.map((val, key) => (

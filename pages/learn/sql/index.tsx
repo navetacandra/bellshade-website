@@ -39,7 +39,7 @@ export default function Page() {
           <div className='container mx-auto px-auto'>
             <div className='relative overflow-x-auto shadow-md sm:rounded-lg'>
               <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
-                <thead className='text-base text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400'>
+                <thead className='text-base text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-slate-200'>
                   <tr>
                     <th className='px-6 py-3'>#</th>
                     <th className='px-6 py-3'>Topik</th>
@@ -67,12 +67,12 @@ export default function Page() {
                             </Link>
                           </p>
                         ) : (
-                          <p className='text-slate-500 text-base'>
+                          <p className='text-slate-400 text-base'>
                             {`${val.topik} - On Progress`}
                           </p>
                         )}
                       </td>
-                      <td className='px-6 py-4 text-base'>
+                      <td className='px-6 py-4 text-base text-slate-400'>
                         <TextStyle Text={val.target_pembelajaran} />
                       </td>
                     </tr>

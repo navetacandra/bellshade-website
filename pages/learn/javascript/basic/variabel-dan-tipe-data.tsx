@@ -4,6 +4,7 @@ import TextStyle from "@/components/TextStyle";
 import Layout from "@/components/Template/Layout";
 import WrapperTemplate from "@/components/Template/WrapperTemplate";
 import dataJson from "@/data-json/javascript/basic/002_data-type.json";
+import { Fragment } from "react";
 
 export default function Page() {
   return (
@@ -13,13 +14,13 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Variabel dan Tipe Data</h2>
+          <h1 className='title-2'>Variabel dan Tipe Data</h1>
           {dataJson["text-1"].map((val, key) => (
             <p className='section_text' key={key}>
               {val}
             </p>
           ))}{" "}
-          <h4 className='subtitle-h3'>Jenis-Jenis Mendeklarasikan Variabel</h4>
+          <h2 className='subtitle-h3'>Jenis-Jenis Mendeklarasikan Variabel</h2>
           <p className='section_text'>
             Dalam bahasa pemrograman JavaScript sendiri memiliki 3 cara
             mendeklarasikan sebuah variabel, yaitu
@@ -33,23 +34,23 @@ export default function Page() {
           </OrderedList>
           <p className='section_text'>Contoh:</p>
           <SyntaxHighlighter code={dataJson["variabel-declare-code"]} />
-          <h4 className='subtitle-h3'>Jenis-Jenis Tipe Data</h4>
+          <h2 className='subtitle-h3'>Jenis-Jenis Tipe Data</h2>
           <p className='section_text'>
             Untuk tipe data, JavaScript memiliki banyak tipe data, kali ini
             membahas 3 tipe data dasar yang sering digunakan, yaitu:
           </p>
           <OrderedList>
             {dataJson["data-type"].map((val, key) => (
-              <div key={key} className='ml-4'>
+              <Fragment key={key}>
                 <li className='section_text'>
                   <code className='mark-text'>{val.type}</code>
                 </li>
                 {val.desc.map((val1, key1) => (
-                  <p className='section_text' key={key1}>
+                  <p className='section_text' key={key1} role='listitem'>
                     <TextStyle Text={val1} />
                   </p>
                 ))}
-              </div>
+              </Fragment>
             ))}
           </OrderedList>
           <SyntaxHighlighter code={dataJson["data-type-code"]} />
@@ -62,7 +63,7 @@ export default function Page() {
               Boolean.
             </p>
           </div>
-          <h4 className='my-3'>typeOf</h4>
+          <h2 className='my-3'>typeOf</h2>
           <p className='section_text'>
             <i>typeOf</i> adalah salah satu jenis operator java script yang
             dapat digunakan untuk mengecek/melihat tipe data dari sebuah

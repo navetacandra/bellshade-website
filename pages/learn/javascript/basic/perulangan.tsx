@@ -14,12 +14,12 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Pengulangan (Looping)</h2>
+          <h1 className='title-2'>Pengulangan (Looping)</h1>
           <p className='section_text'>
             Looping dalam bahasa pemrograman manapun itu melakukan tugas yang
             berulang berdasarkan kondisi yang diberikan.
           </p>
-          <h4 className='subtitle-h4'>Jenis-Jenis Looping</h4>
+          <h2 className='subtitle-h4'>Jenis-Jenis Looping</h2>
           <p className='section_text'>
             Dalam JavaScript terdapat beberapa fungsi looping, diantaranya:
           </p>
@@ -30,31 +30,35 @@ export default function Page() {
                 <li className='section_text'>
                   <TextStyle Text={val.title} />
                 </li>
-                <p className='section_text'>
-                  <TextStyle Text={val.desc} />
-                </p>
-                <SyntaxHighlighter code={val.draft} />
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>
+                    <TextStyle Text={val.desc} />
+                  </p>
+                  <SyntaxHighlighter code={val.draft} />
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
-            ))}{" "}
+            ))}
           </OrderedList>
         </section>
         <section className='my-5'>
-          <h3 className='subtitle-h3'>Keyword Spesial dalam Looping</h3>
+          <h2 className='subtitle-h3'>Keyword Spesial dalam Looping</h2>
           <OrderedList>
             {dataJson.special_keyword.map((val, key) => (
               <Fragment key={key}>
                 <li className='section_text'>
                   <TextStyle Text={val.title} />
                 </li>
-                {val.desc.map((val1, key1) => (
-                  <p className='section_text' key={key1}>
-                    <TextStyle Text={val1} />
-                  </p>
-                ))}
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  {val.desc.map((val1, key1) => (
+                    <p className='section_text' key={key1}>
+                      <TextStyle Text={val1} />
+                    </p>
+                  ))}
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

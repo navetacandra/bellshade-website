@@ -12,11 +12,11 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Belajar Penggunaan Array di Javascript</h2>
+          <h1 className='title-2'>Belajar Penggunaan Array di Javascript</h1>
         </section>
         {dataJson.map((val, key) => (
           <section className='my-5' key={key}>
-            <h4 className='subtitle-h4'>{val.title}</h4>
+            <h2 className='subtitle-h4'>{val.title}</h2>
             <p className='section_text'>
               <TextStyle Text={val.desc} />
             </p>

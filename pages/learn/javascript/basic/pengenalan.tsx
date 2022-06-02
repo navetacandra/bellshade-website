@@ -11,8 +11,8 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Pengenalan Javascript</h2>
-          <h4 className='subtitle-h3'>Hello World</h4>
+          <h1 className='title-2'>Pengenalan Javascript</h1>
+          <h2 className='subtitle-h3'>Hello World</h2>
           <p className='section_text'>
             Selamat datang di bahasa pemrograman javascript. Selamat menempuh
             jalan ninja sebagai programmer.

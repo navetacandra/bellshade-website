@@ -14,14 +14,14 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Fungsi</h2>
+          <h1 className='title-2'>Fungsi</h1>
           <p className='section_text'>
             Function (fungsi) adalah sebuah sub-program / pecahan code yang
             dapat dipanggil berulang kali di manapun dan kapanpun. Function
             digunakan agar program yang dibuat lebih efisien dan mudah untuk
             dibaca, sehingga akan lebih mudah dalam menangani error.
           </p>
-          <h3 className='subtitle-h3'>Macam-Macam Function</h3>
+          <h2 className='subtitle-h3'>Macam-Macam Function</h2>
           <OrderedList className='section_text'>
             {dataJson["function-type-list"].map((val, key) => (
               <Fragment key={key}>
@@ -30,8 +30,10 @@ export default function Page() {
                     <strong>{val.type}</strong>
                   </p>
                 </li>
-                <p className='section_text'>{val.desc}</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>{val.desc}</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}{" "}
           </OrderedList>
@@ -56,7 +58,7 @@ export default function Page() {
           <SyntaxHighlighter code={dataJson["parameter-argument-code"]} />
         </section>
         <section className='my-5'>
-          <h3 className='subtitle-h3'>Sifat Function</h3>
+          <h2 className='subtitle-h3'>Sifat Function</h2>
           <p className='section_text'>
             Sebuah function boleh mengembalikan sebuah nilai ataupun tidak
             mengembalikan nilai. Jika ingin mengembalikan sebuah nilai maka

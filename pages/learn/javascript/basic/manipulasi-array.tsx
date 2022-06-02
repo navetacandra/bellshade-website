@@ -22,40 +22,42 @@ export default function Page() {
           <OrderedList>
             {dataJson.map((data, i) => (
               <Fragment key={i}>
-                <h4 className='subtitle-h4 ml-3'>
-                  <li>{data.title}</li>
-                </h4>
-                {data.desc.map((val, key) => (
-                  <p className='section_text' key={key}>
-                    <TextStyle Text={val} />
-                  </p>
-                ))}{" "}
-                <SyntaxHighlighter code={data.draft} />
-                {data.desc_1
-                  ? data.desc_1.map((val, key) => (
-                      <p className='section_test' key={key}>
-                        <TextStyle Text={val} />
-                      </p>
-                    ))
-                  : null}
-                <UnorderedList className='my-3'>
-                  {data.list.map((val, key) => (
-                    <li key={key}>
-                      <p className='section_text'>
-                        <TextStyle Text={val} />
-                      </p>
-                    </li>
+                <li>
+                  <h4 className='subtitle-h4 ml-3'>{data.title}</h4>
+                </li>
+                <div role='listitem'>
+                  {data.desc.map((val, key) => (
+                    <p className='section_text' key={key}>
+                      <TextStyle Text={val} />
+                    </p>
                   ))}
-                </UnorderedList>
-                <p className='section_text'>Contoh:</p>
-                {data.desc_2
-                  ? data.desc.map((val, key) => (
-                      <p className='section_text' key={key}>
-                        <TextStyle Text={val} />
-                      </p>
-                    ))
-                  : null}
-                <SyntaxHighlighter code={data.code} />
+                  <SyntaxHighlighter code={data.draft} />
+                  {data.desc_1
+                    ? data.desc_1.map((val, key) => (
+                        <p className='section_test' key={key}>
+                          <TextStyle Text={val} />
+                        </p>
+                      ))
+                    : null}
+                  <UnorderedList className='my-3'>
+                    {data.list.map((val, key) => (
+                      <li key={key}>
+                        <p className='section_text'>
+                          <TextStyle Text={val} />
+                        </p>
+                      </li>
+                    ))}
+                  </UnorderedList>
+                  <p className='section_text'>Contoh:</p>
+                  {data.desc_2
+                    ? data.desc.map((val, key) => (
+                        <p className='section_text' key={key}>
+                          <TextStyle Text={val} />
+                        </p>
+                      ))
+                    : null}
+                  <SyntaxHighlighter code={data.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

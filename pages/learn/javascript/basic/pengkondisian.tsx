@@ -14,7 +14,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Pengkondisian</h2>
+          <h1 className='title-2'>Pengkondisian</h1>
           <p className='section_text'>
             Kegunaan dari pengkondisian adalah memberi tau program blok kode
             mana {"yang "} bisa dieksekusi/dijalankan. Dalam javascript terdapat
@@ -27,13 +27,15 @@ export default function Page() {
                 <li className='section_text'>
                   <TextStyle Text={val.title} />
                 </li>
-                {val.desc.map((val1, key1) => (
-                  <p className='section_text' key={key1}>
-                    <TextStyle Text={val1} />
-                  </p>
-                ))}
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  {val.desc.map((val1, key1) => (
+                    <p className='section_text' key={key1}>
+                      <TextStyle Text={val1} />
+                    </p>
+                  ))}
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

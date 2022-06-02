@@ -13,10 +13,10 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section>
-          <h2 className='title-2'>Method-Method untuk Memanipulasi Object</h2>
+          <h1 className='title-2'>Method-Method untuk Memanipulasi Object</h1>
           {dataJson.map((data, i) => (
             <Fragment key={i}>
-              <h4 className='subtitle-h4'>{data.title}</h4>
+              <h2 className='subtitle-h4'>{data.title}</h2>
               <p className='section_text'>
                 <TextStyle Text={data.desc} />
               </p>

@@ -13,14 +13,14 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Strict Mode</h2>
+          <h1 className='title-2'>Strict Mode</h1>
           {dataJson.map((data, key) => (
             <Fragment key={key}>
               {typeof data.title === "string" && !!data.title.length
                 ? [data.title].map((val, i) => (
-                    <h4 className='subtitle-h4' key={i}>
+                    <h2 className='subtitle-h4' key={i}>
                       <TextStyle Text={val} />
-                    </h4>
+                    </h2>
                   ))
                 : null}{" "}
               {typeof data.desc === "object" && !!data.desc.length

@@ -14,7 +14,7 @@ export default function Page() {
     >
       <WrapperTemplate>
         <section className='my-5'>
-          <h2 className='title-2'>Operator</h2>
+          <h1 className='title-2'>Operator</h1>
           {dataJson["text-1"].map((val, key) => (
             <p className='section_text' key={key}>
               {val}
@@ -22,9 +22,9 @@ export default function Page() {
           ))}{" "}
         </section>
         <section className='my-5'>
-          <h3 className='subtitle-h3'>
+          <h2 className='subtitle-h3'>
             Javascript comparison (perbandingan) operator
-          </h3>
+          </h2>
           <p className='section_text'>
             Banyak jenis operasi perbandingan. Macam-macamnya yaitu:
           </p>
@@ -38,15 +38,17 @@ export default function Page() {
                     </p>
                   </li>
                 ))}
-                <p className='section_text'>{val.desc}</p>
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>{val.desc}</p>
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>
         </section>
         <section className='my-5'>
-          <h3 className='subtitle-h3'>Javascript logical (logika) operator</h3>
+          <h2 className='subtitle-h3'>Javascript logical (logika) operator</h2>
           {dataJson["text-2"].map((val, key) => (
             <p className='section_text' key={key}>
               {val}
@@ -62,9 +64,11 @@ export default function Page() {
                     </p>
                   </li>
                 ))}
-                <p className='section_text'>{val.desc}</p>
-                <p className='section_text'>Contoh:</p>
-                <SyntaxHighlighter code={val.code} />
+                <div role='listitem'>
+                  <p className='section_text'>{val.desc}</p>
+                  <p className='section_text'>Contoh:</p>
+                  <SyntaxHighlighter code={val.code} />
+                </div>
               </Fragment>
             ))}
           </OrderedList>

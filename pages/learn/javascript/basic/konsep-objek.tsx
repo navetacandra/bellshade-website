@@ -13,7 +13,7 @@ export default function Page() {
       <WrapperTemplate>
         {dataJson.map((data, i) => (
           <section key={i} className='my-5'>
-            {data.title ? <h2 className='title-2'>{data.title}</h2> : null}{" "}
+            {data.title ? <h1 className='title-2'>{data.title}</h1> : null}
             {data.text_1.map((val, key) => (
               <p className='section_text' key={key}>
                 <TextStyle Text={val} />
